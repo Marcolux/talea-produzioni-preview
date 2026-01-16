@@ -1,0 +1,75 @@
+
+.hambContainer {
+    padding: 10px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    z-index: 1;
+
+    .hamburger-menu {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1px 0px;
+
+        .bar {
+            height: 4px;
+            border-radius: 10px;
+            width: 95%;
+            background-color: black;
+            border-radius: 10px;
+            transition: all 0.4s ease;	
+        }
+        &.openHam{
+            .bar {
+                &#bar1 {
+                    transform: rotate(45deg) translate(0px, 10px);
+                    width: 120%;
+                }
+                &#bar2 {
+                    transform: translate(-100px, 25px);
+                    width: 400%;
+                    height: 2px;
+                    margin-right: 30px;
+                    display: none;
+                }
+                &#bar3 {
+                    transform: rotate(-45deg) translate(0px, -10px);
+                    width: 120%;
+                }
+            }
+        }
+    }
+}
+
+#smallScreenMenu {
+    box-sizing: border-box;
+    background-color: var(--navbar-background);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    .navBarSm {
+        padding: 30px;
+        .navLinks {
+            text-decoration: none;
+            color: var(--primary-font-color);
+            font-size: var(--navbar-fontsize);
+            font-family: var(--navbar-fontFamily);
+            font-weight: var(--navbar-fontWeight);
+            align-self: center;
+            p {
+                margin: 10px 0px;
+                text-align: center;
+            }
+        }
+    }
+}

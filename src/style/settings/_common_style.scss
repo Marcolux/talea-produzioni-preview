@@ -1,0 +1,24 @@
+
+.rotate180{ transform: rotate(180deg); }
+
+.text-center{text-align: center !important;}
+.text-light {font-weight:300 !important;}
+.text-semibold {font-weight:600 !important;}
+.text-bold {font-weight:700 !important;}
+.text-italic {font-style: italic;}
+.text-white{color: #fff !important;}
+.hide {display: none !important;}
+.show {display: flex;}
+
+/* SCROLLBAR SETTINGS*/
+::-webkit-scrollbar {
+	width: 8px !important;
+}
+::-webkit-scrollbar-track {
+	background-color: #E3D7C84D;
+	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #000000b1;
+	border-radius: 3px;
+}
