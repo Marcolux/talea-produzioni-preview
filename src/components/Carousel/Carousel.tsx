@@ -21,6 +21,10 @@ interface Image {
     extraCaption: string | null
 }
 
+const withPublicUrl = (p: string) =>
+  `${process.env.PUBLIC_URL}${p.startsWith('/') ? '' : '/'}${p}`;
+
+
 const Carousel = (props: CarouselProps) => {
     const [folderPicsIndx, setFolderPicsIndx] = useState<number>(0)
     const [singlePicsIndx, setSinglePicsIndx] = useState<number>(0)
@@ -160,7 +164,7 @@ const Carousel = (props: CarouselProps) => {
                                 >
                                     <img
                                         className='carouselSinglePic'
-                                        src={item.src}
+                                        src={withPublicUrl(item.src)}
                                         alt={item.alt}
                                     />
                                 </animated.div>
