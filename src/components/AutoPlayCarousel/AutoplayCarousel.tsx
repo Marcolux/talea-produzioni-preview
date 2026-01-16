@@ -9,6 +9,9 @@ interface AutoplayProps {
     className?: string
 }
 
+const withPublicUrl = (p: string) =>
+  `${process.env.PUBLIC_URL}${p.startsWith('/') ? '' : '/'}${p}`;
+
 const AutoplayCarousel = (props: AutoplayProps) => {
 
     const [currentSlide, setCurrentSlide] = useState<number>(0) 
@@ -65,7 +68,7 @@ const AutoplayCarousel = (props: AutoplayProps) => {
                             className={`autoPlaySlide`}
                         >
                             <img 
-                                src={allPictures.images[index].src} 
+                                src={withPublicUrl(allPictures.images[index].src)}
                                 alt={allPictures.images[index].alt}
                                 onClick={() => { setIsPaused(!isPaused) }}
                                 onMouseOver={() => { setIsPaused(true) }}
