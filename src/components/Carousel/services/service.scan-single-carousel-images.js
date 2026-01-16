@@ -36,7 +36,7 @@ const generateSingleFolderImageData = () => {
     const images = fs.readdirSync(directoryPath)
         .filter((file) => /\.(png|jpe?g|webp)$/i.test(file))
         .map((file) => {
-            const filePath = `/single-carousel-folder/${file}`
+            const filePath = `single-carousel-folder/${file}`
 
             // Use existing data if available for this image
             const existingImage = existingDataMap.get(filePath)

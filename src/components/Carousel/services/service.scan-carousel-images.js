@@ -67,7 +67,7 @@ const generateImageData = () => {
         const images = fs.readdirSync(path.join(directoryPath, folder))
             .filter((file) => /\.(png|jpe?g|webp)$/i.test(file))
             .map((file) => {
-                const filePath = `/carousel-pictures/${folder}/${file}`
+                const filePath = `carousel-pictures/${folder}/${file}`
     
                 // Use folderNameWithoutPrefix for map lookup
                 const existingImage = existingDataMap.get(folderNameWithoutPrefix)?.get(filePath)

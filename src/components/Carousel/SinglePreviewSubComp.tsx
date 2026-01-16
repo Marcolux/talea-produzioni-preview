@@ -76,7 +76,7 @@ const SinglePreviewSubComp = (props: SinglePreviewProps) => {
                         
                             <img
                                 key={index}
-                                src={img.src}
+                                src={`${process.env.PUBLIC_URL}/${img.src}`}
                                 alt={img.alt}
                                 onClick={() => {
                                     onDirectionChange(index < singlePicsIndx ? 'left' : 'right')
