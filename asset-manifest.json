@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/talea-produzioni-preview/static/css/main.8ed8e9d9.css",
+    "main.js": "/talea-produzioni-preview/static/js/main.af4a1cce.js",
+    "static/js/453.14217530.chunk.js": "/talea-produzioni-preview/static/js/453.14217530.chunk.js",
+    "static/media/Inter-Regular.ttf": "/talea-produzioni-preview/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/talea-produzioni-preview/static/media/PlayfairDisplay-VariableFont_wght.bf46a6bcddc9999a295e.ttf",
+    "static/media/september-script.regular.ttf": "/talea-produzioni-preview/static/media/september-script.regular.357314c66c7fd92cf74c.ttf",
+    "static/media/Merriweather-Regular.ttf": "/talea-produzioni-preview/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
+    "static/media/Prata-Regular.ttf": "/talea-produzioni-preview/static/media/Prata-Regular.2eeab737052a4ae3b2a9.ttf",
+    "static/media/Bison-Bold.ttf": "/talea-produzioni-preview/static/media/Bison-Bold.0ec7f8e68fac9f1c4eef.ttf",
+    "static/media/Ledger-Regular.ttf": "/talea-produzioni-preview/static/media/Ledger-Regular.af758062fdcbe3027bfd.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/talea-produzioni-preview/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "index.html": "/talea-produzioni-preview/index.html",
+    "main.8ed8e9d9.css.map": "/talea-produzioni-preview/static/css/main.8ed8e9d9.css.map",
+    "main.af4a1cce.js.map": "/talea-produzioni-preview/static/js/main.af4a1cce.js.map",
+    "453.14217530.chunk.js.map": "/talea-produzioni-preview/static/js/453.14217530.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ed8e9d9.css",
+    "static/js/main.af4a1cce.js"
+  ]
+}
