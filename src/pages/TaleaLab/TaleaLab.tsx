@@ -3,6 +3,7 @@ import TaleaLabSingleCard from "../../components/TaleaLabCard/TaleaLabCard"
 import GalleryLightbox from "../../components/GalleryLightbox/GalleryLightbox"
 import "../page.scss"
 import './talea-lab.scss'
+import { Link } from "react-router-dom"
 
 const TaleaLab = () => {
 
@@ -44,7 +45,7 @@ const TaleaLab = () => {
                         webkit-playsinline
                         loop
                         preload="metadata"
-                        poster={withPublicUrl('/varie/servizi_poster.jpg')}
+                        poster={withPublicUrl('/varie/clip_lab-musica_1.jpg')}
                         crossOrigin="anonymous"
                     >
                         <source src={withPublicUrl('/varie/clip_lab-musica_1.mp4')} type="video/mp4"/>
@@ -115,7 +116,9 @@ const TaleaLab = () => {
                         leftRight="right"
                         withPublicUrl={withPublicUrl}
                     />
-                    <button className="primary_btn py-10" >Organizza il tuo laboratorio</button>
+                    <Link className="primary_btn py-10" to="/contatti">
+                        <span> Organizza il tuo laboratorio</span>
+                    </Link>
                 </div>
                 {/* <ScrollingSec/> */}
 
@@ -134,7 +137,9 @@ const TaleaLab = () => {
                                 Ritmiincittà
                             </h1>
                             <p lang="it">Ritmincittà è un progetto socio-culturale realizzato tra giugno 2020 e giugno 2022 risultato vincitore dell’avviso pubblico per l’individuazione di proposte progettuali per la creazione di servizi di prossimità presso le aree urbane della Città di Bari a forte rischio di marginalità in attuazione dell’intervento Asse 3, Azione 3.3.1 – Progetto BA3.3.1.g “Urbis” del PON Metro 2014 – 2020. Il target delle attività sono stati giovani baresi di età compresa tra i 14 e 35 anni, in condizioni di disagio economico e sociale dei quartieri Libertà e San Nicola. Sono stati realizzati 3 laboratori artistici: percussioni, danza e realizzazione di costumi e maschere, con il supporto di un servizio di counselling psicologico e di documentazione audiovisiva. Le attività si sono concluse con l’organizzazione di un Carnevale, un momento di festa, una sfilata colorata che ha portato per le strade del quartiere i ragazzi che hanno avuto la possibilità di condividere all’interno del loro contesto di riferimento il lavoro svolto durante il progetto. Ritmincittà si è inserito nel contesto globale di una politica di prevenzione, formazione ed empowerement, per coltivare i valori etici ed estetici, in stretta relazione con il fare musica. Talea ha dato il suo contributo per “Laboratorio di percussioni” per il progetto “Bullismo: violenza fra pari” del III municipio del Comune di Bari”</p>
-                            <button className="primary_btn">Guarda il video</button>
+                            <Link className="primary_btn py-10 col-12" to="https://www.youtube.com/watch?v=vryQb71fX3w" target="_blank" style={{minWidth: '100%'}}>
+                                <span>Guarda il video</span>
+                            </Link>
                             <div id="loghi_footer_ritmi" className="flex">
                                 <img src={withPublicUrl('/immagini-pagine/talea-lab/loghi-footer.png')} alt="Ritmicitta Collaborazioni" />
                             </div>

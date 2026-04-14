@@ -15,6 +15,35 @@
         font-size: clamp(40px, 11.6vw, 120px);
         letter-spacing: 0.01em;
     }
+    &:not(.audiovisivamente__page) {
+        .primary_btn {
+            background-color: var(--alternative-black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: fit-content;
+            cursor: pointer;
+            &.reverted {
+                background-color: var(--primary-color);
+                color: var(--alternative-black);
+                border-width: 0px;
+            }
+            &.noBG {
+                background-color: transparent;
+            }
+            span {
+                scale: 1;
+                transition: scale .2s ease-in-out;
+            }
+            &:hover{
+                span {
+                    scale: 1.05;
+                }
+            }
+        }
+    }
     &.audiovisivamente__page {
         background-color: var(--audiovisivamente-page-bg);
         // HEADINGS

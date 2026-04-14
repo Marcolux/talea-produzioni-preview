@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom'
 import './servizi_single_card.scss'
 import { useInView } from "react-intersection-observer"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
     title: string
@@ -7,14 +10,16 @@ type Props = {
     url: string
     leftRight: string
     withPublicUrl: (p: string) => string
+    servizio?: string
 }
 export type SingleServiziCard = {
     title: string
     description?: React.ReactNode
     nameInURL: string
     leftRight?: string
+    servizio?: string
 }
-const ServiziSingleCard = ({ title, description, url, leftRight, withPublicUrl }: Props) => {
+const ServiziSingleCard = ({ title, description, url, leftRight, withPublicUrl, servizio }: Props) => {
    
     const [ref, inView] = useInView({
         threshold: 0.4,
@@ -33,14 +38,24 @@ const ServiziSingleCard = ({ title, description, url, leftRight, withPublicUrl }
                 <div className='overlay' />
                 <div className="descCenter">
                     {description ? (
-                        <p className="desc" lang='it'>
-                        {description}
-                        </p>
+                        <div className='flex flex-column' style={{zIndex: '15'}}>
+                            <p className="desc" lang='it'>
+                                {description}
+                            </p>
+                            {servizio && (
+                                <Link
+                                    className="scopri_link py-5"
+                                    to="/contatti"
+                                    state={{ servizio }}
+                                >
+                                    <span>Scopri di più <FontAwesomeIcon className='ml-5' icon={faArrowRight} /></span>
+                                </Link>
+                            )}
+                        </div>
                     ) : null}
                 </div>
                 <div className="titleBlock">
                     <h2 className="title font-sanmarino">{title}</h2>
-
                 </div>
             </div>
         </article>

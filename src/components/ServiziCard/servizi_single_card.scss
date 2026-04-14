@@ -36,6 +36,11 @@
                     opacity: 1;
                     transform: translateY(0px);
                 }
+
+                .scopri_link {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
 
             img {
@@ -58,6 +63,23 @@
                 border-right-color: var(--primary-color);
                 border-top-color: var(--primary-color);
             }
+
+        }
+        .scopri_link {
+            align-self: flex-end;
+            color: var(--primary-color);
+            font-size: clamp(13px, 1.1vw, 17px);
+            letter-spacing: 0.08em;
+            opacity: 0;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            transform: translateY(8px);
+            transition: opacity 250ms ease 200ms, transform 280ms ease 200ms;
+            z-index: 15;
+
+            svg { transition: transform 250ms ease; }
+            &:hover svg { transform: translateX(5px); }
         }
         .descCenter {
             position: absolute;
@@ -120,7 +142,7 @@
         overflow: visible;
         position: absolute;
         right: 40px;
-        z-index: 3;
+        z-index: 1;
     }
 
     .kicker {

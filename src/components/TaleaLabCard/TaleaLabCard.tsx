@@ -33,6 +33,7 @@ const TaleaLabSingleCard = ({
     const [idx, setIdx] = useState(0)
     const timerRef = useRef<number | null>(null)
     const [isPaused, setIsPaused] = useState(false)
+    const touchStartX = useRef<number | null>(null)
 
     // Keep index valid if images change
     useEffect(() => {
@@ -62,6 +63,23 @@ const TaleaLabSingleCard = ({
                 className="lab_carousel"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
+                onTouchStart={(e) => {
+                    touchStartX.current = e.touches[0].clientX
+                    setIsPaused(true)
+                }}
+                onTouchEnd={(e) => {
+                    if (touchStartX.current === null) return
+                    const delta = e.changedTouches[0].clientX - touchStartX.current
+                    if (Math.abs(delta) > 40) {
+                        if (delta < 0) {
+                            setIdx((i) => (i + 1) % slides.length)
+                        } else {
+                            setIdx((i) => (i - 1 + slides.length) % slides.length)
+                        }
+                    }
+                    touchStartX.current = null
+                    setIsPaused(false)
+                }}
             >
                 <div
                     className="lab_carousel_track"

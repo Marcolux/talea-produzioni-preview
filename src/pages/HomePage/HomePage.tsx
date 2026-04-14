@@ -43,7 +43,7 @@ const HomePage = () => {
                         crossOrigin="anonymous"
                         ref={videoRef}
                     >
-                        <source src={withPublicUrl('/loghi/animazione_talea.mp4')} type="video/mp4"/>
+                        <source src={'https://res.cloudinary.com/drdrs6pdq/video/upload/v1776179653/Talea/animazione_talea_short.mp4'} type="video/mp4"/>
                     </video>
                 </div>
 

@@ -177,14 +177,14 @@
             #loghi_footer_ritmi {
                 background-color: #ffffff;
                 height: fit-content;
-                padding: 20px;
+                // padding: 20px;
                 width: 100%;
                 align-self: center;
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
                 img {
-                    height: 60px;
+                    height: 100%;
                     width: auto;
                     max-width: 100%;
                     object-fit: cover;
@@ -291,7 +291,7 @@
 
         // Changed
         #talea_lab_attivita {
-            row-gap: 20px;
+            row-gap: 50px;
         }
         .talea_lab_card {
             display: flex;

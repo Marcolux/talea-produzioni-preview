@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import { useLocation } from "react-router-dom"
 import Dropdown from "../../components/DropdownSelect/DropdownSelect"
 import emailjs from "@emailjs/browser"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,9 +13,10 @@ const Contatti = () => {
     const nameRef = useRef<HTMLInputElement | null>(null)
     const formRef = useRef<HTMLFormElement | null>(null)
     const honeypotRef = useRef<HTMLInputElement | null>(null)
+    const location = useLocation()
 
     const [name, setName] = useState("")
-    const [subject, setSubject] = useState("")
+    const [subject, setSubject] = useState(location.state?.servizio ?? "")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     const [isSubmitting, setIsSubmitting] = useState(false)
@@ -24,7 +26,14 @@ const Contatti = () => {
     const maxMessageLength = 600
 
     // Auto-focus first name on mount
-    useEffect(() => { nameRef.current?.focus() }, [])
+    // useEffect(() => { nameRef.current?.focus() }, [])
+
+    // Pre-fill servizio from router state (handles both fresh mount and same-instance re-navigation)
+    useEffect(() => {
+        if (location.state?.servizio) {
+            setSubject(location.state.servizio)
+        }
+    }, [location.state?.servizio])
 
     // Auto-hide success message after a few seconds
     useEffect(() => {
@@ -188,12 +197,14 @@ const Contatti = () => {
                             placeholder="Seleziona un Servizio"
                             value={subject}
                             options={[
+                                { value: "360° Eco-Virtual Tour", label: "360° Eco-Virtual Tour" },
                                 { value: "Audio mix e post-produzione", label: "Audio mix e post-produzione" },
-                                { value: "Montaggio e post-produzione", label: "Montaggio e post-produzione" },
                                 { value: "Composizione di colonne sonore", label: "Composizione di colonne sonore" },
-                                { value: "Scrittura e sviluppo creativo", label: "Scrittura e sviluppo creativo" },
-                                { value: "Podcast", label: "Podcast" },
+                                { value: "Montaggio e post-produzione", label: "Montaggio e post-produzione" },
                                 { value: "Noleggio drone con operatore", label: "Noleggio drone con operatore" },
+                                { value: "Podcast", label: "Podcast" },
+                                { value: "Produzione Esecutiva", label: "Produzione Esecutiva" },
+                                { value: "Scrittura e sviluppo creativo", label: "Scrittura e sviluppo creativo" }
                             ]}
                         />
                         <div className="col-12 errorTextDiv">
@@ -244,20 +255,20 @@ const Contatti = () => {
                         className="primary_btn py-10"
                         disabled={isSubmitting}
                     >
-                        {isSubmitting ? "Invio in Corso..." : "Invia Messaggio"}
+                        <span>
+                            {isSubmitting ? "Invio in Corso..." : "Invia Messaggio"}
+                        </span>
                     </button>
 
                     <p
                         id="messageSent"
-                        className={`fontSize16 my-0 messageSent ${ sent ? "show" : "hide" }`}
+                        className={`fontSize16 mt-15 flex flex-column flex-alignItems-center  mb-0 messageSent ${ sent ? "show" : "hide" }`}
                         role="status"
                         aria-live="polite"
                     >
                         Message Inviato! Grazie!
+                        <span className="mt-5">Ci faremo sentire in un paio di giorni!</span>
                     </p>
-                </div>
-                <div className="col-12 flex flex-justifyContent-center">
-                    <p>Ci faremo sentire in un paio di giorni!</p>
                 </div>
             </form>
         </div>

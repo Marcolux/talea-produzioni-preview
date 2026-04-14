@@ -155,6 +155,20 @@
         width: 100% !important;
     }
 }
+@media screen and (max-width: 767px) {
+    .flip-card_ck {
+        .flip-toggle {
+            display: flex;
+            transform: translateX(0px) scale(1) rotateY(0deg);
+            .flip-icon {
+                opacity: 1;
+            }
+        }
+        &.is-flipped .flip-toggle {
+            transform: translateX(0px) scale(1) rotateY(180deg);
+        }
+    }
+}
 @media screen and (min-width: 1101px) and (max-width: 1250px) {
     .flip-card_ck {
         width: 70% !important;
