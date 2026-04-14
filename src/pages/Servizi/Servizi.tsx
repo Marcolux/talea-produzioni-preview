@@ -2,7 +2,6 @@ import ServiziSingleCard, { SingleServiziCard } from "../../components/ServiziCa
 import './servizi.scss'
 import "../page.scss"
 import { useInView } from "react-intersection-observer"
-import { Link } from "react-router-dom"
 
 
 const Servizi = () => {

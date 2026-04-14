@@ -35,7 +35,7 @@ const Footer = () => {
                     }
                 </div>
                 <div id="footer_text_wrapper">
-                    <h1 className='my-0'>TALEA</h1>
+                    <p className='my-0 footer-brand-name'>TALEA</p>
                     <div className='flex flex-column my-15'>
                         <p className="my-0">Via S. Hahnemann – n° 2 A/5 , 70126 – BARI (BA) ITALY / P.I. 08399410722</p>
                         <p className="my-0">info@taleaproduzioni.it +39.3287597221 / +39.3495636427</p>

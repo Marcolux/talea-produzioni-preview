@@ -178,13 +178,14 @@ const Carousel = (props: CarouselProps) => {
                     }
                     {
                         carouselType !== "single-preview" && singlePicsIndx !== 0 &&
-                        <button 
+                        <button
                             className="carouselScrollIcon left"
                             onClick={() => { handleScrolling('left')}}
+                            aria-label="Immagine precedente"
                         >
-                            <FontAwesomeIcon 
-                                icon={faChevronLeft} 
-                                size="3x"  
+                            <FontAwesomeIcon
+                                icon={faChevronLeft}
+                                size="3x"
                             />
                         </button>
                     }
@@ -199,6 +200,7 @@ const Carousel = (props: CarouselProps) => {
                                         className='carouselSinglePic'
                                         src={withPublicUrl(item.src)}
                                         alt={item.alt}
+                                        loading="lazy"
                                     />
                                 </animated.div>
                             ) : null
@@ -206,13 +208,14 @@ const Carousel = (props: CarouselProps) => {
                     }
                     {
                         carouselType !== "single-preview" && singlePicsIndx + 1 < imagesLength  &&
-                        <button 
+                        <button
                             className="carouselScrollIcon right"
                             onClick={() => { handleScrolling('right')}}
+                            aria-label="Immagine successiva"
                         >
-                            <FontAwesomeIcon 
-                                icon={faChevronRight} 
-                                size="3x" 
+                            <FontAwesomeIcon
+                                icon={faChevronRight}
+                                size="3x"
                             />
                         </button>
                     }       

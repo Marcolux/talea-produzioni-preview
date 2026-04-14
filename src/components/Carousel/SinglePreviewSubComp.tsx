@@ -60,14 +60,14 @@ const SinglePreviewSubComp = (props: SinglePreviewProps) => {
 
     return (
         <div className='carouselPreview' ref={previewRef}>
-            <button 
+            <button
                 className="previewScrollIcons left"
                 onClick={() => { handleScrolling('left')}}
-                tabIndex={0}
+                aria-label="Scorri anteprima a sinistra"
             >
-                <FontAwesomeIcon 
-                    icon={faChevronLeft} 
-                    size="3x"  
+                <FontAwesomeIcon
+                    icon={faChevronLeft}
+                    size="3x"
                 />
             </button>
             <div className="allPics">
@@ -78,6 +78,7 @@ const SinglePreviewSubComp = (props: SinglePreviewProps) => {
                                 key={index}
                                 src={`${process.env.PUBLIC_URL}/${img.src}`}
                                 alt={img.alt}
+                                loading="lazy"
                                 onClick={() => {
                                     onDirectionChange(index < singlePicsIndx ? 'left' : 'right')
                                     onSelectPicture(index)
@@ -98,14 +99,14 @@ const SinglePreviewSubComp = (props: SinglePreviewProps) => {
                     ))
                 }
             </div> 
-            <button 
+            <button
                 className="previewScrollIcons right"
                 onClick={() => { handleScrolling('right')}}
-                tabIndex={0}
+                aria-label="Scorri anteprima a destra"
             >
-                <FontAwesomeIcon 
-                    icon={faChevronRight} 
-                    size="3x" 
+                <FontAwesomeIcon
+                    icon={faChevronRight}
+                    size="3x"
                 />
             </button>
         </div>

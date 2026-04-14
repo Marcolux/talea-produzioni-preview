@@ -19,3 +19,19 @@ body {
   background-color: var(--page-primary-background);
 }
 
+/* Focus styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+

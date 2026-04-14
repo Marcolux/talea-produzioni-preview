@@ -59,7 +59,7 @@ const CarouselModal = ({
     return () => { document.body.style.overflow = "" }
   }, [])
 
-  const { key, label } = IMAGE_SEQUENCE[imageIndex]
+  const { key } = IMAGE_SEQUENCE[imageIndex]
   const image = evoluzione.images[key]
   const fallback = Object.values(evoluzione.images).find(img => img !== null)
   const displayImage = image ?? fallback

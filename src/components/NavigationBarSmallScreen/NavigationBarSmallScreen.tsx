@@ -33,13 +33,18 @@ const NavigationBarSmallScreen = () => {
             id="smallScreenWrapper" 
             className={taleaAudio === 'audiovisivamente' ? 'audiovisivamenteNav' : ''}
         >
-            <div className={isExpanded ? 'hambContainer open' : 'hambContainer'} onClick={toggleLogic}>
+            <button
+                className={isExpanded ? 'hambContainer open' : 'hambContainer'}
+                onClick={toggleLogic}
+                aria-label={isExpanded ? 'Chiudi menu' : 'Apri menu'}
+                aria-expanded={isExpanded}
+            >
                 <div className={isExpanded ? 'hamburger-menu openHam' : 'hamburger-menu'}>
                     <div className="bar" id="bar1"></div>
                     <div className="bar" id="bar2"></div>
                     <div className="bar" id="bar3"></div>
                 </div>
-            </div>
+            </button>
 
             {transitions((style, condition) =>
                 condition ? (

@@ -46,7 +46,6 @@ const EvoluzioneThumbnail = ({ evoluzione, activeFilter, onClick }: EvoluzioneTh
     }
   }, [])
 
-  const image = evoluzione.images[currentKey]
   const fallback = Object.values(evoluzione.images).find(img => img !== null)
 
   if (!fallback) return null

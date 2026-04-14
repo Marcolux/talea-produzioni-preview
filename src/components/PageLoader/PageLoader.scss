@@ -1,0 +1,18 @@
+.page-loader {
+    align-items: center;
+    background-color: var(--page-primary-background);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+
+    &__logo {
+        animation: pulse 1.2s ease-in-out infinite;
+        width: 100px;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1;   transform: scale(1);    }
+    50%       { opacity: 0.5; transform: scale(0.92); }
+}

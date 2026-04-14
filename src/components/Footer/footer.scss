@@ -51,9 +51,13 @@
             position: relative;
             z-index: 1;
         }
-        #seguici_wrapper { 
+        #seguici_wrapper {
             text-transform: uppercase;
             font-weight: 600;
+        }
+        .footer-brand-name {
+            font-size: 2em;
+            font-weight: bold;
         }
     }
 

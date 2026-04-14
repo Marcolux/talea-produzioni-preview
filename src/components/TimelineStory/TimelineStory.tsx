@@ -112,39 +112,42 @@ const TimeLineStory = (props: TimeLineStoryProps) => {
                             > 
                                 {
                                     index > 0 && (
-
-                                        <FontAwesomeIcon 
-                                            id="prevSlide" 
-                                            icon={faChevronUp} 
-                                            className="fontSize40"
+                                        <button
+                                            id="prevSlide"
+                                            className="fontSize40 timelineNavBtn"
+                                            aria-label="Diapositiva precedente"
                                             onClick={() => {
                                                 setSingleSlide(prev=> prev - 1)
                                                 setUpOrDown('down')
                                             }}
-                                        />            
-                                    ) 
+                                        >
+                                            <FontAwesomeIcon icon={faChevronUp} />
+                                        </button>
+                                    )
                                 }
                                 <div id="slideText" className="p-20 mx-30" >
                                     <p className="my-0 fontSize16">{slideList[index].slide_body.description}</p>
                                 </div>
 
                                 {
-                                    index + 1 < slideList.length && ( 
-                                        <FontAwesomeIcon 
-                                            id="nextSlide" 
-                                            icon={faChevronDown} 
-                                            className="fontSize40"
+                                    index + 1 < slideList.length && (
+                                        <button
+                                            id="nextSlide"
+                                            className="fontSize40 timelineNavBtn"
+                                            aria-label="Diapositiva successiva"
                                             onClick={() => {
                                                 setSingleSlide(prev=> prev + 1)
                                                 setUpOrDown('up')
                                             }}
-                                        />
+                                        >
+                                            <FontAwesomeIcon icon={faChevronDown} />
+                                        </button>
                                     )
-                                }     
+                                }
                             </div>
 
                             <div id="slidePic">
-                                <img id="slideImg" src={`${process.env.PUBLIC_URL}/timelineStory-pictures/${slideList[index].slide_body.rightBG}`} alt="Carousel 2"/>
+                                <img id="slideImg" src={`${process.env.PUBLIC_URL}/timelineStory-pictures/${slideList[index].slide_body.rightBG}`} alt={slideList[index].slide_body.picNote || slideList[index].slide_body.rightBG} loading="lazy" />
                                 <p className={`m-0 note_${index}`} id="picNote">{slideList[index].slide_body.picNote}</p>
                             </div>
                         </div>

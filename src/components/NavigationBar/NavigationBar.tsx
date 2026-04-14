@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import './navigation-bar.scss'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";

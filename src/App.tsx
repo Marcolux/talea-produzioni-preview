@@ -1,25 +1,24 @@
 import { Routes, Route } from 'react-router-dom'
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import './style/App.scss'
 
 import NavigationBar from './components/NavigationBar/NavigationBar'
 import NavigationBarSmallScreen from './components/NavigationBarSmallScreen/NavigationBarSmallScreen'
 import Footer from './components/Footer/Footer'
-
-import HomePage from './pages/HomePage/HomePage' 
-import Servizi from './pages/Servizi/Servizi'
-import TaleaHub from './pages/TaleaHub/TaleaHub'
-import TaleaLab from './pages/TaleaLab/TaleaLab'
-import Contatti from './pages/Contatti/Contatti'
-
-import Audiovisivamente from './pages/Audiovisivamente/Home/AudiovisivamenteHome'
-import AudiovisivamenteAnalogie from './pages/Audiovisivamente/Analogie/Analogie'
-import AudiovisivamenteCineocchio from './pages/Audiovisivamente/Cineocchio/Cineocchio'
-import AudiovisivamenteDistopie from './pages/Audiovisivamente/Distopie/Distopie'
-import AudiovisivamenteEvoluzioni from './pages/Audiovisivamente/Evoluzione/Evoluzioni'
-import AudiovisivamenteNatura360 from './pages/Audiovisivamente/Natura360/Natura360'
-
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
-import './style/App.scss'
+import PageLoader from './components/PageLoader/PageLoader'
+
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'))
+const Servizi = lazy(() => import('./pages/Servizi/Servizi'))
+const TaleaHub = lazy(() => import('./pages/TaleaHub/TaleaHub'))
+const TaleaLab = lazy(() => import('./pages/TaleaLab/TaleaLab'))
+const Contatti = lazy(() => import('./pages/Contatti/Contatti'))
+const Audiovisivamente = lazy(() => import('./pages/Audiovisivamente/Home/AudiovisivamenteHome'))
+const AudiovisivamenteAnalogie = lazy(() => import('./pages/Audiovisivamente/Analogie/Analogie'))
+const AudiovisivamenteCineocchio = lazy(() => import('./pages/Audiovisivamente/Cineocchio/Cineocchio'))
+const AudiovisivamenteDistopie = lazy(() => import('./pages/Audiovisivamente/Distopie/Distopie'))
+const AudiovisivamenteEvoluzioni = lazy(() => import('./pages/Audiovisivamente/Evoluzione/Evoluzioni'))
+const AudiovisivamenteNatura360 = lazy(() => import('./pages/Audiovisivamente/Natura360/Natura360'))
 
 
 function App() {
@@ -46,21 +45,23 @@ function App() {
         <NavigationBarSmallScreen/>
       }
         <ScrollToTop/>
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="/servizi" element={<Servizi/>} />
-          <Route path="/talea-hub" element={<TaleaHub/>} />
-          <Route path="/talea-lab" element={<TaleaLab/>} />
-          <Route path="/contatti" element={<Contatti/>} />
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/servizi" element={<Servizi/>} />
+            <Route path="/talea-hub" element={<TaleaHub/>} />
+            <Route path="/talea-lab" element={<TaleaLab/>} />
+            <Route path="/contatti" element={<Contatti/>} />
 
-          {/* Audiovisivamente */}
-          <Route path="/audiovisivamente" element={<Audiovisivamente/>} />
-          <Route path="/audiovisivamente/analogie" element={<AudiovisivamenteAnalogie/>} />
-          <Route path="/audiovisivamente/cineocchio" element={<AudiovisivamenteCineocchio/>} />
-          <Route path="/audiovisivamente/distopie" element={<AudiovisivamenteDistopie/>} />
-          <Route path="/audiovisivamente/evoluzione" element={<AudiovisivamenteEvoluzioni/>} />
-          <Route path="/audiovisivamente/natura-360" element={<AudiovisivamenteNatura360/>} />
-        </Routes>
+            {/* Audiovisivamente */}
+            <Route path="/audiovisivamente" element={<Audiovisivamente/>} />
+            <Route path="/audiovisivamente/analogie" element={<AudiovisivamenteAnalogie/>} />
+            <Route path="/audiovisivamente/cineocchio" element={<AudiovisivamenteCineocchio/>} />
+            <Route path="/audiovisivamente/distopie" element={<AudiovisivamenteDistopie/>} />
+            <Route path="/audiovisivamente/evoluzione" element={<AudiovisivamenteEvoluzioni/>} />
+            <Route path="/audiovisivamente/natura-360" element={<AudiovisivamenteNatura360/>} />
+          </Routes>
+        </Suspense>
 
       <Footer/>
     </div>

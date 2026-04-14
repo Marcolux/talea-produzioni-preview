@@ -4,9 +4,6 @@ import "./homepage.scss"
 import { collezione_immagini } from "./collezione_immagini"
 
 const AudiovisivamenteHome = () => {
-    const withPublicUrl = (p: string) =>
-        `${process.env.PUBLIC_URL}${p.startsWith("/") ? "" : "/"}${p}`
-
     return(
         <div className="page audiovisivamente__page" id="audiovisivamente__home" lang="it">
 
