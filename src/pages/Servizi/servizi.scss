@@ -122,12 +122,11 @@
                 &.inView { transform: translateX(0px);}
                 .card {
                     border-radius: 8px !important;
-                    height: 65svh !important;
+                    height: 70svh !important;
                     margin: 0px !important;
                     width: 100% !important;
-                    img { 
+                    img {
                         border-radius: 8px !important;
-                        
                     }
                     .overlay { border-radius: 8px !important;}
                     .titleBlock {
@@ -150,12 +149,17 @@
                             transform: translateY(0);
                             .desc {
                                 opacity: 1;
-                                transform: translateY(-40px);
+                                transform: translateY(0);
                             }
                         }
                     }
                     .descCenter {
-                        padding: 15px;
+                        max-width: 100%;
+                        padding: 20px 20px 90px;
+                        // .desc {
+                        //     font-size: clamp(12px, 3.2vw, 15px);
+                        //     line-height: 1.45;
+                        // }
                     }
                 }
             }
