@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as MainRouter } from 'react-router-dom';  // Import BrowserRouter
+import { BrowserRouter as MainRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 
 import './style/index.scss';
 import './style/settings/settings.scss'
@@ -13,9 +14,11 @@ const root = ReactDOM.createRoot(
 )
 root.render(
   <React.StrictMode>
-    <MainRouter basename={basename}>
-      <App/>
-    </MainRouter>
+    <HelmetProvider>
+      <MainRouter basename={basename}>
+        <App/>
+      </MainRouter>
+    </HelmetProvider>
   </React.StrictMode>
 )
 

@@ -94,9 +94,10 @@ const TaleaLab = () => {
                     <TaleaLabSingleCard 
                         title="Soundscaping"
                         images={[
-                            "/immagini-pagine/talea-lab/labs-pics/", 
-                            "/immagini-pagine/talea-lab/labs-pics/", 
-                            "/immagini-pagine/talea-lab/labs-pics/",
+                            "/immagini-pagine/talea-lab/labs-pics/soundscaping_1.webp", 
+                            "/immagini-pagine/talea-lab/labs-pics/soundscaping_2.webp", 
+                            "/immagini-pagine/talea-lab/labs-pics/soundscaping_3.webp",
+                            "/immagini-pagine/talea-lab/labs-pics/soundscaping_4.webp",
                         ]} 
                         cardDescription="Delle passeggiate sonore, un percorso tecnico-artistico che ha come obiettivo la composizione e produzione musicale a partire dai suoni della città, per valorizzare aspetti identitari significativi attraverso la scoperta del paesaggio sonoro. Il suono, un potente attivatore di immagini ed emozioni, ci permette di viaggiare molto molto lontano e di riscoprire ciò che è prossimo."
                         leftRight="left"

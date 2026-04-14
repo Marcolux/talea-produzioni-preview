@@ -35,7 +35,7 @@ const Servizi = () => {
         {
             title: "MONTAGGIO E POST PRODUZIONE",
             description: "Editing video professionale con gestione di workflow nativi e proxy per ottimizzare i tempi di lavorazione su progetti complessi. Offriamo servizi di color grading, titolazione e mastering in conformità con i codec e i profili richiesti dai distributori. Finalizzazione accurata per garantire la massima resa visiva su web, broadcast e cinema.",
-            nameInURL: "immagini-pagine/servizi/audio.jpg",
+            nameInURL: "immagini-pagine/servizi/servizi_montaggio.jpg",
             servizio: "Montaggio e post-produzione"
         },
         {
