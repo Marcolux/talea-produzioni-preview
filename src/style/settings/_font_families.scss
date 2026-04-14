@@ -1,0 +1,347 @@
+@font-face {
+	font-family: 'Abril Fatface';
+	src: url('../fonts/Abril_Fatface/AbrilFatface-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arsenica';
+	src: url('../fonts/arsenica/ArsenicaTrial-Bold.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bison';
+	src: url('../fonts/Bison/Bison-Bold.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bodoni Moda';
+	src: url('../fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bodoni Libre';
+	src: url('../fonts/Libre_Bodoni/LibreBodoni-VariableFont_wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cinzel';
+	src: url('../fonts/Cinzer/Cinzel-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cormorant';
+	src: url('../fonts/Cormorant/Cormorant-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/Cormorant/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Editorial';
+	src: url('../fonts/Editorial/PPEditorialNew-Ultralight.otf') format('opentype');
+	font-display: swap;
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Editorial';
+	src: url('../fonts/Editorial/PPEditorialNew-Regular.otf') format('opentype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Editorial';
+	src: url('../fonts/Editorial/PPEditorialNew-Italic.otf') format('opentype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Editorial';
+	src: url('../fonts/Editorial/PPEditorialNew-Ultrabold.otf') format('opentype');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	src: url('../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Imbue';
+	src: url('../fonts/Imbue/Imbue-VariableFont_opsz\,wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Instrumental';
+	src: url('../fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gravitas One';
+	src: url('../fonts/GravitasOne/GravitasOne-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter/Inter-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ledger';
+	src: url('../fonts/ledger/Ledger-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Outfit';
+	src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Prata';
+	src: url('../fonts/Prata/Prata-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'San Marino';
+	src: url('../fonts/San_Marino/San\ Marino.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'San Marino Outline';
+	src: url('../fonts/San_Marino/San\ Marino\ Outline.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'September Script';
+	src: url('../fonts/September_script/september-script.regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UNCAGE';
+	src: url('../fonts/UNCAGE/UNCAGE-Regular.otf') format('opentype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Vidaloka';
+	src: url('../fonts/Vidaloka/Vidaloka-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+// Font utility classes
+
+.font-abril-fatface {
+	font-family: 'Abril Fatface', serif;
+}
+
+.font-arsenica {
+	font-family: 'Arsenica', serif;
+}
+
+.font-bebas-neue {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-bison {
+	font-family: 'Bison', sans-serif;
+}
+
+.font-bodoni {
+	font-family: 'Bodoni Moda', sans-serif;
+}
+
+.font-bison {
+	font-family: 'Bodoni Libre', sans-serif;
+}
+
+.font-cinzel {
+	font-family: 'Cinzel', serif;
+}
+
+.font-cormorant {
+	font-family: 'Cormorant', serif;
+}
+
+.font-cormorant-garamond {
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.font-editorial {
+	font-family: 'Editorial', serif;
+}
+
+.font-editorial-italic {
+	font-family: 'Editorial', serif;
+	font-style: italic;
+}
+
+.font-editorial-ultra-light {
+	font-family: 'Editorial', serif;
+	font-weight: 200;
+}
+
+.font-editorial-ultra-bold {
+	font-family: 'Editorial', serif;
+	font-weight: 800;
+}
+
+.font-fraunces {
+	font-family: 'Fraunces', serif;
+}
+
+.font-gravitas-one {
+	font-family: 'Gravitas One', serif;
+}
+
+.font-imbue {
+	font-family: 'Imbue', serif;
+}
+
+.font-inter {
+	font-family: 'Inter', sans-serif;
+}
+
+.font-instrumental {
+	font-family: 'Instrumental', sans-serif;
+}
+
+.font-ledger {
+	font-family: 'Ledger', serif;
+}
+
+.font-merriweather {
+	font-family: 'Merriweather', serif;
+}
+
+.font-outfit {
+	font-family: 'Outfit', sans-serif;
+}
+
+.font-playfair-display {
+	font-family: 'Playfair Display', serif;
+}
+
+.font-prata {
+	font-family: 'Prata', serif;
+}
+
+.font-sanmarino {
+	font-family: 'San Marino', serif;
+}
+
+.font-sanmarino-outline {
+	font-family: 'San Marino Outline', serif;
+}
+
+.font-september-script {
+	font-family: 'September Script', cursive;
+}
+
+.font-uncage {
+	font-family: 'UNCAGE', sans-serif;
+}
+
+.font-vidaloka {
+	font-family: 'Vidaloka', serif;
+}
+
+.font-journal {
+	font-family: 'journal', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}

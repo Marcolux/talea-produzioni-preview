@@ -1,0 +1,127 @@
+.talea_lab_card {
+    display: flex;
+    width: 70%;
+    height: 500px;
+    overflow-x: hidden;
+    &.left {
+        flex-direction: row;
+        &.inView_talea_lab_card {
+            .lab_card_title {
+                animation: trackingInLab 2s cubic-bezier(.2,.6,.2,1) forwards;
+                animation-delay: 0s;
+            }
+        }
+    }
+    &.right {
+        flex-direction: row-reverse;
+        .lab_card_text_wrapper {
+            align-items: end;
+        }
+        .lab_card_title { 
+            margin-left: 0px;
+            margin-right: -50px;
+        }
+        &.inView_talea_lab_card {
+            .lab_card_title {
+                animation: trackingInRight 2s cubic-bezier(.2,.6,.2,1) forwards;
+            }
+        }
+    }
+    .lab_card_text_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .lab_card_title {
+            border-bottom: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font: var(--page-subHeaders-font-vr);
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            margin-left: 0px;
+            opacity: 0;
+            padding: 40px 100px 0px 140px;
+            width: fit-content;
+        }
+        .lab_card_description {
+            color: var(--talea-white);
+            display: flex;
+            font: var(--page-paragraphText-font);
+            padding: 60px;
+            margin: 0px;
+            width: clamp(260px, 48.4vw, 800px);
+            max-width: 100%;  
+            letter-spacing: .04em;     
+        }
+    }
+
+    @keyframes trackingInLab {
+        to {
+            opacity: 1;
+            letter-spacing: 0.01em;
+            margin-left: -90px;
+        }
+    }
+    @keyframes trackingInLabSM {
+        to {
+            opacity: 1;
+            letter-spacing: 0.01em;
+            margin-left: 0px;
+        }
+    }
+    @keyframes trackingInRight {
+        to {
+            opacity: 1;
+            letter-spacing: 0.01em;
+            margin-left: 90px;
+        }
+    }
+    .lab_carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 14px;
+        
+        .lab_carousel_track {
+            display: flex;
+            transition: transform 600ms ease;
+            will-change: transform;
+            position: absolute;
+            inset: 0;
+            .lab_carousel_img {
+                width: 100%;
+                flex: 0 0 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+    .lab_carousel_dots {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        .lab_dot {
+            width: 10px;
+            height: 13px;
+            border: none;
+            border-radius: 50%;
+            opacity: 0.8;
+            cursor: pointer;
+            // background-color: #f3a94fb6;
+            &.is-active {
+                opacity: 1;
+                background-color: #000000a5;
+            }
+        }
+    }
+
+
+}

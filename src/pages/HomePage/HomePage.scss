@@ -1,0 +1,370 @@
+.page#homePage {
+    background: linear-gradient(       
+        to top,
+        #181616 0%,
+        #000000 60%,
+    );
+    padding: 40px 0px;
+    #heroAniWrapper {
+        align-items: center;
+        display: flex;
+        height: calc(100dvh - 40px - 100px);
+        flex-direction: column;
+        min-height: 0;
+        min-width: 100%;
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: nowrap;
+
+        #videoWrapper {
+            flex: 1 1 auto;
+            min-height: 0; 
+            overflow: hidden;
+            position: relative;
+            transform: scale(1.2);
+            will-change: transform;
+            &.inView {
+                animation: scalingUp 2s ease-out forwards;
+                animation-delay: 7s;
+            }
+            video {
+                display: block;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        h1 {
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font-size: clamp(27px, 4.19vw, 65px);
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 0.4em;
+            min-width: fit-content;
+            opacity: 0;
+            transform: translateY(0);
+            &.inView {
+                animation: trackingIn 4s cubic-bezier(.2,.6,.2,1) forwards;
+                animation-delay: 5s;
+            }
+        }
+    }
+    #homepage_transition {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 120px;
+        img {
+            width: 100%;
+        }
+        .waveMask {
+            width: 100%; 
+            height: 219px;
+            background: linear-gradient(
+                90deg,
+                #FFF1D6,
+                #FFDFA8,
+                #F8BB68,
+                #F3A84F,
+                #ED9B3F,
+                #E38F34,
+                #D37F27,
+                #C97A22,
+            );
+            background-size: 200% 100%;
+            animation: gradMove 7s ease-in-out infinite;
+
+            /* use your PNG as the mask */
+            -webkit-mask-image: url("./Wave\ Separator.png");
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 100% 100%;
+            -webkit-mask-position: center;
+
+            mask-image: url("./Wave\ Separator.png");
+            mask-repeat: no-repeat;
+            mask-size: 100% 100%;
+            mask-position: center;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font-size: clamp( 20px, 2.58vw, 40px);
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin: 0;
+            min-width: fit-content;
+            opacity: 0;
+            padding: 160px 0px 140px;
+            text-align: center;
+            transform: translateY(0);
+            width: 100%;
+            &.inView {
+                animation: trackingIn2 4s cubic-bezier(.2,.6,.2,1) forwards;
+            }
+        }
+        p {
+            color: #ffffff;
+            font-size: clamp(20px, 2.58vw, 30px);
+            margin: 0px;
+            max-width: 1150px;
+            text-align: center;
+            width: 75%;
+        }
+
+    }
+    #homepage_germogli {
+        min-height: 100dvh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        padding: 50px;
+        h1 {
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font-size: clamp( 40px, 5.8vw, 90px);
+            font-weight: 400;
+            margin: 0;
+            min-width: fit-content;
+            &.inView {
+                animation: trackingIn3 2s cubic-bezier(.2,.6,.2,1) forwards;
+                animation-delay: .2s;
+            }
+        }
+        .primaryColor {
+            color: var(--primary-color);
+            font-size: 30px;
+        }
+        #all_cards_wrapper {
+            align-items: end;
+            display: flex;
+            gap: 40px;
+            .flip-card_ck {
+                width: 43%;
+                &:nth-child(2) {
+                    .flip-card_ck-inner {aspect-ratio: 1.5/1.1;}
+                    width: 51%;
+                }
+                &:nth-child(3) {
+                    .flip-card_ck-inner {aspect-ratio: 1.5/1.1;}
+                    width: 51%;
+                    align-self: flex-start;
+                }
+            }
+            .backText {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                height: 100%;
+                overflow-y: auto;
+                padding-right: 20px !important;
+                .backTitle {
+                    font-weight: 600;
+                    letter-spacing: 0.08em;
+                    line-height: 1.1;
+                    margin: 0;
+                    text-transform: uppercase;
+                    .backSubtitle {
+                        font-style: italic;
+                        letter-spacing: 0.05em;
+                        margin: 0;
+                        opacity: 0.9;
+                        text-transform: capitalize;
+                    }
+                }
+                .backMeta {
+                    letter-spacing: 0.12em;
+                    margin: 0.2em 0 0.6em 0;
+                    opacity: 0.7;
+                    text-transform: capitalize;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 40px;
+                        height: 2px;
+                        margin-top: 0.6em;
+                        background: rgba(255,255,255,0.2);
+                    }
+                    &.meta_strings {
+                        text-transform: capitalize !important;
+                    }
+                }
+                .backDescription {
+                    font-weight: 300;
+                    hyphens: auto;
+                    letter-spacing: 0.01em;
+                    margin: 0;
+                    text-align: justify;
+                    text-align-last: left;
+                }
+            }
+        }
+    }
+
+    @keyframes scalingUp {
+        to {
+            transform: scale(1.4);
+        }
+    }
+    @keyframes trackingIn {
+        to {
+            opacity: 1;
+            letter-spacing: 0.01em;
+            transform: translateY(-35px);
+        }
+    }
+    @keyframes trackingIn2 {
+        to {
+            opacity: 1;
+            letter-spacing: 0.06em;
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes trackingIn3 {
+        from {
+            opacity: 0;
+            transform: translateX(-300px) translateY(0);
+            letter-spacing: 0.4em;
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0) translateY(-15px);
+            letter-spacing: 0.06em;
+        }
+    }
+    @keyframes trackingIn3_small_view {
+        from {
+            opacity: 0;
+            transform: translateY(0) translateX(0) scale(1.7);
+            letter-spacing: 0.1em;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(-45px) translateX(0) scale(1);
+            letter-spacing: 0.06em;
+        }
+    }
+    @keyframes trackingIn4 {
+        to {
+            opacity: 1;
+            letter-spacing: 0.01em;
+            bottom: 45px;
+            transform: translateY(-15px) translateX(0px);
+        }
+    }
+    @keyframes trackingIn4_small_screen {
+        to {
+            opacity: 1;
+            letter-spacing: 0.01em;
+            bottom: 45px;
+            transform: translateY(-30px) translateX(0px);
+        }
+    }
+    @keyframes gradMove {
+        0%   { background-position: 0% 50%; }
+        50%  { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+}
+@media screen and (max-width: 1450px) {
+    #homepage_germogli{
+        padding: 0px !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #homePage {
+        padding-top: 0px !important;
+        #heroAniWrapper {
+            height: 100dvh !important;
+            h1 {
+                line-height: 1.05;
+                text-align: center;
+                text-wrap: balance;
+                white-space: normal;      // NOT break-spaces
+                &.inView {
+                    animation: trackingIn3_small_view 2s cubic-bezier(.2,.6,.2,1) forwards !important;
+                    animation-delay: 2s !important;
+                }
+            }
+        }
+        .flipcard__content img {
+            min-width: 100% !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+        #videoWrapper {
+            align-items: center;
+            height: 100dvh;
+            justify-content: center;
+            video {
+                height: 100dvh !important;
+                object-fit: contain;
+                scale: .6;
+                width: 100vw;
+            }
+        }
+        #homepage_transition {
+            padding-top: 20px !important;
+            .waveMask {
+                height: 50px !important;
+            }
+            h1 {
+               padding: 80px 0px 40px !important;
+            }
+            p {
+                width: 98% !important;
+                padding: 0px 38px;
+                hyphens: auto;
+                letter-spacing: 0.01em;
+                text-align: justify !important;
+                text-align-last: left;
+            }
+        }
+        #homepage_germogli { 
+            padding: 0px !important;
+            #all_cards_wrapper {
+                margin-top: 20px !important;
+                padding: 50px 18px !important;
+                gap: 30px !important;
+            }
+            .flipcard-wrapper {
+                width: 100%;
+            }
+            .flip-card_ck {
+                height: 60dvh;
+                padding: 5px !important;
+                .flip-toggle {
+                    bottom: 20px !important;
+                    right: 20px !important;
+                    height: 30px !important;
+                    width: 30px !important;
+                }
+            }
+            .flip-card_ck-back {
+                padding: 15px 10px !important;
+                    .cardText  {
+                        padding-right: 0px !important;
+                    }
+                    .backText {
+                        padding-right: 10px;
+                        .backTitle {
+                            .backSubtitle {}
+                        }
+                        .backMeta {
+                            &::after {}
+                            &.meta_strings {}
+                        }
+                        .backDescription {}
+                    }
+                }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+body {
+  background-color: var(--page-primary-background);
+}
+

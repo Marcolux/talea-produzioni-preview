@@ -1,0 +1,203 @@
+#audiovisivamente__distopie {
+    overflow-x: hidden;
+    padding: 0px !important;
+
+
+    /* SECTION BASE */
+    .section {
+        position: relative;
+        background: #e5e6dc;
+        padding: 80px 0 0;
+        z-index: 2;
+        &.bottom {
+            padding-top: 0;
+        }
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 48px 48px !important;
+        p {
+            font-size: clamp(15px, 1.8vw, 20px) !important;
+            max-width: 75ch !important;
+            text-align: justify;
+            hyphens: auto;
+        }
+    }
+    .hero_desc_wrapper { 
+        height: auto;
+
+    }
+    /* ===== TOP SECTION CURVE ===== */
+    // Sits flush below .section.top — fill matches section bg, curves down into image gap
+    .section.top::after {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 150' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23e5e6dc' d='M0,115 C480,90 960,120 1440,100 L1440,0 L0,0 Z'/%3E%3Cpath d='M0,115 C480,90 960,120 1440,100' fill='none' stroke='%238A9a5b' stroke-width='2.5'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 2;
+    }
+
+    /* ===== BOTTOM SECTION CURVE ===== */
+    // Sits flush above .section.bottom — fill matches section bg, curves up out of image gap
+    .section.bottom::before {
+        content: "";
+        position: absolute;
+        top: -150px;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 150' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23e5e6dc' d='M0,40 C480,15 960,45 1440,22 L1440,150 L0,150 Z'/%3E%3Cpath d='M0,40 C480,15 960,45 1440,22' fill='none' stroke='%238A9a5b' stroke-width='2.5'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 2;
+    }
+
+    /* ===== MAGAZINE GALLERY ===== */
+    .magGallery {
+        padding: 0 48px 80px;
+        max-width: 1400px;
+        margin: 0 auto;
+
+        &__pair {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: -40px; // vertical overlap between pairs
+
+            // Left image: large, right image: smaller, offset down
+            &.pair--normal {
+                .magGallery__item:first-child {
+                    width: 45%;
+                    margin-top: 0;
+                    z-index: 2;
+                }
+                .magGallery__item:last-child {
+                    width: 35%;
+                    margin-top: 50px;
+                    margin-left: -24px;
+                    z-index: 3;
+                }
+            }
+
+            // Mirror: right image large, left image smaller offset down
+            &.pair--reverse {
+                flex-direction: row-reverse;
+                .magGallery__item:first-child {
+                    width: 45%;
+                    margin-top: 0;
+                    z-index: 2;
+                }
+                .magGallery__item:last-child {
+                    width: 35%;
+                    margin-top: 50px;
+                    margin-right: -24px;
+                    z-index: 3;
+                }
+            }
+        }
+
+        &__item {
+            position: relative;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease var(--delay, 0s), transform 0.5s ease var(--delay, 0s);
+
+            img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+
+            &:hover img { transform: scale(1.02); }
+        }
+
+        &__num {
+            position: absolute;
+            top: 12px;
+            right: 14px;
+            color: rgba(255,255,255,0.75);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            z-index: 4;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        }
+
+        // Always visible — inView adds the animated reveal
+        .magGallery__item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &.inView .magGallery__item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 700px) {
+        .magGallery {
+            padding: 0 16px 48px;
+
+            &__pair {
+                flex-direction: column !important;
+                margin-bottom: 20px !important;
+
+                &.pair--normal,
+                &.pair--reverse {
+                    .magGallery__item:first-child,
+                    .magGallery__item:last-child {
+                        width: 85% !important;
+                        margin: 0 auto 0 !important;
+                    }
+                    .magGallery__item:last-child {
+                        margin-top: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ===== IMAGE GAP ===== */
+    .image-gap {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background:
+            linear-gradient(to bottom,
+                #e5e6dc 0%,
+                transparent 20%,
+                transparent 80%,
+                #e5e6dc 100%
+            ),
+            repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 9px,
+                rgba(40, 60, 35, 0.08) 9px,
+                rgba(40, 60, 35, 0.08) 10px
+            ),
+            #b8c8a8;
+        background-attachment: fixed;
+
+        img {
+            width: 40%;
+            max-width: 500px;
+            height: auto;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335));
+        }
+    }
+}

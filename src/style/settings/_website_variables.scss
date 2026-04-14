@@ -1,0 +1,59 @@
+$primary-color: #3498db;
+$primary-font-color: yellow;
+:root {
+    --alternative-black: #181616;
+    --primary-color: #F3A84F;
+    --primary-font-color: #000000;
+    --page-primary-background: #EFEAE2;
+    --white-text: #ffffff;
+
+    --talea-white: #EFEAE2;
+
+    /*==== GENERAL ====*/
+    --padding-xs: 5px;
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --padding-lg: 30px;
+    --padding-xl: 40px;
+    --h-100: 100;
+
+    /* Font Families */
+    --primary-font: 'Montserrat';
+    --secondary-font: 'San Marino';
+    --font-headers: 'San Marino';
+    --font-headers-outline: 'San Marino Outline';
+
+
+    /* Font Shorthands  (vw = max-size / target-width * 100) */
+    --page-headers-font: italic 300 clamp(50px, 5.7vw, 80px) / 1.1 var(--font-headers);
+    --page-subHeaders-font: 400 clamp(24px, 4.4vw, 64px) / 1.1 var(--secondary-font);
+    --page-subHeaders-font-sm: 400 clamp(24px, 4.4vw, 48px) / 1.1 var(--secondary-font);
+    --page-subHeaders-font-vr: 300 clamp(24px, 4.4vw, 64px) / 1.3 var(--primary-font);
+    --page-secHeaders-font: 300 clamp(24px, 3.25vw, 44px) / 1.3 var(--secondary-font);
+    --page-secHeaders-font-vr: italic 300 clamp(24px, 3.25vw, 44px) / 1.3 var(--font-headers-outline);
+    --page-paragraphTitle-font: 300 clamp(18px, 2.28vw, 32px) / 1.2 var(--secondary-font);
+    --page-paragraphTitle-font-vr: 300 clamp(18px, 2.07vw, 28px) / 1.2 var(--primary-font);
+    --page-paragraphText-font: 300 clamp(16px, 1.48vw, 20px) / 1.45 var(--primary-font);
+    --font-button: 300 clamp(16px, 1.3vw, 20px) / 1.45 var(--primary-font);
+
+    /*==== NAVIGATION BAR ====*/
+    --navbar-height: 40px;
+    --navbar-background: #000000;
+    --navbar-text-color: var(--primary-color);
+    --navbar-fontsize: clamp(16px, 1.3vw, 20px);
+    --navbar-fontFamily: 'Montserrat';
+    --navbar-fontWeight: 600;
+
+    /*==== FOOTER ====*/
+    --footer-height: 60px;
+
+
+    /*==== AUDIOVISIVAMENTE ====*/
+        
+    --primary-audiovisivamente: #94a9a5;
+    --secondary-audiovisivamente: #607b60;
+    --primary-font-audiov: 'Abril Fatface', serif;
+    --audiovisivamente-white: #e6e7db;
+    --audiovisivamente-page-bg: #E5E6DC;
+    --audiovisivamente-green-1: #3a413a;
+}

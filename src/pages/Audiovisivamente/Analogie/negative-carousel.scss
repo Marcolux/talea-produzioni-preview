@@ -1,0 +1,534 @@
+.carouselFrame {
+    --film-base: #12100E;
+    --film-dark: #0A0908;
+    --film-mid: #1C1714;
+    --film-edge: #252018;
+    --film-highlight: rgba(255, 214, 170, 0.06);
+    --hole-color: #D4C9A8;
+    --hole-shadow: #6B5E3A;
+    --sprocket-bg: #0E0C0A;
+    --text-soft: #f4e7d2;
+
+    background:
+        linear-gradient(to right,
+            var(--film-dark) 0px,
+            var(--film-mid) 46px,
+            var(--film-base) 90px,
+            var(--film-base) calc(100% - 90px),
+            var(--film-mid) calc(100% - 46px),
+            var(--film-dark) 100%
+        );
+
+    border-radius: 2px;
+    box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.8),
+        0 8px 20px rgba(0, 0, 0, 0.8),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    height: 80dvh;
+    margin: 0 auto;
+    max-height: 760px;
+    max-width: 1650px;
+    min-height: 520px;
+    overflow: hidden;
+    padding: 24px 50px !important;
+    position: relative;
+    width: 100%;
+
+    // Sprocket hole strips (top & bottom)
+    &::before,
+    &::after {
+        background:
+            repeating-linear-gradient(
+                to right,
+                #0A0908 0px,
+                #0A0908 8px,
+                var(--hole-color) 8px,
+                var(--hole-color) 26px,
+                #0A0908 26px,
+                #0A0908 38px
+            );
+        box-shadow:
+            inset 0 2px 4px rgba(0, 0, 0, 0.8),
+            inset 0 -2px 4px rgba(0, 0, 0, 0.6);
+        content: "";
+        height: 18px;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+    
+    &::before { top: 6px;}
+    &::after { bottom: 6px; }
+
+    // Thin amber dividers between sprocket strip and image area
+    .sprocket-top,
+    .sprocket-bottom {
+        background: linear-gradient(to right, #3A2E1A, #5A4A28, #3A2E1A);
+        height: 1px;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+
+    .sprocket-top {
+        top: 28px;
+    }
+
+    .sprocket-bottom {
+        bottom: 28px;
+    }
+
+    // Radial vignette simulating film curl and light falloff
+    .film-vignette {
+        background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.45) 100%);
+        bottom: 28px;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 28px;
+        z-index: 0;
+    }
+
+    // Diagonal grain texture (cellulose acetate simulation)
+    .film-grain {
+        background-image:
+            repeating-linear-gradient(
+                45deg,
+                rgba(255, 220, 150, 0.5) 0px,
+                transparent 1px,
+                transparent 3px,
+                rgba(255, 220, 150, 0.3) 4px
+            );
+        bottom: 28px;
+        left: 0;
+        opacity: 0.03;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 28px;
+        z-index: 0;
+    }
+
+    // Section containing the active image and folder buttons
+    .carouselContent {
+        display: flex;
+        gap: 18px;
+        height: 100%;
+        min-height: 0;
+        padding-bottom: 14px;
+        padding-top: 14px;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+
+    // Left section for folder buttons
+    .multiFoldersBtnsSection {
+        // background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 232, 204, 0.2);
+        border-radius: 1px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        height: 100%;
+        justify-content: center;
+        min-width: 160px;
+        padding: 18px;
+        width: 25%;
+
+        .carouselBtnFold {
+            appearance: none;
+            background-color: transparent;
+            border: 1px solid rgba(255, 232, 204, 0.20);
+            border-radius: 2px;
+            color: #8EA8A4;
+            cursor: pointer;
+            font-size: clamp(14px, 1.12vw, 18px);
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            padding: 11px 14px;
+            transition:
+                background 180ms ease,
+                border-color 180ms ease,
+                color 180ms ease,
+                transform 180ms ease;
+            width: 100%;
+
+            &:hover,
+            &:focus-visible {
+                background-color: #6B8878;
+                border-color: rgba(255, 226, 190, 0.22);
+                color: #f0e8d8;
+                outline: none;
+                transform: translateY(-1px);
+            }
+
+            &.active {
+                background-color: #536F54;
+                border-color: rgba(255, 214, 163, 0.30);
+                color: #f0e8d8;
+            }
+        }
+    }
+
+    // Picture section for the active image and the arrows
+    .carouselPictures {
+        background: #0B0908;
+        border: 1px solid rgba(255, 232, 204, 0.2);
+        border-radius: 1px;
+        box-shadow:
+            inset 0 0 0 1px rgba(255, 255, 255, 0.015),
+            inset 0 0 30px rgba(0, 0, 0, 0.7),
+            inset 2px 0 8px rgba(0, 0, 0, 0.5),
+            inset -2px 0 8px rgba(0, 0, 0, 0.5),
+            0 0 0 1px rgba(0, 0, 0, 0.4);
+        flex: 1;
+        height: 100%;
+        min-width: 0;
+        overflow: hidden;
+        position: relative;
+
+        &.fullWidth {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        // Anamorphic lens flare strip — warm top-edge glow
+        &::before {
+            background: linear-gradient(to right, transparent, rgba(255, 210, 140, 0.12), transparent);
+            content: "";
+            height: 2px;
+            left: 10%;
+            pointer-events: none;
+            position: absolute;
+            right: 10%;
+            top: 0;
+            z-index: 5;
+        }
+
+        // Cinematic frame overlay — dust/scratch simulation
+        &::after {
+            background:
+                radial-gradient(ellipse at top left, rgba(255, 240, 200, 0.04), transparent 45%),
+                radial-gradient(ellipse at bottom right, rgba(180, 210, 255, 0.02), transparent 45%),
+                linear-gradient(
+                    to bottom,
+                    rgba(255, 200, 120, 0.04),
+                    transparent 18%,
+                    transparent 82%,
+                    rgba(40, 60, 100, 0.03)
+                );
+            content: "";
+            inset: 0;
+            mix-blend-mode: screen;
+            pointer-events: none;
+            position: absolute;
+            z-index: 3;
+        }
+
+        .carouselScrollIcon {
+            align-items: center;
+            backdrop-filter: blur(4px);
+            background: rgba(10, 8, 7, 0.75);
+            border: 1px solid rgba(255, 232, 204, 0.2);
+            border-radius: 50%;
+            color: rgba(240, 220, 190, 0.75);
+            cursor: pointer;
+            display: flex;
+            height: 52px;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition:
+                background 180ms ease,
+                border-color 180ms ease,
+                color 180ms ease,
+                transform 180ms ease;
+            width: 52px;
+            z-index: 10;
+
+            &:hover,
+            &:focus-visible {
+                background: rgba(28, 19, 15, 0.9);
+                border-color: rgba(255, 224, 184, 0.26);
+                color: #fff4e4;
+                outline: none;
+            }
+
+            &.left { left: 14px; }
+            &.right { right: 14px; }
+            svg { font-size: 1.2rem !important; }
+        }
+
+        .animatedPic {
+            inset: 0;
+            pointer-events: none;
+            position: absolute;
+            z-index: 2;
+
+            .carouselSinglePic {
+                display: block;
+                filter:
+                    brightness(0.94)
+                    contrast(1.08)
+                    hue-rotate(-8deg)
+                    saturate(0.82)
+                    sepia(0.08);
+                height: 100%;
+                object-fit: contain;
+                padding: 16px 72px 52px;
+                width: 100%;
+            }
+        }
+
+        .picCaption {
+            backdrop-filter: blur(4px);
+            background: rgba(8, 6, 5, 0.65);
+            border: 1px solid rgba(255, 232, 204, 0.2);
+            border-radius: 4px;
+            bottom: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+            color: var(--text-soft);
+            font-size: clamp(0.9rem, 1.1vw, 1rem);
+            font-weight: 400 !important;
+            left: 50%;
+            line-height: 1.4;
+            margin: 0;
+            padding: 10px 14px;
+            position: absolute;
+            text-align: center;
+            transform: translateX(-50%);
+            width: min(80%, 700px);
+            z-index: 11;
+        }
+    }
+
+    // Preview strip for all available pictures
+    .carouselPreview {
+        align-self: center;
+        box-sizing: border-box;
+        display: flex;
+        margin-top: 12px;
+        overflow-x: auto;
+        padding: 6px 0;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        width: min(92%, 900px);
+        z-index: 2;
+
+        .previewScrollIcons {
+            align-self: center;
+            height: 80px;
+            position: absolute;
+            z-index: 3;
+
+            &.right {
+                right: 20px;
+            }
+
+            &.left {
+                left: 20px;
+            }
+        }
+
+        .allPics {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+
+            img {
+                border: 1px solid transparent;
+                border-radius: 1px;
+                cursor: pointer;
+                flex: 0 0 auto;
+                height: 72px;
+                object-fit: cover;
+                opacity: 0.82;
+                transition:
+                    border-color 160ms ease,
+                    opacity 160ms ease,
+                    transform 160ms ease;
+                width: 100px;
+
+                &:hover {
+                    opacity: 1;
+                    transform: translateY(-1px);
+                }
+
+                &.active {
+                    border: 1px solid rgba(255, 214, 163, 0.5);
+                    opacity: 1;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            height: 0px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    }
+    .carouselFullscreenBtn {
+        align-items: center;
+        backdrop-filter: blur(4px);
+        background: rgba(10, 8, 7, 0.75);
+        border: 1px solid rgba(255, 220, 180, 0.12);
+        border-radius: 50%;
+        bottom: 14px;
+        color: rgba(240, 220, 190, 0.75);
+        cursor: pointer;
+        display: flex;
+        height: 38px;
+        justify-content: center;
+        position: absolute;
+        right: 14px;
+        transition:
+            background 180ms ease,
+            border-color 180ms ease,
+            color 180ms ease;
+        width: 38px;
+        z-index: 10;
+
+        &:hover,
+        &:focus-visible {
+            background: rgba(28, 19, 15, 0.9);
+            border-color: rgba(255, 224, 184, 0.26);
+            color: #fff4e4;
+            outline: none;
+        }
+
+        svg {
+            font-size: 0.85rem !important;
+        }
+    }
+
+    // When the picture div itself is the fullscreen element,
+    // make the image fill the screen properly
+    &:fullscreen {
+        background: #0B0908;
+        border-radius: 0;
+
+        .animatedPic .carouselSinglePic {
+            object-fit: contain;
+            padding: 48px 80px;
+        }
+
+        .carouselFullscreenBtn {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        // Keep caption and arrows visible in fullscreen
+        .picCaption {
+            bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .carouselFrame {
+        height: auto;
+        min-height: 480px;
+
+        .carouselContent {
+            flex-direction: column;
+        }
+
+        .multiFoldersBtnsSection {
+            height: auto;
+            min-width: 0;
+            width: 100%;
+        }
+
+        .carouselPictures {
+            min-height: 360px;
+
+            .animatedPic {
+                .carouselSinglePic {
+                    padding: 14px 56px 56px;
+                }
+            }
+
+            .carouselScrollIcon {
+                height: 44px;
+                width: 44px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .carouselFrame {
+        min-height: 0;
+        padding: 20px 14px !important;
+
+        .carouselContent {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        // Buttons become a horizontal scrollable row
+        .multiFoldersBtnsSection {
+            border: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+            height: auto;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding: 4px 0;
+            scrollbar-width: none;
+            width: 100%;
+
+            &::-webkit-scrollbar { display: none; }
+
+            .carouselBtnFold {
+                flex: auto;
+                font-size: 12px !important;
+                padding: 8px 12px;
+                white-space: nowrap;
+                width: auto;
+            }
+        }
+
+        // Image area fills remaining height
+        .carouselPictures {
+            min-height: 280px;
+            flex: 1;
+
+            .animatedPic .carouselSinglePic {
+                padding: 10px 44px 40px;
+            }
+
+            .carouselScrollIcon {
+                height: 38px;
+                width: 38px;
+                top: 75% !important;
+                svg { font-size: 0.9rem !important; }
+            }
+
+            .picCaption {
+                font-size: 0.78rem;
+                padding: 7px 10px;
+                width: min(90%, 320px);
+            }
+            .carouselFullscreenBtn {
+                top: 14px !important
+            }
+        }
+    }
+}

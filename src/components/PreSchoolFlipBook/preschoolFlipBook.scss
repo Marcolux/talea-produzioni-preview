@@ -1,0 +1,579 @@
+.preschoolFlipBookWrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .preschoolBook {
+        margin: 0 auto;
+
+        // ─── Page base ───────────────────────────────────────────────
+        .backPage,
+        .coverPage,
+        .scrapbookPage,
+        #home_intro {
+            box-shadow: 0 1.5em 3em -1em rgb(70, 69, 69);
+            height: 100%;
+            width: 100%;
+        }
+        .backPage__inner,
+        .coverPage__inner,
+        .scrapbookPage__paper {
+            box-sizing: border-box;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .pageTitDesc {
+            height: 100%;
+            .pageTitle {
+                color: #647A62;
+                font-family: "journal", sans-serif;
+                font-size: clamp(30px, 4.5vw, 75px);
+                font-weight: 400;
+                margin: 0 0 0.75rem;
+                opacity: 0.7;
+            }
+            .home_description {
+                color: var(--audiovisivamente-green-1);
+                font-size: clamp(13px, 1.05vw, 18px) !important;
+                font-weight: 400 !important;
+                hyphens: auto;
+                line-height: 1.75;
+                max-width: 75ch !important;
+                position: relative;
+                text-align: justify;
+                width: 80%;
+    
+                &:first-child::before {
+                    color: var(--audiovisivamente-green-1) !important;
+                    content: "\201C";
+                    font-family: Georgia, serif;
+                    font-size: 6rem;
+                    left: -55px;
+                    line-height: 1;
+                    pointer-events: none;
+                    position: absolute;
+                    top: -35px;
+                    z-index: 0;
+                }
+    
+                & + .home_description {
+                    border-top: 1px solid #CED9CC;
+                    margin-top: 1.2em;
+                    padding-top: 1.2em;
+                }
+            }
+        }
+        // ─── Back page ───────────────────────────────────────────────
+        .backPage__inner {
+            align-items: center;
+            background:
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.08)),
+                #eadfce;
+            color: #7a5f49;
+            display: flex;
+            font-size: 1rem;
+            justify-content: center;
+        }
+
+        // ─── Cover page ──────────────────────────────────────────────
+        .coverPage__inner {
+            align-items: center;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+
+        }
+        .coverKicker {
+            color: #647A62;
+            font-family: "journal", sans-serif;
+            font-size: clamp(30px, 4.5vw, 75px);
+            margin: 0 0 0.75rem;
+            opacity: 0.7;
+        }
+
+        .coverSubtitle {
+            color: var(--audiovisivamente-green-1);
+            font-size: clamp(20px, 2.8vw, 45px);
+            line-height: 1.4;
+            margin-top: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        // ─── Flip hint ───────────────────────────────────────────────
+        .flipHint {
+            align-items: center;
+            backdrop-filter: blur(6px);
+            background-color: #21212100;
+            border: 1px solid #647A62;
+            border-radius: 999px;
+            bottom: 2rem;
+            box-shadow:
+                0 10px 24px rgba(0, 0, 0, 0.18),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+            color: #f4eadf;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "Outfit", sans-serif;
+            gap: 0.6rem;
+            padding: 0.75rem 1rem;
+            pointer-events: none;
+            position: absolute;
+            right: 2rem;
+            z-index: 1;
+
+            &.scrolling {
+                align-items: center;
+                border-radius: 50%;
+                display: flex;
+                height: 35px !important;
+                justify-content: center;
+                padding: 20px !important;
+                width: 35px !important;
+
+                svg {
+                    animation: none !important;
+                    font-size: 15px !important;
+                }
+
+                &._previous {
+                    left: 2rem !important;
+                }
+            }
+
+            // ─── Sfoglia cover button ─────────────────────────────────
+            &.flipHint--sfoglia {
+                align-items: center;
+                animation: sfogliaFloat 3s ease-in-out infinite;
+                background: rgba(100, 122, 98, 0.12);
+                border: 1.5px solid #647A62;
+                border-radius: 999px;
+                bottom: 2rem;
+                display: flex;
+                gap: 0.55rem;
+                height: auto !important;
+                left: 50%;
+                padding: 0.65rem 1.4rem !important;
+                right: auto;
+                transform: translateX(-50%);
+                width: auto !important;
+
+                .flipHint__label {
+                    color: #647A62;
+                    font-family: "Outfit", sans-serif;
+                    font-size: 0.95rem;
+                    font-weight: 600;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                }
+
+                svg {
+                    animation: sfogliaChevron 3s ease-in-out infinite !important;
+                    color: #647A62;
+                    font-size: 0.85rem !important;
+                }
+            }
+
+            svg {
+                animation: flipNudge 1.4s ease-in-out infinite;
+                color: #647A62;
+                font-size: 0.95rem !important;
+            }
+        }
+
+        @keyframes flipNudge {
+            0%, 100% {
+                opacity: 0.8;
+                transform: translateX(0);
+            }
+            50% {
+                opacity: 1;
+                transform: translateX(6px);
+            }
+        }
+
+        // Sfoglia button — whole pill gently breathes and shifts right
+        @keyframes sfogliaFloat {
+            0%, 100% {
+                background: rgba(100, 122, 98, 0.10);
+                box-shadow: 0 4px 16px rgba(100, 122, 98, 0.0);
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                background: rgba(100, 122, 98, 0.20);
+                box-shadow: 0 8px 24px rgba(100, 122, 98, 0.18);
+                transform: translateX(calc(-50% + 5px)) translateY(-3px);
+            }
+        }
+
+        // Sfoglia chevron — page-lift pulse timed with the pill
+        @keyframes sfogliaChevron {
+            0%, 40%, 100% {
+                opacity: 0.7;
+                transform: translateX(0) rotateY(0deg);
+            }
+            60% {
+                opacity: 1;
+                transform: translateX(5px) rotateY(-20deg);
+            }
+            80% {
+                opacity: 0.9;
+                transform: translateX(2px) rotateY(0deg);
+            }
+        }
+
+        // ─── Home intro page ─────────────────────────────────────────
+        #home_intro {
+            background:
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.06)),
+                #ece3d6;
+            box-shadow:
+                inset 0 0 0 1px rgba(120, 90, 60, 0.2),
+                inset 0 0 48px rgba(120, 90, 60, 0.17);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            overflow: hidden;
+            padding: 1.4rem;
+            position: relative;
+            width: 100%;
+
+            #home_description_wrapper {
+                align-items: center;
+                display: flex;
+                flex: auto;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 24px;
+                width: 100%;
+
+            }
+            .home_description {
+                color: var(--audiovisivamente-green-1);
+                font-size: clamp(13px, 1.05vw, 18px) !important;
+                font-weight: 400 !important;
+                hyphens: auto;
+                line-height: 1.75;
+                max-width: 75ch !important;
+                position: relative;
+                text-align: justify;
+                width: 80%;
+    
+                &:first-child::before {
+                    color: var(--audiovisivamente-green-1);
+                    content: "\201C";
+                    font-family: Georgia, serif;
+                    font-size: 6rem;
+                    left: -45px;
+                    line-height: 1;
+                    pointer-events: none;
+                    position: absolute;
+                    top: -25px;
+                    z-index: 0;
+                }
+    
+                & + .home_description {
+                    border-top: 1px solid #CED9CC;
+                    margin-top: 1.2em;
+                    padding-top: 1.2em;
+                }
+            }
+        }
+
+        // ─── Logos ───────────────────────────────────────────────────
+        #all_logos {
+            // pad
+            .scrapbookPage__paper {
+                // background-color: #ffffff;
+                #loghi_progetto_wrapper {
+                    align-items: center;
+                    background-color: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: clamp(15px, 1.8vw, 30px);
+                    padding: clamp(8px, 2vw, 16px) clamp(10px, 2.5vw, 24px);
+                    width: 100%;
+                    height: 100%;
+
+                    .loghi_label {
+                        font-size: clamp(9px, 1vw, 13px);
+                        font-style: italic;
+                        color: #555;
+                        text-align: center;
+                        letter-spacing: 0.02em;
+                    }
+                    #divider_min_logo {
+                        display: flex;
+                        flex-direction: column;
+                        width: 85%;
+                        gap: 20px;
+                    }
+                    .loghi_divider {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #ccc;
+                        margin: clamp(2px, 0.5vw, 4px) 0;
+                    }
+
+
+                    // ── Talea row ──
+                    .ideata_row {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: clamp(10px, 1.5vw, 25px);
+
+                        .logo_talea {
+                            max-height: clamp(60px, 14vw, 150px);
+                            max-width: clamp(60px, 14vw, 150px);
+                            object-fit: contain;
+                            flex-shrink: 0;
+                            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.18));
+                        }
+                    }
+
+                    // ── MIC / CIPS row ──
+                    .mic_row {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: clamp(8px, 2vw, 22px);
+                        width: 100%;
+
+                        .logo_cips {
+                            width: 57%;
+                            object-fit: contain;
+                            flex-shrink: 0;
+                        }
+
+                        .mic_text {
+                            font-size: clamp(8px, 1.2vw, 12px);
+                            color: #444;
+                            line-height: 1.4;
+                            margin: 0;
+
+                            a {
+                                color: inherit;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    
+                    // ── Partner logos grid ──
+                    #partners_wrapper {
+                        gap: 10px;
+                    }
+                    #loghi_partners {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        gap: clamp(10px, 1vw, 20px);
+                        width: 100%; 
+                        .logo_partner {
+                            max-height: clamp(28px, 3.2vw, 50px);
+                            max-width: auto;
+                            object-fit: contain;
+                        }
+                    }
+
+                    // ── Small screen overrides ──
+                    @media screen and (max-width: 800px) {
+                        gap: 6px;
+                        padding: 8px 12px;
+
+                        .ideata_row {
+                            flex-direction: column;
+                            gap: 4px;
+
+                            .logo_talea {
+                                max-height: 56px;
+                                max-width: 56px;
+                            }
+                        }
+
+                        .mic_row {
+                            flex-direction: column;
+                            gap: 6px;
+                            text-align: center;
+
+                            .logo_cips {
+                                width: 70%;
+                            }
+
+                            .mic_text {
+                                font-size: 8px;
+                                text-align: center;
+                            }
+                        }
+
+                        #loghi_partners {
+                            gap: 4px 8px;
+
+                            .logo_partner {
+                                max-height: 26px;
+                                max-width: 56px;
+                            }
+                        }
+                    }
+
+                }
+            }
+                    }
+
+        // ─── Empty pages — per-section skins ────────────────────────
+        // CINEOCCHIO — deep olive, diagonal film-strip lines
+        .pageEmpty--general .scrapbookPage__paper {
+            background:
+                repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 9px,
+                    rgba(40, 60, 35, 0.08) 9px,
+                    rgba(40, 60, 35, 0.08) 10px
+                ),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.04)),
+                #b8c8a8;
+            box-shadow:
+                inset 0 0 0 1px rgba(40, 60, 35, 0.2),
+                inset 0 0 48px rgba(40, 60, 35, 0.16);
+        }
+
+        // ─── Photo card ──────────────────────────────────────────────
+        .photoCaption {
+            color: #6a4f3c;
+            font-size: 0.98rem;
+            line-height: 1.35;
+            margin: 0.85rem 0 0;
+            text-align: center;
+        }
+
+        .photoCard {
+            background: #fffefa;
+            border-radius: 10px;
+            box-shadow:
+                0 16px 30px rgba(88, 58, 35, 0.18),
+                0 2px 8px rgba(88, 58, 35, 0.08),
+                inset 0 0 0 1px rgba(80, 60, 40, 0.06);
+            height: 90%;
+            margin: 2.2rem auto 0;
+            max-width: 80%;
+            padding: 0.8rem 0.8rem 1rem;
+            position: relative;
+            width: 100%;
+        }
+
+        .photoTape {
+            border-radius: 4px;
+            height: 20px;
+            opacity: 0.82;
+            position: absolute;
+            top: -10px;
+            width: 56px;
+
+            &--topLeft {
+                left: 18px;
+                transform: rotate(-15deg);
+            }
+
+            &--topRight {
+                right: 18px;
+                transform: rotate(15deg);
+            }
+        }
+
+        .tape-blue .photoTape    { background: rgba(185, 200, 210, 0.85); } // dusty blue-grey
+        .tape-green .photoTape   { background: rgba(200, 190, 175, 0.85); } // warm linen
+        .tape-pink .photoTape    { background: rgba(232, 210, 185, 0.85); } // warm parchment
+        .tape-yellow .photoTape  { background: rgba(228, 210, 148, 0.85); } // aged amber/kraft
+
+        // ─── Scrapbook page ──────────────────────────────────────────
+        .scrapbookPage__paper {
+            background:
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.06)),
+                #ece3d6;
+            box-shadow:
+                inset 0 0 0 1px rgba(120, 90, 60, 0.2),
+                inset 0 0 48px rgba(120, 90, 60, 0.17);
+            padding: 1.4rem;
+        }
+
+        // ─── Photo ───────────────────────────────────────────────────
+        .scrapbookPhoto {
+            border-radius: 6px;
+            display: block;
+            height: 90%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    // ─── Mobile layout ───────────────────────────────────────────
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // Pages fill the full surface — no outer padding
+        .scrapbookPage__paper {
+            padding: 0 !important;
+        }
+
+        // Text-only pages restore comfortable inner spacing
+        .pageTitDesc {
+            padding: 1.2rem 1.4rem !important;
+        }
+
+        // Cover intro page keeps its own padding
+        #home_intro {
+            padding: 1.2rem 1.4rem !important;
+        }
+
+        // Photo card fills the page
+        .photoCard {
+            height: 100% !important;
+            margin: 0 !important;
+            max-width: 100% !important;
+            padding: 10px !important;
+        }
+    }
+
+    // ─── Mobile external navigation bar ─────────────────────────
+    .mobileBookNav {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        padding: 0.8rem 0 0.4rem;
+        width: 100%;
+
+        &__btn {
+            align-items: center;
+            background: rgba(100, 122, 98, 0.10);
+            border: 1.5px solid #647A62;
+            border-radius: 50%;
+            color: #647A62;
+            cursor: pointer;
+            display: flex;
+            height: 48px;
+            justify-content: center;
+            width: 48px;
+            transition: background 0.2s;
+
+            &:active {
+                background: rgba(100, 122, 98, 0.28);
+            }
+
+            svg {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

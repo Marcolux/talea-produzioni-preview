@@ -1,0 +1,355 @@
+
+#talea_lab {
+    position: relative;
+    z-index: 1;
+    #heroWrapperTaleaLab {
+        width: 100%;
+        height: calc(100dvh - 80px);
+        padding-bottom: 0px;
+        overflow: hidden;
+        position: relative;
+        // background-color: var(--alternative-black);
+        video {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        h1 {
+            bottom: 0px;
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font-size: clamp( 65px, 7.75vw, 140px);
+            font-weight: 400;
+            left: 5vw;
+            letter-spacing: 0.4em;
+            margin: 0;
+            min-width: fit-content;
+            opacity: 0;
+            position: absolute;
+            transform: translateY(0) translateX(-300px);
+            z-index: 1;
+            &.inView {
+                animation: trackingIn4 2s cubic-bezier(.2,.6,.2,1) forwards;
+                animation-delay: .2s;
+            }
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.35),
+                rgba(0, 0, 0, 0.35)
+            );
+        }
+
+    }
+    #talea_lab_sect {
+        align-items: center;
+        background-color: var(--alternative-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // z-index: 1;
+        h1 {
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font-size: clamp( 20px, 2.3vw, 35px);
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin: 0;
+            min-width: fit-content;
+            opacity: 0;
+            padding-bottom: 20px;
+            text-align: center;
+            transform: translateY(0);
+            width: 100%;
+            &.inView {
+                animation: trackingIn2 4s cubic-bezier(.2,.6,.2,1) forwards;
+            }
+        }
+        padding: 160px 60px;
+        .tale_lab_descr_text{
+            color: var(--talea-white);
+            font: var(--page-paragraphText-font);
+            width: 80%;
+            letter-spacing: .02em;
+        }
+    }
+    .waveMask {
+        width: 100%; 
+        height: 219px;
+        background: linear-gradient(
+            90deg,
+            #FFF1D6,
+            #FFDFA8,
+            #F8BB68,
+            // #F3A84F,
+            // #ED9B3F,
+            // #E38F34,
+            #D37F27,
+            #C97A22,
+        );
+        background-size: 200% 100%;
+        animation: gradMove 7s ease-in-out infinite;
+
+        /* use your PNG as the mask */
+        -webkit-mask-image: url("./Wave\ Separator.png");
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-position: center;
+
+        mask-image: url("./Wave\ Separator.png");
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        mask-position: center;
+    }
+    #talea_lab_attivita {
+        background-color: var(--alternative-black);
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 150px;
+        row-gap: 150px;
+        align-items: center;
+    }
+    .pageTransition_lab {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #aeaeae;
+        background-color: rgba(20, 20, 20, 0.5);
+        border-top: 3px solid var(--secondaryColor);
+        border-bottom: 3px solid var(--secondaryColor);
+        position: relative;
+    }
+    .cosa_abbiamo_fatto_lab {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #aeaeae;
+        background: linear-gradient(       
+            to bottom,
+            #181616 0%,
+            #000000 60%,
+        );
+        border-top: 3px solid var(--secondaryColor);
+        border-bottom: 3px solid var(--secondaryColor);
+        position: relative;
+        h1 {
+            color: var(--primary-color);
+            flex: 0 0 auto; 
+            font-size: clamp( 20px, 1.9vw, 30px);
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin: 0;
+            min-width: fit-content;
+            opacity: 0;
+            padding-bottom: 20px;
+            text-align: center;
+            transform: translateY(0);
+            width: 100%;
+            &.inView {
+                animation: trackingIn2 4s cubic-bezier(.2,.6,.2,1) forwards;
+            }
+        }
+        #ritmicitta_images_wrapper {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        #ritmicitta_text {
+            letter-spacing: .02em;
+            line-height: clamp( 19px, 1.6vw, 25px) ;
+            // text-transform: uppercase;
+            font-size: clamp( 14px, 1.2vw, 20px);
+            opacity: 1;
+            margin: 0 0 10px;
+            justify-content: center;
+            height: 100%;
+            #loghi_footer_ritmi {
+                background-color: #ffffff;
+                height: fit-content;
+                padding: 20px;
+                width: 100%;
+                align-self: center;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                img {
+                    height: 60px;
+                    width: auto;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    @keyframes skewOff {
+        to {
+            transform: skew(0deg);
+        }
+    }
+}
+.bg-layer {
+    position: fixed;
+    inset: 0;
+    background-position: bottom !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 0;
+}
+@media screen and (max-width: 1550px ) {
+    
+    #talea_lab {
+        #heroWrapperTaleaLab {
+            
+            padding-bottom: 0px;
+            video {}
+            h1 {
+                &.inView {}
+            }
+            .overlay {}
+
+        }
+        #talea_lab_sect {
+            h1 {
+                &.inView {}
+            }
+            .tale_lab_descr_text{}
+        }
+        .waveMask {}
+        #talea_lab_attivita { }
+        .pageTransition_lab {}
+
+        // Changed
+        .talea_lab_card {
+            display: flex;
+            width: 90%;
+            height: 600px;
+            overflow-x: hidden;
+        }
+    }
+}
+@media screen and (max-width: 1000px ) {
+    
+    #talea_lab {
+        #heroWrapperTaleaLab {
+            align-items: center;
+            background: linear-gradient(       
+                to top,
+                #181616 0%,
+                #000000 60%,
+            );
+            display: flex;
+            height: 100svh !important;
+            margin-bottom: 0px !important;
+            video {
+                height: min(65svh, 520px);  // shorter hero on phones
+                object-fit: cover;
+                object-position: 50% 30%;
+            }
+            h1 {
+                left: 10px;
+                letter-spacing: 0.01em !important;
+                min-width: fit-content;
+                transform: translateY(0px) translateX(-100px);
+                white-space: normal;
+                &.inView {
+                    animation: trackingIn4_small_screen 2s cubic-bezier(.2,.6,.2,1) forwards;
+                }
+            }
+
+        }
+        #talea_lab_sect {
+            padding: 40px 0px;
+            h1 {
+                min-width: 85%;
+                max-width: 85%;
+                &.inView {}
+            }
+            .tale_lab_descr_text{
+                width: 84%;
+                font-weight: 300;
+                hyphens: auto;
+                letter-spacing: 0.01em;
+                text-align: justify;
+                text-align-last: left;
+
+            }
+        }
+        .waveMask {}
+        #talea_lab_attivita { }
+        .pageTransition_lab {}
+
+        // Changed
+        #talea_lab_attivita {
+            row-gap: 20px;
+        }
+        .talea_lab_card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: fit-content;
+            overflow-x: hidden;
+            width: 84%;
+            &.inView_talea_lab_card {
+                .lab_card_title {
+                    animation: trackingInLabSM 2s cubic-bezier(.2,.6,.2,1) forwards;
+                    animation-delay: 0s;  
+                }
+            }
+            &.right .lab_card_title {
+                margin-right: 0px;
+            }
+            .lab_carousel {
+                height: 50dvh;
+            }
+            .lab_card_text_wrapper {
+                width: 100%;
+                position: relative;
+                .lab_card_title { 
+                    display: flex;
+                    padding: 10px !important;
+                    width: 100%;
+                }
+                .lab_card_description{
+                    padding: 30px 0px;
+                    width: 100% !important;
+                    hyphens: auto;
+                    letter-spacing: 0.01em;
+                    text-align: justify;
+                    text-align-last: left;
+                }
+            }
+        }
+        .cosa_abbiamo_fatto_lab {
+            padding: 30px 0px !important;
+            .ritmiincitta_wrapper {
+                flex-direction: column;
+                padding: 0px !important;
+                width: 85%;
+                #ritmicitta_images_wrapper {
+                    width: 100% !important;
+                }
+                #ritmicitta_text {
+                    width: 100% !important;
+                    padding: 30px 0px !important;
+                    hyphens: auto;
+                    letter-spacing: 0.01em;
+                    text-align: justify;
+                    text-align-last: left;
+                }
+            }
+        }
+    }
+}
+
+

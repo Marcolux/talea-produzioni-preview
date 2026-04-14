@@ -1,0 +1,166 @@
+#ContactPage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .page_paragraphTitle-vr { width: fit-content; }
+    #contactForm {
+        animation: gradientShift 5s linear infinite alternate;
+        background:
+            linear-gradient(#000, #000) padding-box,
+            #ffa115c9 border-box;
+
+        background-size: 100% 100%, 300% 300%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        color: var(--page-primary-background);
+        font: var(--page-paragraphText-font);
+        gap: 25px;
+        max-width: 900px;
+        padding: 32px 55px;
+        width: 100%;
+        .field {height: 125px;}
+        .oneRow {gap: 45px;}
+        label {
+            font: var(--page-paragraphText-font);
+        }
+        .inputText {
+            background-color: #171718;
+            border: 1px solid #f5f5f56f;
+            border-radius: 0px;
+            color: var(--page-primary-background);
+            padding: 10px 5px;
+            font: var(--page-paragraphText-font);
+            &:focus-visible, &:focus{
+                animation: gradientShift 2s linear infinite alternate;
+                background:
+                    linear-gradient(
+                        var(--alternative-black), 
+                        var(--alternative-black)
+                    ) padding-box,
+                    linear-gradient(
+                        270deg,
+                        #c1c2c0 0%,
+                        #F3A84F 100%
+                    ) border-box;
+                
+                background-size: 100% 100%, 300% 300%;
+                border: 0.2px solid transparent;
+                outline: none;
+            }
+            option { background-color: #171718; }
+        }
+        .errorTextDiv {line-height: 20px !important;}
+        .dropdown {
+            width: 100% !important;
+            .dropdown__label, .dropdown__button-text {
+                font: var(--page-paragraphText-font);
+            }
+            .dropdown__button  { width: 100%;}
+            .dropdown__list {
+                background: var(--alternative-black);
+                border-radius: 0px;
+                border: 0px solid #ccc;
+                color: var(--page-primary-background);
+                font: var(--page-paragraphText-font);
+                padding: 6px;
+                .dropdown__option {
+                    color: var(--page-primary-background);
+                    cursor: pointer;
+                    padding: 6px;
+                }
+                .dropdown__option:hover:not(.dropdown__option--active) {
+                    background-color: var(--page-primary-background);
+                    color: var(--alternative-black);
+                }
+                .dropdown__option--active { background: #f3a94f6f; }
+                .dropdown__option--selected { font-weight: 600; }
+            }
+        }
+        .primaryBtn-vr1{
+            width: 450px;
+            font: var(--primary-btn-btn-font);
+            &:hover {
+                cursor: pointer;
+                scale: 1.1;
+            }
+        }
+    }
+    .messageSent {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        &.show { opacity: 1; }
+    }
+    .inputError { border: 1px solid #c24141 !important;  }
+    .errorText {
+        animation: gradientShift 5s linear infinite alternate;
+        background-color: var(--primary-color);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        will-change: background-position;
+        transform: translateZ(0);
+        font-weight: 600;
+    }
+}
+
+@keyframes gradientShift {
+    from { background-position: 0% 50%; }
+    to   { background-position: 200% 50%; }
+}
+@media screen and (max-width:900px) {
+    #ContactPage {
+        padding: 60px 0px 20px !important;
+        .page_sub-headers-vr {padding: 0px 20px;}
+        .page_paragraphText {
+            font-size: 20px !important;
+            font-weight: 200 !important;
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: left !important;
+            width: 100%;
+        }
+        .page_paragraphTitle-vr { width: fit-content; }
+        #contactForm {
+            border-radius: 8px;
+            gap: 25px;
+            max-width: 100%;
+            padding: 20px;
+            width: 100%;
+            line-height: normal;
+            .field {
+                height: fit-content;
+                width: 100%;
+                &.optionalFields {
+                    height: fit-content !important;
+                }
+                label{ padding-top: 5px !important;}
+            }
+            .oneRow {
+                gap: 25px;
+                flex-direction: column;
+            }
+
+            .errorTextDiv {
+                line-height: normal !important;
+            }
+            .errorText {
+                font-weight: 400 !important;
+            }
+            .primaryBtn-vr1{
+                width: 90%;
+                font: var(--primary-btn-btn-font);
+                &:hover {
+                    cursor: pointer;
+                    scale: 1.1;
+                }
+            }
+        }
+        .messageSent {
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            &.show { opacity: 1; }
+        }
+    }
+}

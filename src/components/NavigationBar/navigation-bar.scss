@@ -1,0 +1,124 @@
+
+.navBar {
+    background-color: var(--navbar-background);
+    border-bottom: 1px solid var(--primary-color);
+    column-gap: 65px;
+    min-height: var(--navbar-height);
+    z-index: 1;
+    .logoWrapper {
+        align-items: center;
+        display: flex;
+        height: 100px;
+        max-height: 100px;
+        justify-content: center;
+        width: 290px;
+        img {
+            max-height: 50px;
+            width: auto;
+        }
+    }
+    .mainLinksWrapper {
+        border-left: 1px solid var(--primary-color);
+        border-right: 1px solid var(--primary-color);
+        column-gap: 35px;
+        height: 100%;
+        padding: 30px 65px;
+        min-width: fit-content;
+    }
+    .navLinks {
+        text-decoration: none;
+        color: var(--navbar-text-color);
+        font-size: var(--navbar-fontsize);
+        font-family: var(--navbar-fontFamily);
+        font-weight: var(--navbar-fontWeight);
+        p {
+            margin: 0px;
+        }
+    }
+    &#audiovisivamente_navbar {
+        background-color: #CED9CC;
+        border-bottom: 1px solid rgba(67, 69, 67, 0.2);
+        column-gap: 25px;
+        padding: 20px 20px;
+        filter: drop-shadow(0px 4px 8px rgba(69, 69, 69, 0.3));
+
+        .logoWrapper {
+            align-items: center;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            width: 250px;
+
+            img {
+                max-height: 100%;
+                width: auto;
+                scale: 1;
+                transition: scale .3s ease-in-out;
+
+                &.taleaLogo_nav {
+                    // filter: brightness(0) invert(1); // makes it white on dark bg
+                    max-height: 40px;
+                }
+                &:hover {
+                    scale: 1.05;
+                }
+            }
+        }
+
+        .logo_link_audiovi {
+            .navLinks {
+                font-family: 'Journal', sans-serif !important;
+                text-transform: capitalize !important;
+            }
+        }
+
+        .navLinks {
+            border-radius: 999px;
+            color: var(--audiovisivamente-green-1);
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(12px, 1.1vw, 16px);
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            position: relative;
+            text-transform: uppercase;
+            transition: color 0.25s ease, background-color 0.25s ease;
+            opacity: .8;
+            &:not(.logoNav) {
+                padding: 0.35rem 0.75rem;
+                &::after {
+                    display: none;
+                }
+            }
+            &.logoNav {
+                filter: drop-shadow(0px 0px 0px rgba(16, 16, 16, 0));
+            }
+
+            &:hover {
+                color: #879364;
+            }
+
+            &.active{
+
+                &:not(.logoNav) {
+                    background-color: var(--audiovisivamente-green-1);
+                    color: var(--audiovisivamente-white);
+                }
+                &.logoNav {
+                       filter: drop-shadow(-2px 1px 0px rgba(26, 26, 26, 0.7));
+                }
+            }
+
+        }
+
+        .mainLinksWrapper {
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--audiovisivamente-green-1);
+            border-radius: 999px; // fully rounded pill container
+            display: flex;
+            gap: 0.25rem;
+            height: fit-content;
+            padding: 4px !important;
+        }
+    }
+}

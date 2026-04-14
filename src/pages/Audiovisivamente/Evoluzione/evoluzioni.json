@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "01",
+    "slug": "01_coccinella_alessandro-carnimeo",
+    "subject": "Coccinella",
+    "child": "Alessandro Carnimeo",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Alessandro Carnimeo",
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/01_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/01_I.webp",
+        "alt": "Foto originale di Coccinella di Alessandro Carnimeo"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/01_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/01_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Alessandro Carnimeo"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/01_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/01_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Valeria Pansini e Federica Rutigliano"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/01_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/01_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Valeria Pansini e Federica Rutigliano"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Alessandro Carnimeo DO IVA _Valeria Pansini e Federica Rutigliano 3AI"
+  },
+  {
+    "id": "02",
+    "slug": "02_coccinella_antonella-pellegrino",
+    "subject": "Coccinella",
+    "child": "Antonella Pellegrino",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Mattia Rana"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Antonella Pellegrino",
+      "Mattia Rana"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/02_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/02_I.webp",
+        "alt": "Foto originale di Coccinella di Antonella Pellegrino"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/02_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/02_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Antonella Pellegrino"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/02_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/02_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Mattia Rana"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/02_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/02_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Mattia Rana"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Antonella Pellegrino DO IVA_ Mattia Rana 3AI"
+  },
+  {
+    "id": "03",
+    "slug": "03_coccinella_clelia-grimaldi",
+    "subject": "Coccinella",
+    "child": "Clelia Grimaldi",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Simone De Marzo"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Clelia Grimaldi",
+      "Simone De Marzo"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/03_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/03_I.webp",
+        "alt": "Foto originale di Coccinella di Clelia Grimaldi"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/03_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/03_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Clelia Grimaldi"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/03_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/03_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Simone De Marzo"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/03_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/03_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Simone De Marzo"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Clelia Grimaldi  DO IVA_Simone De Marzo 3AI"
+  },
+  {
+    "id": "04",
+    "slug": "04_coccinella_elena-guastamacchia",
+    "subject": "Coccinella",
+    "child": "Elena Guastamacchia",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Elena Guastamacchia",
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/04_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/04_I.webp",
+        "alt": "Foto originale di Coccinella di Elena Guastamacchia"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/04_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/04_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Elena Guastamacchia"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/04_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/04_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Valeria Pansini e Federica Rutigliano"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/04_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/04_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Valeria Pansini e Federica Rutigliano"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Elena Guastamacchia DO IVA_ Valeria Pansini e Federica Rutigliano 3AI"
+  },
+  {
+    "id": "05",
+    "slug": "05_coccinella_giuseppe-benedetto",
+    "subject": "Coccinella",
+    "child": "Giuseppe Benedetto",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Alessandro Signorile",
+      "Andrea Signorile 3 AI"
+    ],
+    "highschoolerClass": null,
+    "names": [
+      "Giuseppe Benedetto",
+      "Alessandro Signorile",
+      "Andrea Signorile 3 AI"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/05_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/05_I.webp",
+        "alt": "Foto originale di Coccinella di Giuseppe Benedetto"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/05_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/05_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Giuseppe Benedetto"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/05_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/05_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Alessandro Signorile e Andrea Signorile 3 AI"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/05_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/05_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Alessandro Signorile e Andrea Signorile 3 AI"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Giuseppe Benedetto DO IVA_ Alessandro Signorile e Andrea Signorile 3 AI"
+  },
+  {
+    "id": "06",
+    "slug": "06_coccinella_maria-vittoria-buonfiglio",
+    "subject": "Coccinella",
+    "child": "Maria Vittoria Buonfiglio",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Paparusso Claudia"
+    ],
+    "highschoolerClass": "3AT",
+    "names": [
+      "Maria Vittoria Buonfiglio",
+      "Paparusso Claudia"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/06_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/06_I.webp",
+        "alt": "Foto originale di Coccinella di Maria Vittoria Buonfiglio"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/06_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/06_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Maria Vittoria Buonfiglio"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/06_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/06_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Paparusso Claudia"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/06_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/06_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Paparusso Claudia"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Maria Vittoria Buonfiglio DO IVA_ Paparusso Claudia 3AT"
+  },
+  {
+    "id": "07",
+    "slug": "07_coccinella_mia-pierattini",
+    "subject": "Coccinella",
+    "child": "Mia Pierattini",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Dioguardi Alessandro",
+      "Stella Mezzena"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Mia Pierattini",
+      "Dioguardi Alessandro",
+      "Stella Mezzena"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/07_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/07_I.webp",
+        "alt": "Foto originale di Coccinella di Mia Pierattini"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/07_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/07_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Mia Pierattini"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/07_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/07_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Dioguardi Alessandro e Stella Mezzena"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/07_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/07_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Dioguardi Alessandro e Stella Mezzena"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Mia Pierattini  DO IVA_Dioguardi Alessandro e Stella Mezzena 3AI"
+  },
+  {
+    "id": "08",
+    "slug": "08_coccinella_mia-pierattini",
+    "subject": "Coccinella",
+    "child": "Mia Pierattini",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Giuseppe Colella",
+      "Andrea Visitilli"
+    ],
+    "highschoolerClass": "3AT",
+    "names": [
+      "Mia Pierattini",
+      "Giuseppe Colella",
+      "Andrea Visitilli"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/08_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/08_I.webp",
+        "alt": "Foto originale di Coccinella di Mia Pierattini"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/08_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/08_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Mia Pierattini"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/08_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/08_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Giuseppe Colella e Andrea Visitilli"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/08_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/08_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Giuseppe Colella e Andrea Visitilli"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Mia Pierattini DO IVA_ Giuseppe Colella e Andrea Visitilli 3AT"
+  },
+  {
+    "id": "09",
+    "slug": "09_coccinella_raffaella-favia",
+    "subject": "Coccinella",
+    "child": "Raffaella Favia",
+    "childSchool": "DO",
+    "childClass": "IVC",
+    "preschooler": null,
+    "highschoolers": [
+      "Denise Anaclerio"
+    ],
+    "highschoolerClass": "3AT",
+    "names": [
+      "Raffaella Favia",
+      "Denise Anaclerio"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/09_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/09_I.webp",
+        "alt": "Foto originale di Coccinella di Raffaella Favia"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/09_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/09_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Raffaella Favia"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/09_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/09_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Denise Anaclerio"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/09_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/09_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Denise Anaclerio"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Raffaella Favia DO IVC_ Denise Anaclerio 3AT"
+  },
+  {
+    "id": "10",
+    "slug": "10_coccinella_rebecca-magaletti",
+    "subject": "Coccinella",
+    "child": "Rebecca Magaletti",
+    "childSchool": "DO",
+    "childClass": "IVC",
+    "preschooler": null,
+    "highschoolers": [
+      "Ragazzo Scivolato",
+      "Andrea Visitilli"
+    ],
+    "highschoolerClass": "3AT",
+    "names": [
+      "Rebecca Magaletti",
+      "Ragazzo Scivolato",
+      "Andrea Visitilli"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/10_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/10_I.webp",
+        "alt": "Foto originale di Coccinella di Rebecca Magaletti"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/10_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/10_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Rebecca Magaletti"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/10_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/10_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Ragazzo Scivolato e Andrea Visitilli"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/10_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/10_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Ragazzo Scivolato e Andrea Visitilli"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella Rebecca Magaletti DO IVC_ Ragazzo Scivolato e Andrea Visitilli 3AT"
+  },
+  {
+    "id": "11",
+    "slug": "11_coccinella_juri-gravili",
+    "subject": "Coccinella",
+    "child": "Juri Gravili",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Juri Gravili",
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/11_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/11_I.webp",
+        "alt": "Foto originale di Coccinella di Juri Gravili"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/11_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/11_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Coccinella di Juri Gravili"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/11_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/11_III.webp",
+        "alt": "Scenario AI migliore di Coccinella — realizzato da Valeria Pansini e Federica Rutigliano"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/11_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/11_IV.webp",
+        "alt": "Scenario AI peggiore di Coccinella — realizzato da Valeria Pansini e Federica Rutigliano"
+      }
+    },
+    "notes": null,
+    "rawName": "Coccinella_Juri Gravili DO IVA, Valeria Pansini e Federica Rutigliano 3AI"
+  },
+  {
+    "id": "12",
+    "slug": "12_pesce-tropicale_vincenzo-di-gioia",
+    "subject": "Pesce Tropicale",
+    "child": "Vincenzo Di Gioia",
+    "childSchool": "SF",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Giuseppe D",
+      "Alonzo",
+      "Christian Guarno"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Vincenzo Di Gioia",
+      "Giuseppe D",
+      "Alonzo",
+      "Christian Guarno"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/12_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/12_I.webp",
+        "alt": "Foto originale di Pesce Tropicale di Vincenzo Di Gioia"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/12_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/12_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Pesce Tropicale di Vincenzo Di Gioia"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/12_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/12_III.webp",
+        "alt": "Scenario AI migliore di Pesce Tropicale — realizzato da Giuseppe D e Alonzo e Christian Guarno"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/12_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/12_IV.webp",
+        "alt": "Scenario AI peggiore di Pesce Tropicale — realizzato da Giuseppe D e Alonzo e Christian Guarno"
+      }
+    },
+    "notes": null,
+    "rawName": "Pesce Tropicale Vincenzo Di Gioia SF IVA_ Giuseppe D_Alonzo e Christian Guarno 3AI"
+  },
+  {
+    "id": "13",
+    "slug": "13_pesce-tropicale_sofia-de-marzo",
+    "subject": "Pesce Tropicale",
+    "child": "Sofia De Marzo",
+    "childSchool": "SF",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Martiradonna Marco",
+      "Simone Demarzo"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Sofia De Marzo",
+      "Martiradonna Marco",
+      "Simone Demarzo"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/13_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/13_I.webp",
+        "alt": "Foto originale di Pesce Tropicale di Sofia De Marzo"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/13_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/13_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Pesce Tropicale di Sofia De Marzo"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/13_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/13_III.webp",
+        "alt": "Scenario AI migliore di Pesce Tropicale — realizzato da Martiradonna Marco e Simone Demarzo"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/13_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/13_IV.webp",
+        "alt": "Scenario AI peggiore di Pesce Tropicale — realizzato da Martiradonna Marco e Simone Demarzo"
+      }
+    },
+    "notes": null,
+    "rawName": "Pesce tropicale Sofia De Marzo SF IVA_ Martiradonna Marco e Simone Demarzo 3AI"
+  },
+  {
+    "id": "14",
+    "slug": "14_pesce-tropicale_giuseppe-attolico",
+    "subject": "Pesce Tropicale",
+    "child": "Giuseppe Attolico",
+    "childSchool": "SF",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Marco Martiradonna",
+      "Davide Poliseno"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Giuseppe Attolico",
+      "Marco Martiradonna",
+      "Davide Poliseno"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/14_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/14_I.webp",
+        "alt": "Foto originale di Pesce Tropicale di Giuseppe Attolico"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/14_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/14_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Pesce Tropicale di Giuseppe Attolico"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/14_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/14_III.webp",
+        "alt": "Scenario AI migliore di Pesce Tropicale — realizzato da Marco Martiradonna e Davide Poliseno"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/14_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/14_IV.webp",
+        "alt": "Scenario AI peggiore di Pesce Tropicale — realizzato da Marco Martiradonna e Davide Poliseno"
+      }
+    },
+    "notes": null,
+    "rawName": "Pesce tropicale_ Giuseppe Attolico SF IVA_ Marco Martiradonna e Davide Poliseno 3AI"
+  },
+  {
+    "id": "15",
+    "slug": "15_pesce-tropicale_vittorio-lettini",
+    "subject": "Pesce Tropicale",
+    "child": "Vittorio Lettini",
+    "childSchool": "SF",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Christian Luigi Guarno",
+      "Giuseppe D",
+      "Alonzo"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Vittorio Lettini",
+      "Christian Luigi Guarno",
+      "Giuseppe D",
+      "Alonzo"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/15_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/15_I.webp",
+        "alt": "Foto originale di Pesce Tropicale di Vittorio Lettini"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/15_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/15_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Pesce Tropicale di Vittorio Lettini"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/15_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/15_III.webp",
+        "alt": "Scenario AI migliore di Pesce Tropicale — realizzato da Christian Luigi Guarno e Giuseppe D e Alonzo"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/15_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/15_IV.webp",
+        "alt": "Scenario AI peggiore di Pesce Tropicale — realizzato da Christian Luigi Guarno e Giuseppe D e Alonzo"
+      }
+    },
+    "notes": null,
+    "rawName": "Pesce tropicale_ Vittorio Lettini SF IVA_ Christian Luigi Guarno e  Giuseppe D_Alonzo 3AI"
+  },
+  {
+    "id": "16",
+    "slug": "16_pesce-tropicale_ettore-pizzo",
+    "subject": "Pesce Tropicale",
+    "child": "Ettore Pizzo",
+    "childSchool": "SF",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Valeria Pansini",
+      "Federica Rutigliano",
+      "3AI"
+    ],
+    "highschoolerClass": null,
+    "names": [
+      "Ettore Pizzo",
+      "Valeria Pansini",
+      "Federica Rutigliano",
+      "3AI"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/16_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/16_I.webp",
+        "alt": "Foto originale di Pesce Tropicale di Ettore Pizzo"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/16_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/16_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Pesce Tropicale di Ettore Pizzo"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/16_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/16_III.webp",
+        "alt": "Scenario AI migliore di Pesce Tropicale — realizzato da Valeria Pansini e Federica Rutigliano e 3AI"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/16_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/16_IV.webp",
+        "alt": "Scenario AI peggiore di Pesce Tropicale — realizzato da Valeria Pansini e Federica Rutigliano e 3AI"
+      }
+    },
+    "notes": null,
+    "rawName": "Pesce tropicale_Ettore Pizzo SF IVA_Valeria Pansini e Federica Rutigliano_3AI"
+  },
+  {
+    "id": "17",
+    "slug": "17_pesce-tropicale_gabriela-bottalico",
+    "subject": "Pesce Tropicale",
+    "child": "Gabriela Bottalico",
+    "childSchool": "SF",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Stella Mezzena",
+      "Alessandro Dioguardi",
+      "Mattias Lafortezza"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Gabriela Bottalico",
+      "Stella Mezzena",
+      "Alessandro Dioguardi",
+      "Mattias Lafortezza"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/17_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/17_I.webp",
+        "alt": "Foto originale di Pesce Tropicale di Gabriela Bottalico"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/17_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/17_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Pesce Tropicale di Gabriela Bottalico"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/17_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/17_III.webp",
+        "alt": "Scenario AI migliore di Pesce Tropicale — realizzato da Stella Mezzena e Alessandro Dioguardi e Mattias Lafortezza"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/17_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/17_IV.webp",
+        "alt": "Scenario AI peggiore di Pesce Tropicale — realizzato da Stella Mezzena e Alessandro Dioguardi e Mattias Lafortezza"
+      }
+    },
+    "notes": null,
+    "rawName": "Pesce tropicale_Gabriela Bottalico SF IVA_ Stella Mezzena, Alessandro Dioguardi e  Mattias Lafortezza 3AI"
+  },
+  {
+    "id": "18",
+    "slug": "18_teiera_alessia-cellamare",
+    "subject": "Teiera",
+    "child": "Alessia Cellamare",
+    "childSchool": "DO",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Andrea Signorile",
+      "Alessandro Signorile"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Alessia Cellamare",
+      "Andrea Signorile",
+      "Alessandro Signorile"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/18_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/18_I.webp",
+        "alt": "Foto originale di Teiera di Alessia Cellamare"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/18_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/18_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Teiera di Alessia Cellamare"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/18_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/18_III.webp",
+        "alt": "Scenario AI migliore di Teiera — realizzato da Andrea Signorile e Alessandro Signorile"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/18_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/18_IV.webp",
+        "alt": "Scenario AI peggiore di Teiera — realizzato da Andrea Signorile e Alessandro Signorile"
+      }
+    },
+    "notes": null,
+    "rawName": "Teiera Alessia Cellamare DO IVB_ Andrea Signorile e Alessandro Signorile 3AI"
+  },
+  {
+    "id": "19",
+    "slug": "19_teiera_anna-laura-bagordo",
+    "subject": "Teiera",
+    "child": "Anna Laura Bagordo",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Flavio Gambacorta"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Anna Laura Bagordo",
+      "Flavio Gambacorta"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/19_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/19_I.webp",
+        "alt": "Foto originale di Teiera di Anna Laura Bagordo"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/19_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/19_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Teiera di Anna Laura Bagordo"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/19_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/19_III.webp",
+        "alt": "Scenario AI migliore di Teiera — realizzato da Flavio Gambacorta"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/19_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/19_IV.webp",
+        "alt": "Scenario AI peggiore di Teiera — realizzato da Flavio Gambacorta"
+      }
+    },
+    "notes": null,
+    "rawName": "Teiera Anna Laura Bagordo SF IVB_ Flavio Gambacorta 3AI"
+  },
+  {
+    "id": "20",
+    "slug": "20_teiera_federico-de-marzo",
+    "subject": "Teiera",
+    "child": "Federico De Marzo",
+    "childSchool": "DO",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Francesco Campana"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Federico De Marzo",
+      "Francesco Campana"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/20_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/20_I.webp",
+        "alt": "Foto originale di Teiera di Federico De Marzo"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/20_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/20_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Teiera di Federico De Marzo"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/20_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/20_III.webp",
+        "alt": "Scenario AI migliore di Teiera — realizzato da Francesco Campana"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/20_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/20_IV.webp",
+        "alt": "Scenario AI peggiore di Teiera — realizzato da Francesco Campana"
+      }
+    },
+    "notes": null,
+    "rawName": "Teiera Federico De Marzo DO IVB_ Francesco Campana 3AI"
+  },
+  {
+    "id": "21",
+    "slug": "21_teiera_greta-lorusso",
+    "subject": "Teiera",
+    "child": "Greta Lorusso",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Davide Poliseno",
+      "Marco Martiradonna"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Greta Lorusso",
+      "Davide Poliseno",
+      "Marco Martiradonna"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/21_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/21_I.webp",
+        "alt": "Foto originale di Teiera di Greta Lorusso"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/21_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/21_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Teiera di Greta Lorusso"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/21_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/21_III.webp",
+        "alt": "Scenario AI migliore di Teiera — realizzato da Davide Poliseno e Marco Martiradonna"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/21_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/21_IV.webp",
+        "alt": "Scenario AI peggiore di Teiera — realizzato da Davide Poliseno e Marco Martiradonna"
+      }
+    },
+    "notes": null,
+    "rawName": "Teiera Greta Lorusso SF IVB_ Davide Poliseno e Marco Martiradonna 3AI"
+  },
+  {
+    "id": "22",
+    "slug": "22_teiera_sofia-scala",
+    "subject": "Teiera",
+    "child": "Sofia Scala",
+    "childSchool": "DO",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Stella Mezzena Dioguardi Alessandro",
+      "Mattias Lafortezza"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Sofia Scala",
+      "Stella Mezzena Dioguardi Alessandro",
+      "Mattias Lafortezza"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/22_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/22_I.webp",
+        "alt": "Foto originale di Teiera di Sofia Scala"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/22_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/22_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Teiera di Sofia Scala"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/22_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/22_III.webp",
+        "alt": "Scenario AI migliore di Teiera — realizzato da Stella Mezzena Dioguardi Alessandro e Mattias Lafortezza"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/22_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/22_IV.webp",
+        "alt": "Scenario AI peggiore di Teiera — realizzato da Stella Mezzena Dioguardi Alessandro e Mattias Lafortezza"
+      }
+    },
+    "notes": null,
+    "rawName": "Teiera Sofia Scala DO IVB_ Stella Mezzena Dioguardi Alessandro e Mattias Lafortezza 3AI"
+  },
+  {
+    "id": "23",
+    "slug": "23_teiera_nicola-callea",
+    "subject": "Teiera",
+    "child": "Nicola Callea",
+    "childSchool": "DO",
+    "childClass": "IVC",
+    "preschooler": null,
+    "highschoolers": [
+      "Francesco Campana"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Nicola Callea",
+      "Francesco Campana"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/23_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/23_I.webp",
+        "alt": "Foto originale di Teiera di Nicola Callea"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/23_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/23_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Teiera di Nicola Callea"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/23_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/23_III.webp",
+        "alt": "Scenario AI migliore di Teiera — realizzato da Francesco Campana"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/23_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/23_IV.webp",
+        "alt": "Scenario AI peggiore di Teiera — realizzato da Francesco Campana"
+      }
+    },
+    "notes": null,
+    "rawName": "Teiera_Nicola Callea DO IVC_Francesco Campana 3AI"
+  },
+  {
+    "id": "24",
+    "slug": "24_torta_alessandro-armenise",
+    "subject": "Torta",
+    "child": "Alessandro Armenise",
+    "childSchool": "DO",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Andrea Signorile",
+      "Alessandro Signorile"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Alessandro Armenise",
+      "Andrea Signorile",
+      "Alessandro Signorile"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/24_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/24_I.webp",
+        "alt": "Foto originale di Torta di Alessandro Armenise"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/24_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/24_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Alessandro Armenise"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/24_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/24_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Andrea Signorile e Alessandro Signorile"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/24_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/24_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Andrea Signorile e Alessandro Signorile"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Alessandro Armenise DO IVB_ Andrea Signorile e Alessandro Signorile 3AI"
+  },
+  {
+    "id": "25",
+    "slug": "25_torta_ambra-diliso",
+    "subject": "Torta",
+    "child": "Ambra Diliso",
+    "childSchool": "DO",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Michele Diomede 3AT",
+      "Davide Poliseno"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Ambra Diliso",
+      "Michele Diomede 3AT",
+      "Davide Poliseno"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/25_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/25_I.webp",
+        "alt": "Foto originale di Torta di Ambra Diliso"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/25_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/25_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Ambra Diliso"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/25_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/25_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Michele Diomede 3AT e Davide Poliseno"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/25_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/25_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Michele Diomede 3AT e Davide Poliseno"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Ambra Diliso DO IVB_Michele Diomede 3AT_Davide Poliseno 3AI"
+  },
+  {
+    "id": "26",
+    "slug": "26_torta_christian-perchiazzi",
+    "subject": "Torta",
+    "child": "Christian Perchiazzi",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Domenico Licciardi"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Christian Perchiazzi",
+      "Domenico Licciardi"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/26_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/26_I.webp",
+        "alt": "Foto originale di Torta di Christian Perchiazzi"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/26_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/26_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Christian Perchiazzi"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/26_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/26_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Domenico Licciardi"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/26_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/26_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Domenico Licciardi"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Christian Perchiazzi SF IVB_Domenico Licciardi 3AI"
+  },
+  {
+    "id": "27",
+    "slug": "27_torta_diego-ganzerli",
+    "subject": "Torta",
+    "child": "Diego Ganzerli",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Giuseppe D",
+      "Alonzo",
+      "Christian Guarno"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Diego Ganzerli",
+      "Giuseppe D",
+      "Alonzo",
+      "Christian Guarno"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/27_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/27_I.webp",
+        "alt": "Foto originale di Torta di Diego Ganzerli"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/27_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/27_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Diego Ganzerli"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/27_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/27_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Giuseppe D e Alonzo e Christian Guarno"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/27_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/27_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Giuseppe D e Alonzo e Christian Guarno"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Diego Ganzerli SF IVB_ Giuseppe D_Alonzo e Christian Guarno 3AI"
+  },
+  {
+    "id": "28",
+    "slug": "28_torta_francesco-delle-fontane",
+    "subject": "Torta",
+    "child": "Francesco Delle Fontane",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Simone De Marzo"
+    ],
+    "highschoolerClass": null,
+    "names": [
+      "Francesco Delle Fontane",
+      "Simone De Marzo"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/28_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/28_I.webp",
+        "alt": "Foto originale di Torta di Francesco Delle Fontane"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/28_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/28_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Francesco Delle Fontane"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/28_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/28_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Simone De Marzo"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/28_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/28_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Simone De Marzo"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Francesco Delle Fontane SF IVB_ Simone De Marzo"
+  },
+  {
+    "id": "29",
+    "slug": "29_torta_gabriel-cinquepalmi",
+    "subject": "Torta",
+    "child": "Gabriel Cinquepalmi",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Denise",
+      "Claudia"
+    ],
+    "highschoolerClass": "3AT",
+    "names": [
+      "Gabriel Cinquepalmi",
+      "Denise",
+      "Claudia"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/29_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/29_I.webp",
+        "alt": "Foto originale di Torta di Gabriel Cinquepalmi"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/29_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/29_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Gabriel Cinquepalmi"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/29_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/29_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Denise e Claudia"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/29_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/29_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Denise e Claudia"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Gabriel Cinquepalmi SF IVB_Denise e Claudia 3AT"
+  },
+  {
+    "id": "30",
+    "slug": "30_torta_mia-orofino",
+    "subject": "Torta",
+    "child": "Mia Orofino",
+    "childSchool": "DO",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Flavio Gambacorta"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Mia Orofino",
+      "Flavio Gambacorta"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/30_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/30_I.webp",
+        "alt": "Foto originale di Torta di Mia Orofino"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/30_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/30_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Mia Orofino"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/30_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/30_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Flavio Gambacorta"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/30_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/30_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Flavio Gambacorta"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Mia Orofino DO IVB_ Flavio Gambacorta 3AI"
+  },
+  {
+    "id": "31",
+    "slug": "31_torta_nina-giura",
+    "subject": "Torta",
+    "child": "Nina Giura",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Andrea Signorile",
+      "Alessandro Signorile"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Nina Giura",
+      "Andrea Signorile",
+      "Alessandro Signorile"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/31_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/31_I.webp",
+        "alt": "Foto originale di Torta di Nina Giura"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/31_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/31_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Nina Giura"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/31_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/31_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Andrea Signorile e Alessandro Signorile"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/31_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/31_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Andrea Signorile e Alessandro Signorile"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Nina Giura DO IVA_  Andrea Signorile e Alessandro Signorile 3AI"
+  },
+  {
+    "id": "32",
+    "slug": "32_torta_pietro-bozzo",
+    "subject": "Torta",
+    "child": "Pietro Bozzo",
+    "childSchool": "SF",
+    "childClass": "IVB",
+    "preschooler": null,
+    "highschoolers": [
+      "Francesco Campana"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Pietro Bozzo",
+      "Francesco Campana"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/32_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/32_I.webp",
+        "alt": "Foto originale di Torta di Pietro Bozzo"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/32_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/32_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Pietro Bozzo"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/32_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/32_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Francesco Campana"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/32_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/32_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Francesco Campana"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Pietro Bozzo SF IVB_ Francesco Campana 3AI"
+  },
+  {
+    "id": "33",
+    "slug": "33_torta_rita-de-tullio",
+    "subject": "Torta",
+    "child": "Rita De Tullio",
+    "childSchool": "DO",
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "Rita De Tullio",
+      "Valeria Pansini",
+      "Federica Rutigliano"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/33_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/33_I.webp",
+        "alt": "Foto originale di Torta di Rita De Tullio"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/33_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/33_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a Torta di Rita De Tullio"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/33_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/33_III.webp",
+        "alt": "Scenario AI migliore di Torta — realizzato da Valeria Pansini e Federica Rutigliano"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/33_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/33_IV.webp",
+        "alt": "Scenario AI peggiore di Torta — realizzato da Valeria Pansini e Federica Rutigliano"
+      }
+    },
+    "notes": null,
+    "rawName": "Torta Rita De Tullio DO IVA_ Valeria Pansini e Federica Rutigliano 3AI"
+  },
+  {
+    "id": "34",
+    "slug": "34_no_cognome-e-scuola-coccinella-maurizio",
+    "subject": "no",
+    "child": "cognome e scuola! Coccinella Maurizio",
+    "childSchool": null,
+    "childClass": "IVA",
+    "preschooler": null,
+    "highschoolers": [
+      "Fabio Gambacorta"
+    ],
+    "highschoolerClass": "3AI",
+    "names": [
+      "cognome e scuola! Coccinella Maurizio",
+      "Fabio Gambacorta"
+    ],
+    "images": {
+      "original": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/34_I.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/34_I.webp",
+        "alt": "Foto originale di no di cognome e scuola! Coccinella Maurizio"
+      },
+      "drawing": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/34_II.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/34_II.webp",
+        "alt": "Disegno della scuola dell'infanzia ispirato a no di cognome e scuola! Coccinella Maurizio"
+      },
+      "aiBest": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/34_III.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/34_III.webp",
+        "alt": "Scenario AI migliore di no — realizzato da Fabio Gambacorta"
+      },
+      "aiWorst": {
+        "thumb": "immagini-pagine/evoluzioni/images/thumbs/34_IV.webp",
+        "full": "immagini-pagine/evoluzioni/images/full/34_IV.webp",
+        "alt": "Scenario AI peggiore di no — realizzato da Fabio Gambacorta"
+      }
+    },
+    "incomplete": true,
+    "notes": null,
+    "rawName": "x no cognome e scuola! Coccinella Maurizio IVA_ Fabio Gambacorta 3AI"
+  }
+]
