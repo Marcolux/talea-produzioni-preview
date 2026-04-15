@@ -239,7 +239,7 @@
     }
 }
 @media screen and (max-width: 1000px ) {
-    
+
     #talea_lab {
         #heroWrapperTaleaLab {
             align-items: center;
@@ -352,4 +352,13 @@
     }
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    #talea_lab {
+        #heroWrapperTaleaLab {
+            height: 80svh;
+            video {
+                height: 80svh;
+            }
+        }
+    }
+}

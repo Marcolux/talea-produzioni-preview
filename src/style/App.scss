@@ -35,3 +35,34 @@ button:focus-visible {
   outline: none;
 }
 
+/* Shared keyframes — must live here so they are available regardless of which
+   page bundle loads first (React.lazy splits HomePage.scss into its own chunk) */
+@keyframes trackingIn2 {
+    to {
+        opacity: 1;
+        letter-spacing: 0.06em;
+        transform: translateY(-15px);
+    }
+}
+@keyframes trackingIn4 {
+    to {
+        opacity: 1;
+        letter-spacing: 0.01em;
+        bottom: 45px;
+        transform: translateY(-15px) translateX(0px);
+    }
+}
+@keyframes trackingIn4_small_screen {
+    to {
+        opacity: 1;
+        letter-spacing: 0.01em;
+        bottom: 45px;
+        transform: translateY(-30px) translateX(0px);
+    }
+}
+@keyframes gradMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
