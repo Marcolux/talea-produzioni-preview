@@ -210,24 +210,8 @@
     
     #talea_lab {
         #heroWrapperTaleaLab {
-            
             padding-bottom: 0px;
-            video {}
-            h1 {
-                &.inView {}
-            }
-            .overlay {}
-
         }
-        #talea_lab_sect {
-            h1 {
-                &.inView {}
-            }
-            .tale_lab_descr_text{}
-        }
-        .waveMask {}
-        #talea_lab_attivita { }
-        .pageTransition_lab {}
 
         // Changed
         .talea_lab_card {
@@ -273,7 +257,6 @@
             h1 {
                 min-width: 85%;
                 max-width: 85%;
-                &.inView {}
             }
             .tale_lab_descr_text{
                 width: 84%;
@@ -285,9 +268,6 @@
 
             }
         }
-        .waveMask {}
-        #talea_lab_attivita { }
-        .pageTransition_lab {}
 
         // Changed
         #talea_lab_attivita {
@@ -359,6 +339,19 @@
             video {
                 height: 80svh;
             }
+        }
+        .lab_card_text_wrapper {
+            max-width: 50%;
+            .lab_card_title { 
+                padding: 40px 70px 0px 60px;
+            }
+            
+        }
+        .talea_lab_card.right .lab_card_title { 
+            margin-right: 75px;
+        }
+        .talea_lab_card.left .lab_card_title { 
+            margin-left: 75px;
         }
     }
 }

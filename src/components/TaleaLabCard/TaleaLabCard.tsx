@@ -22,7 +22,7 @@ const TaleaLabSingleCard = ({
 
     const [ref, inView] = useInView({
         threshold: 0.2,
-        triggerOnce: false,
+        triggerOnce: true,
     })
 
     const slides = useMemo(

@@ -103,7 +103,7 @@ const TaleaLab = () => {
                         leftRight="left"
                         withPublicUrl={withPublicUrl}
                     />
-                    <TaleaLabSingleCard 
+                    <TaleaLabSingleCard
                         title="Art Lab"
                         images={[
                             "/immagini-pagine/talea-lab/labs-pics/artlab 0.webp", 
