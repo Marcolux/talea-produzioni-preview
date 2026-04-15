@@ -350,21 +350,13 @@
             }
             .flip-card_ck-back {
                 padding: 15px 10px !important;
-                    .cardText  {
-                        padding-right: 0px !important;
-                    }
-                    .backText {
-                        padding-right: 10px;
-                        .backTitle {
-                            .backSubtitle {}
-                        }
-                        .backMeta {
-                            &::after {}
-                            &.meta_strings {}
-                        }
-                        .backDescription {}
-                    }
+                .cardText  {
+                    padding-right: 0px !important;
                 }
+                .backText {
+                    padding-right: 10px;
+                }
+            }
         }
-    }
+    }  
 }

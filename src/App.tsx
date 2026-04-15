@@ -24,7 +24,7 @@ const AudiovisivamenteNatura360 = lazy(() => import('./pages/Audiovisivamente/Na
 function App() {
   const [smallScreenView, setSmallScreenView] = useState('Regular')
   const handleResize = () => {
-    window.innerWidth < 768 ? setSmallScreenView('SmallScreen') : setSmallScreenView('Regular')
+    window.innerWidth < 800 ? setSmallScreenView('SmallScreen') : setSmallScreenView('Regular')
   }
 
   useEffect(() => {

@@ -64,24 +64,16 @@
 }
 
 @media screen and (max-width: 1000px) { 
+    .footer {
 
-    .logoWrapper {display: none !important;}
-    #footer_text_wrapper {
-        div {
-            gap: 3px;
-            p {
-                line-height: 1.3;
+        .logoWrapper {display: none !important;}
+        #footer_text_wrapper {
+            div {
+                gap: 3px;
+                p {
+                    line-height: 1.3;
+                }
             }
         }
-        // #seguici_wrapper {
-        //     display: flex;
-        //     flex-direction: column;
-        //     width: 100%;
-        //     #footer_links {
-        //         display: flex;
-        //         justify-content: center;
-        //         width: 100%;
-        //     }
-        // }
     }
 }
