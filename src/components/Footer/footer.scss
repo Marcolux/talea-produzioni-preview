@@ -19,26 +19,42 @@
         height: fit-content;
         justify-content: center;
         padding: 40px;
+        // ── Social icon circles (Talea — orange on black) ────────────────
+        .social_icon_wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: #000;
+            font-size: 1rem;
+            margin-right: 12px;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+
+            &:hover { opacity: 0.75; }
+        }
+
         &.footer_aud {
-            background-color: var(--secondary-audiovisivamente);
-             border-top: 1px solid var(--audiovisivamente-green-1);
+            background-color: #CED9CC;
+            border-top: 1px solid var(--audiovisivamente-green-1);
             color: #181616;
-            
+
             #logoFooter {
                 max-height: 140px;
             }
-            #footer_links {
-                img {
-                    filter: invert(1) sepia(100);
-                }
+
+            // ── Social icon circles (Audiovisivamente — green on white) ───
+            .social_icon_wrap {
+                background-color: var(--audiovisivamente-green-1);
+                color: #fff;
             }
         }
+
         #logoFooter {
             max-height: 170px;
-        }
-        .social_icons {
-            height: 30px;
-            margin-right: 20px;
         }
         .logoWrapper {
     

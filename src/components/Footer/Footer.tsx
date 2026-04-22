@@ -1,37 +1,39 @@
 import { useLocation } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import type { IconProp } from '@fortawesome/fontawesome-svg-core'
 import './footer.scss'
 
 const Footer = () => {
     const withPublicUrl = (p: string) => `${process.env.PUBLIC_URL}${p.startsWith('/') ? '' : '/'}${p}`
     const page = useLocation().pathname
-    const pageDark = page === '/' 
-    const noSplatter = page !== '/' 
+    const pageDark = page === '/'
+    const noSplatter = page !== '/'
     const audiovisivamente = page.includes('audiovisivamente')
     return (
         <div className={pageDark ? 'footer darkFt' : 'footer'}>
-            <img 
+            <img
                 id='footer_splatter'
                 src={withPublicUrl('/varie/footer-splatter.png')}
                 alt='Footer Talea Splash'
                 className={noSplatter ? 'hide' : ''}
             />
-            <div id='footerContentWrapper'  className={audiovisivamente ? 'footer_aud' : ''}>
+            <div id='footerContentWrapper' className={audiovisivamente ? 'footer_aud' : ''}>
                 <div className="logoWrapper">
                     {
-                        audiovisivamente 
-                        ? 
-                        <img 
+                        audiovisivamente
+                        ?
+                        <img
                             id='logoFooter'
                             src={withPublicUrl('/loghi/logo_webHD_0006_black_just_logo.png')}
                             alt='Talea Non Circolare'
                         />
-                        : 
-                        <img 
+                        :
+                        <img
                             id='logoFooter'
                             src={withPublicUrl('/loghi/logo_webHD_0005_orange_circle_just_logo 1.png')}
                             alt='Talea Non Circolare'
                         />
-                         
                     }
                 </div>
                 <div id="footer_text_wrapper">
@@ -43,9 +45,15 @@ const Footer = () => {
                     <div className='flex flex-column' id='seguici_wrapper'>
                         <p className="my-0">Seguici</p>
                         <div className="mt-15" id='footer_links'>
-                            <img src={withPublicUrl('/icons/facebook-icon.png')} alt="facebook" className="social_icons" />
-                            <img src={withPublicUrl('/icons/instagram-icon.png')} alt="instagram" className="social_icons" />
-                            <img src={withPublicUrl('/icons/youtbe-icon.png')} alt="youtube" className="social_icons" />
+                            <a href="https://www.facebook.com/taleaproduzioni" target="_blank" rel="noreferrer" className="social_icon_wrap" aria-label="Facebook">
+                                <FontAwesomeIcon icon={faFacebookF as IconProp} />
+                            </a>
+                            <a href="https://www.instagram.com/taleaproduzioni" target="_blank" rel="noreferrer" className="social_icon_wrap" aria-label="Instagram">
+                                <FontAwesomeIcon icon={faInstagram as IconProp} />
+                            </a>
+                            <a href="https://www.youtube.com/@taleaproduzioni" target="_blank" rel="noreferrer" className="social_icon_wrap" aria-label="YouTube">
+                                <FontAwesomeIcon icon={faYoutube as IconProp} />
+                            </a>
                         </div>
                     </div>
                 </div>

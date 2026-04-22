@@ -52,8 +52,8 @@ const NavigationBarSmallScreen = () => {
                         <div className='navBarSm'>
                             {taleaAudio === 'talea' ? (
                                 <>
-                                    <NavLink className="navLinksSmScreen" to={'/'} onClick={closeMenu}>
-                                        <p>Home Page</p>
+                                    <NavLink className="navLinksSmScreen logoNav" to={'/'} end onClick={closeMenu}>
+                                        <img src={withPublicUrl('/loghi/logo_talea-letter.png')} alt='Talea' />
                                     </NavLink>
                                     <NavLink className="navLinksSmScreen" to={'/servizi'} onClick={closeMenu}>
                                         <p>Servizi</p>
@@ -64,8 +64,8 @@ const NavigationBarSmallScreen = () => {
                                     <NavLink className="navLinksSmScreen" to={'/contatti'} onClick={closeMenu}>
                                         <p>Contatti</p>
                                     </NavLink>
-                                    <NavLink className="navLinksSmScreen" to={'/audiovisivamente'} onClick={closeMenu}>
-                                        <p>Audiovisivamente</p>
+                                    <NavLink className="navLinksSmScreen audioviLogoNav" to={'/audiovisivamente'} onClick={closeMenu}>
+                                        <img src={withPublicUrl('/loghi/AVM_orange.png')} alt='Audiovisivamente' />
                                     </NavLink>
                                 </>
                             ) : (

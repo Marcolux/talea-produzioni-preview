@@ -105,6 +105,11 @@
     // ── Control bar ──────────────────────────────────────────────────────
     &:hover &__controls { opacity: 1; }
 
+    // always visible on touch devices (no hover)
+    @media (hover: none) {
+        &__controls { opacity: 1; }
+    }
+
     &__controls {
         position: absolute;
         bottom: 0;

@@ -6,6 +6,10 @@
 
     // ─── Audiovisivamente variant ─────────────────────────────────
     &.audiovisivamenteNav {
+        .hambContainer {
+            background-color: #CED9CC;
+            border-radius: 8px;
+        }
         .hamburger-menu .bar {
             background-color: var(--audiovisivamente-green-1);
         }
@@ -13,8 +17,11 @@
 
     // ─── Hamburger ────────────────────────────────────────────────
     .hambContainer {
+        background: none;
+        border: none;
         cursor: pointer;
         padding: 10px;
+        position: relative;
         z-index: 200;
 
         .hamburger-menu {
@@ -30,18 +37,16 @@
                 border-radius: 2px;
                 height: 2px;
                 transition: transform 0.3s ease, opacity 0.3s ease;
+                transform-origin: center;
                 width: 100%;
-
-                &#bar1 { transform-origin: top left; }
-                &#bar3 { transform-origin: bottom left; }
             }
         }
 
         &.open .hamburger-menu {
             .bar {
-                &#bar1 { transform: rotate(45deg) translate(1px, -2px); }
+                &#bar1 { transform: translateY(9px) rotate(45deg); }
                 &#bar2 { opacity: 0; }
-                &#bar3 { transform: rotate(-45deg) translate(1px, 2px); }
+                &#bar3 { transform: translateY(-9px) rotate(-45deg); }
             }
         }
     }
@@ -59,7 +64,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 2rem;
             height: 100%;
             justify-content: center;
             padding: 2rem;
@@ -68,24 +73,61 @@
             .navLinksSmScreen {
                 color: var(--navbar-text-color);
                 font-family: var(--navbar-fontFamily);
-                font-size: clamp(1.2rem, 5vw, 1.8rem);
+                font-size: clamp(0.95rem, 4vw, 1.3rem);
                 font-weight: var(--navbar-fontWeight);
                 letter-spacing: 0.08em;
                 text-decoration: none;
                 text-transform: uppercase;
-                transition: opacity 0.2s ease;
+                transition: background-color 0.25s ease, color 0.25s ease, opacity 0.25s ease;
+                border-radius: 999px;
+                padding: 0.5rem 1.25rem;
+                opacity: 0.8;
 
                 p { margin: 0; }
 
-                &:hover { opacity: 0.5; }
+                &:hover { opacity: 1; }
 
                 &.active {
+                    background-color: var(--navbar-text-color);
+                    color: var(--navbar-background);
                     opacity: 1;
-                    text-decoration: underline;
-                    text-underline-offset: 6px;
+                }
+
+                &.logoNav {
+                    background-color: transparent;
+                    padding: 0;
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+
+                    img {
+                        max-height: 40px;
+                        width: auto;
+                        display: block;
+                    }
+
+                    &.active { background-color: transparent; }
+                }
+
+                &.audioviLogoNav {
+                    background-color: transparent;
+                    padding: 0;
+                    margin-top: auto;
+
+                    &:hover { opacity: 0.5; }
+
+                    img {
+                        max-height: 56px;
+                        width: auto;
+                        display: block;
+                    }
                 }
             }
         }
+    }
+
+    // audiovisivamente bar color — must come after .hambContainer to win the cascade
+    &.audiovisivamenteNav .hambContainer .hamburger-menu .bar {
+        background-color: var(--audiovisivamente-green-1);
     }
 
     // ─── Audiovisivamente menu links ──────────────────────────────
@@ -116,6 +158,7 @@
             }
 
             &.logoNav {
+                margin-top: 3rem;
                 margin-bottom: 1rem;
 
                 img {
@@ -127,6 +170,10 @@
                     background-color: transparent;
                     filter: drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335));
                 }
+            }
+
+            &:last-child {
+                margin-top: auto;
             }
         }
     }

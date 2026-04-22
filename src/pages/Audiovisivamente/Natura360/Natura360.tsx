@@ -5,7 +5,7 @@ import "./natura360.scss"
 
 const withPublicUrl = (p: string) => `${process.env.PUBLIC_URL}${p.startsWith("/") ? "" : "/"}${p}`
 const VIDEO_SRC   = 'https://res.cloudinary.com/drdrs6pdq/video/upload/v1776138605/Audiovisivamente/Clip_2_-_video_360_oay93b.mp4'
-const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/poster.jpg') // 📌 replace poster.jpg with your image filename
+const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/poster.jpg') 
 
 declare global {
     namespace JSX {
@@ -21,7 +21,9 @@ const Player360 = () => {
     const [playing, setPlaying] = useState(false)
     const [paused, setPaused]   = useState(false)
     const [progress, setProgress] = useState(0)
+    const [isFullscreen, setIsFullscreen] = useState(false)
     const videoRef = useRef<HTMLVideoElement>(null)
+    const containerRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         require('aframe')
@@ -54,8 +56,26 @@ const Player360 = () => {
         video.currentTime = (Number(e.target.value) / 100) * video.duration
     }
 
+    const toggleFullscreen = () => {
+        const el = containerRef.current
+        if (!el) return
+        if (!document.fullscreenElement) {
+            el.requestFullscreen()
+            setIsFullscreen(true)
+        } else {
+            document.exitFullscreen()
+            setIsFullscreen(false)
+        }
+    }
+
+    useEffect(() => {
+        const onFsChange = () => setIsFullscreen(!!document.fullscreenElement)
+        document.addEventListener('fullscreenchange', onFsChange)
+        return () => document.removeEventListener('fullscreenchange', onFsChange)
+    }, [])
+
     return (
-        <div className="player360">
+        <div className="player360" ref={containerRef}>
             <video
                 ref={videoRef}
                 id="video360"
