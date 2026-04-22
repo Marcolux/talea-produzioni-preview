@@ -4,8 +4,9 @@ import "../../page.scss"
 import "./natura360.scss"
 
 const withPublicUrl = (p: string) => `${process.env.PUBLIC_URL}${p.startsWith("/") ? "" : "/"}${p}`
-const VIDEO_SRC   = 'https://res.cloudinary.com/drdrs6pdq/video/upload/v1776138605/Audiovisivamente/Clip_2_-_video_360_oay93b.mp4'
-const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/poster.jpg') 
+const VIDEO_SRC_1 = 'https://res.cloudinary.com/drdrs6pdq/video/upload/v1776826474/Talea/VID_20260303_104052_00_037_sjtwjy.mp4'
+const VIDEO_SRC_2 = 'https://res.cloudinary.com/drdrs6pdq/video/upload/v1776138605/Audiovisivamente/Clip_2_-_video_360_oay93b.mp4'
+const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/poster.jpg')
 
 declare global {
     namespace JSX {
@@ -16,8 +17,9 @@ declare global {
         }
     }
 }
-
-const Player360 = () => {
+let playerCount = 0
+const Player360 = ({ src }: { src: string }) => {
+    const [videoId] = useState(() => `video360_${++playerCount}`)
     const [playing, setPlaying] = useState(false)
     const [paused, setPaused]   = useState(false)
     const [progress, setProgress] = useState(0)
@@ -78,8 +80,8 @@ const Player360 = () => {
         <div className="player360" ref={containerRef}>
             <video
                 ref={videoRef}
-                id="video360"
-                src={VIDEO_SRC}
+                id={videoId}
+                src={src}
                 poster={POSTER_SRC}
                 preload="none"
                 crossOrigin="anonymous"
@@ -100,7 +102,7 @@ const Player360 = () => {
 
             {playing && (
                 <a-scene embedded vr-mode-ui="enabled: true" className="player360__scene">
-                    <a-videosphere src="#video360" rotation="0 -90 0" />
+                    <a-videosphere src={`#${videoId}`} rotation="0 -90 0" />
                     <a-camera look-controls="reverseMouseDrag: false" />
                 </a-scene>
             )}
@@ -145,8 +147,12 @@ const Natura360 = () => {
                 </div>
             </section>
             <section className="natura360__player">
-                <p className="natura360__label">Versione locale</p>
-                <Player360 />
+                <p className="natura360__label">Versione Nuova con Audio</p>
+                <Player360 src={VIDEO_SRC_1} />
+            </section>
+            <section className="natura360__player">
+                <p className="natura360__label">Versione Senza Audio</p>
+                <Player360 src={VIDEO_SRC_2} />
             </section>
             <section className="natura360__player">
                 <p className="natura360__label">Versione YouTube</p>

@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import type { IconProp } from '@fortawesome/fontawesome-svg-core'
 import './footer.scss'
 
 const Footer = () => {
@@ -46,13 +45,13 @@ const Footer = () => {
                         <p className="my-0">Seguici</p>
                         <div className="mt-15" id='footer_links'>
                             <a href="https://www.facebook.com/taleaproduzioni" target="_blank" rel="noreferrer" className="social_icon_wrap" aria-label="Facebook">
-                                <FontAwesomeIcon icon={faFacebookF as IconProp} />
+                                <FontAwesomeIcon icon={faFacebookF as any} />
                             </a>
                             <a href="https://www.instagram.com/taleaproduzioni" target="_blank" rel="noreferrer" className="social_icon_wrap" aria-label="Instagram">
-                                <FontAwesomeIcon icon={faInstagram as IconProp} />
+                                <FontAwesomeIcon icon={faInstagram as any} />
                             </a>
                             <a href="https://www.youtube.com/@taleaproduzioni" target="_blank" rel="noreferrer" className="social_icon_wrap" aria-label="YouTube">
-                                <FontAwesomeIcon icon={faYoutube as IconProp} />
+                                <FontAwesomeIcon icon={faYoutube as any} />
                             </a>
                         </div>
                     </div>

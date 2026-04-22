@@ -171,7 +171,7 @@ const Carousel = (props: CarouselProps) => {
                             onClick={toggleFullscreen}
                             aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
                         >
-                            <FontAwesomeIcon icon={isFullscreen ? faCompress : faExpand} />
+                            <FontAwesomeIcon icon={(isFullscreen ? faCompress : faExpand) as any} />
                         </button>
                         :
                         <></>
