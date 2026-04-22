@@ -26,11 +26,11 @@ const withPublicUrl = (p: string) => `${process.env.PUBLIC_URL}${p.startsWith("/
 
 const PreschoolFlipBook = ({ images, id, className = "" }: PreschoolFlipBookProps) => {
     const bookRef = useRef<any>(null)
-    const [isPortrait, setIsPortrait] = useState(() => window.innerWidth < 768)
+    const [isPortrait, setIsPortrait] = useState(() => window.innerWidth < 1024)
     const [, setCurrentPage] = useState(0)
     
     const [dims, setDims] = useState(() => {
-        const mobile = window.innerWidth < 768
+        const mobile = window.innerWidth < 1024
         return {
             width: mobile
                 ? Math.round(window.innerWidth * 0.95)
@@ -43,7 +43,7 @@ const PreschoolFlipBook = ({ images, id, className = "" }: PreschoolFlipBookProp
 
     useEffect(() => {
         const calculate = () => {
-            const mobile = window.innerWidth < 768
+            const mobile = window.innerWidth < 1024
 
             setIsPortrait(mobile)
             setDims({
