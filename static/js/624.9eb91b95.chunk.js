@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktalea_produzioni_preview=self.webpackChunktalea_produzioni_preview||[]).push([[624],{624:(e,a,i)=>{i.r(a),i.d(a,{default:()=>l});i(396);var s=i(579);const l=()=>(0,s.jsx)("div",{className:"page",children:(0,s.jsx)("h1",{children:"Talea Hub"})})},396:()=>{}}]);
+//# sourceMappingURL=624.9eb91b95.chunk.js.map
