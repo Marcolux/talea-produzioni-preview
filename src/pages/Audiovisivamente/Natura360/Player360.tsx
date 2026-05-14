@@ -1,10 +1,20 @@
 import { useEffect, useRef, useState } from "react"
 
-const Player360 = ({ src, playerCount, POSTER_SRC }: { src: string, playerCount: number, POSTER_SRC: string }) => {
-    const [videoId] = useState(() => `video360_${++playerCount}`)
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            'a-scene': any
+            'a-videosphere': any
+            'a-camera': any
+        }
+    }
+}
+
+const Player360 = ({ src, videoId, POSTER_SRC }: { src: string, videoId: string, POSTER_SRC: string }) => {
     const [playing, setPlaying] = useState(false)
     const [paused, setPaused]   = useState(false)
     const [progress, setProgress] = useState(0)
+    const [isFullscreen, setIsFullscreen] = useState(false)
     const videoRef = useRef<HTMLVideoElement>(null)
     const containerRef = useRef<HTMLDivElement>(null)
 
@@ -19,6 +29,12 @@ const Player360 = ({ src, playerCount, POSTER_SRC }: { src: string, playerCount:
         video.addEventListener('timeupdate', onTimeUpdate)
         return () => video.removeEventListener('timeupdate', onTimeUpdate)
     }, [playing])
+
+    useEffect(() => {
+        const onFsChange = () => setIsFullscreen(!!document.fullscreenElement)
+        document.addEventListener('fullscreenchange', onFsChange)
+        return () => document.removeEventListener('fullscreenchange', onFsChange)
+    }, [])
 
     const handlePlay = () => {
         videoRef.current?.play()
@@ -37,6 +53,16 @@ const Player360 = ({ src, playerCount, POSTER_SRC }: { src: string, playerCount:
         const video = videoRef.current
         if (!video) return
         video.currentTime = (Number(e.target.value) / 100) * video.duration
+    }
+
+    const toggleFullscreen = () => {
+        const el = containerRef.current
+        if (!el) return
+        if (!document.fullscreenElement) {
+            el.requestFullscreen().catch(() => {})
+        } else {
+            document.exitFullscreen()
+        }
     }
 
     return (
@@ -82,6 +108,9 @@ const Player360 = ({ src, playerCount, POSTER_SRC }: { src: string, playerCount:
                         value={progress}
                         onChange={handleSeek}
                     />
+                    <button className="player360__controls__btn player360__controls__fullscreen" onClick={toggleFullscreen} title={isFullscreen ? 'Esci dal fullscreen' : 'Fullscreen'}>
+                        {isFullscreen ? '⊡' : '⛶'}
+                    </button>
                 </div>
             )}
         </div>

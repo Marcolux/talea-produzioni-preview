@@ -1,23 +1,12 @@
 import { useInView } from "react-intersection-observer"
+import Player360 from "./Player360"
 import "../../page.scss"
 import "./natura360.scss"
-import Player360 from "./Player360"
 
 const withPublicUrl = (p: string) => `${process.env.PUBLIC_URL}${p.startsWith("/") ? "" : "/"}${p}`
 const VIDEO_SRC_6 = 'https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/Costa_Ripagnola_TEST%201%20700Mb%20for%20S3.mp4'
 const VIDEO_SRC_7 = 'https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/Costa%20Ripagnola_file_da_1GB.mp4'
 const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/poster.jpg')
-
-declare global {
-    namespace JSX {
-        interface IntrinsicElements {
-            'a-scene': any
-            'a-videosphere': any
-            'a-camera': any
-        }
-    }
-}
-let playerCount = 0
 
 const Natura360 = () => {
     const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
@@ -43,12 +32,12 @@ const Natura360 = () => {
 
             <section className="natura360__player">
                 <p className="natura360__label">Costa Ripagnola TEST 1 Versione Marco S3 API Load</p>
-                <Player360 src={VIDEO_SRC_6} POSTER_SRC={POSTER_SRC} playerCount={playerCount} />
+                <Player360 src={VIDEO_SRC_6} POSTER_SRC={POSTER_SRC} videoId="video360_1" />
             </section>
 
             <section className="natura360__player">
                 <p className="natura360__label">Costa Ripagnola S3 API Load over 1GB</p>
-                <Player360 src={VIDEO_SRC_7} POSTER_SRC={POSTER_SRC} playerCount={playerCount} />
+                <Player360 src={VIDEO_SRC_7} POSTER_SRC={POSTER_SRC} videoId="video360_2" />
             </section>
         </div>
     )
