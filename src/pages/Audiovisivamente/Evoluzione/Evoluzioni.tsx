@@ -80,8 +80,10 @@ const Evoluzioni = () => {
         <h1 ref={heroTextRef} className={`heroTitle ${inViewHeroText ? "inView" : ""} `}>Evoluzioni</h1>
         <div ref={heroDescrRef} className={`${inViewHeroDescr ? "inView" : "" } hero_desc_wrapper`}>
           <p className="col-12" lang="it">
-            Le studentesse e gli studenti della scuola secondaria di II grado ITET Le Noci hanno proiettato nel futuro le immagini del presente. 
-            Partendo dagli scatti fotografici realizzati dalla scuola primaria, i ragazzi hanno utilizzato l’Intelligenza Artificiale per generare scenari inediti e mondi distopici. 
+            Le studentesse e gli studenti dell'Istituto Tecnico Economico e Tecnologico Statale Lenoci-Euclide 
+            hanno proiettato nel futuro le immagini del presente. 
+            Partendo dagli scatti fotografici realizzati dalla scuola primaria, 
+            i ragazzi hanno utilizzato l'intelligenza artificiale per generare scenari inediti e mondi distopici.
           </p>
           <p className="col-12" lang="it">
             Un esercizio creativo e tecnologico per visualizzare gli effetti estremi della crisi ambientale e riflettere sulle sfide del nostro tempo.

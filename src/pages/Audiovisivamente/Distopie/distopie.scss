@@ -143,6 +143,10 @@
             transform: translateY(0);
         }
     }
+    #videoCorto {
+        height: 90dvh;
+        width: auto;
+    }
 
     @media (max-width: 700px) {
         .magGallery {
@@ -168,6 +172,10 @@
                     }
                 }
             }
+        }
+        #videoCorto {
+            height: auto;
+            width: 100vw;
         }
     }
 

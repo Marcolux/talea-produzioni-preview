@@ -112,7 +112,7 @@ const PreschoolFlipBook = ({ images, id, className = "" }: PreschoolFlipBookProp
                     <h2 className="coverKicker my-0">AudiovisivaMENTE</h2>
                     <p className="coverSubtitle my-30">Spazi Ecologici e Digitali</p>
                     <p className="home_description my-0">
-                        Il progetto Audiovisivamente integra educazione ambientale, civica e digitale,
+                        Il progetto AudiovisivaMENTE: spazi ecologici e digitali, formazione e consapevolezza, integra educazione ambientale, civica e digitale,
                         utilizzando il linguaggio audiovisivo come strumento di apprendimento trasversale.
                     </p>
                     <p className="home_description">
@@ -163,8 +163,8 @@ const PreschoolFlipBook = ({ images, id, className = "" }: PreschoolFlipBookProp
             <div className="scrapbookPage__paper">
                 <div className="pageTitDesc flex flex-column flex-alignItems-center flex-justifyContent-center">
                     <p className="home_description my-0">
-                        Le fotografie analogiche scattate dai bambini delle Scuole Primarie Don Orione e San Francesco, come in una piccola staffetta,
-                        sono arrivate nelle mani dei bambini della Scuola dell'Infanzia San Francesco.
+                        Le fotografie analogiche scattate dai bambini delle Scuole Primarie Don Orione e San Francesco, come in una piccola staffetta, 
+                        sono arrivate nelle mani dei bambini delle scuole dell'Infanzia San Francesco e Don Orione.
                     </p>
                     <p className="home_description">
                         Le nostre esperte ZicZic, per l'occasione hanno ricreato una camera ottica artigianale,
@@ -252,7 +252,7 @@ const PreschoolFlipBook = ({ images, id, className = "" }: PreschoolFlipBookProp
                     <p className="pageTitle">ECO VIRTUAL TOUR</p>
                     <p className="home_description my-0">
                         Esplorare la natura in un cammino immersivo fatto di suoni, immagini e parole.
-                        Due classi della scuola secondaria di I° grado dell'@Istituto Comprensivo Japigia 1 Verga hanno esplorato la riserva naturale di Costa Ripagnola insieme a Alessandro De Luisi, guida turistica e presidente dell'Associazione Pugliarte e i professionisti dell'Associazione Talea, Cristina D'Eredità, Dario Mattia e Paola Sarappa.
+                        Due classi della scuola secondaria di I° grado dell'Istituto Comprensivo Japigia 1 Verga hanno esplorato la riserva naturale di Costa Ripagnola insieme a Alessandro De Luisi, guida turistica e presidente dell'Associazione Pugliarte e i professionisti dell'Associazione Talea, Cristina D'Eredità, Dario Mattia e Paola Sarappa.
                     </p>
                     <p className="home_description">
                         Con microfoni, registratori e telecamere alla mano, attraverso l'applicazione della tecnologia audiovisiva 360° i ragazzi hanno captato tutta l'essenza del luogo.

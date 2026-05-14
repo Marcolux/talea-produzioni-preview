@@ -140,9 +140,9 @@ const HomePage = () => {
                     />
                     <FlippingCardCK 
                         id="talea_home_card_5" 
-                        imgSrc={withPublicUrl(`/immagini-pagine/homepage/Strings.jpeg`)} 
-                        imgAlt="hello from the other side"
-                        overlayText=""
+                        imgSrc={withPublicUrl(`/immagini-pagine/homepage/Strings.webp`)} 
+                        imgAlt="Sounds from Human Collective Intelligence"
+                        overlayText="Sounds from Human Collective Intelligence"
                         backText={
                             <div className="flex flex-column backText">
                                 <h3 className="backTitle primaryColor">
@@ -163,7 +163,7 @@ const HomePage = () => {
                     <FlippingCardCK 
                         id="talea_home_card_3" 
                         imgSrc={withPublicUrl(`/immagini-pagine/homepage/HOME_NEWS_META_COVER.jpg`)} 
-                        imgAlt="hello from the other side"
+                        imgAlt="META Talea"
                         overlayText={
                             <img
                                 src={withPublicUrl(`/immagini-pagine/homepage/Meta_awards_white.png`)}

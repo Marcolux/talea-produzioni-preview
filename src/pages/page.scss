@@ -189,7 +189,7 @@
                 min-width: fit-content;
                 opacity: 0;
                 margin-top: 70px;
-                transform: translateY(0) translateX(-300px);
+                transform: translateY(0) translateX(-100px);
                 z-index: 1;
                 &.inView {
                     animation: audiovisivamente_title_animation 2s cubic-bezier(.2,.6,.2,1) forwards;
