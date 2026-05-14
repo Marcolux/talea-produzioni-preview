@@ -40,6 +40,15 @@ const Player360 = ({ src, videoId, POSTER_SRC }: { src: string, videoId: string,
         videoRef.current?.play()
         setPlaying(true)
         setPaused(false)
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: '360° Eco Virtual Tour',
+                artist: 'Talea Produzioni',
+                artwork: [{ src: POSTER_SRC, sizes: '512x512', type: 'image/jpeg' }],
+            })
+            navigator.mediaSession.setActionHandler('play', () => { videoRef.current?.play(); setPaused(false) })
+            navigator.mediaSession.setActionHandler('pause', () => { videoRef.current?.pause(); setPaused(true) })
+        }
     }
 
     const togglePause = () => {

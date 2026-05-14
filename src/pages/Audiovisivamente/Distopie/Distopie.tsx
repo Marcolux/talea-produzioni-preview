@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react"
 import { useInView } from "react-intersection-observer"
 import MagazineGallery from "./MagazineGallery/MagazineGallery"
 import "../../page.scss"
@@ -17,13 +18,31 @@ const filmImages = [
 
 
 
+const POSTER_CORTO = withPublicUrl('/immagini-pagine/audiovisivamente/distopie/cortometraggio-lenoci/distopie-poster.jpg')
+
 const Distopie = () => {
+    const videoCortoRef = useRef<HTMLVideoElement>(null)
     const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
     const [heroTextRefBot, inViewHeroTextBot] = useInView({ threshold: .1, triggerOnce: false })
     const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
     const [heroDescrRef2, inViewHeroDescr2] = useInView({ threshold: .1, triggerOnce: false })
     const [topRef, inViewTop] = useInView({ threshold: 0, triggerOnce: true })
     const [bottomRef, inViewBottom] = useInView({ threshold: 0, triggerOnce: true })
+
+    useEffect(() => {
+        const video = videoCortoRef.current
+        if (!video) return
+        const onPlay = () => {
+            if (!('mediaSession' in navigator)) return
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: 'Love Bot — Cortometraggio',
+                artist: 'Talea Produzioni',
+                artwork: [{ src: POSTER_CORTO, sizes: '512x512', type: 'image/jpeg' }],
+            })
+        }
+        video.addEventListener('play', onPlay)
+        return () => video.removeEventListener('play', onPlay)
+    }, [])
 
     return (
         <div className="page audiovisivamente__page" id="audiovisivamente__distopie">
@@ -83,11 +102,12 @@ const Distopie = () => {
                 <h1 ref={heroTextRefBot} className={`heroTitle ${inViewHeroTextBot ? "inView" : ""}`}>Cortometraggio</h1>
 
                 <video
+                    ref={videoCortoRef}
                     playsInline
                     webkit-playsinline
                     controls
                     preload="metadata"
-                    poster={withPublicUrl('/immagini-pagine/audiovisivamente/distopie/cortometraggio-lenoci/distopie-poster.jpg')}
+                    poster={POSTER_CORTO}
                     crossOrigin="anonymous"
                     id="videoCorto"
                 >
