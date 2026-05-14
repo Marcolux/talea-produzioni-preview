@@ -30,6 +30,7 @@ const Player360 = ({ src, videoId, POSTER_SRC }: { src: string, videoId: string,
         return () => video.removeEventListener('timeupdate', onTimeUpdate)
     }, [playing])
 
+    // Native fullscreen tracking (Android/desktop — not fired on iOS)
     useEffect(() => {
         const onFsChange = () => setIsFullscreen(!!document.fullscreenElement)
         document.addEventListener('fullscreenchange', onFsChange)
@@ -67,15 +68,26 @@ const Player360 = ({ src, videoId, POSTER_SRC }: { src: string, videoId: string,
     const toggleFullscreen = () => {
         const el = containerRef.current
         if (!el) return
-        if (!document.fullscreenElement) {
-            el.requestFullscreen().catch(() => {})
+        if (document.fullscreenEnabled) {
+            // Android / desktop: native fullscreen; state updated by fullscreenchange listener
+            if (!document.fullscreenElement) {
+                el.requestFullscreen().catch(() => {})
+            } else {
+                document.exitFullscreen()
+            }
         } else {
-            document.exitFullscreen()
+            // iOS Safari: CSS fake fullscreen
+            setIsFullscreen(prev => !prev)
         }
     }
 
     return (
-        <div className="player360" ref={containerRef}>
+        <div
+            className={`player360${isFullscreen ? ' player360--fullscreen' : ''}`}
+            ref={containerRef}
+            // Prevent browser from capturing vertical touch drags as page scroll
+            style={playing ? { touchAction: 'none' } : undefined}
+        >
             <video
                 ref={videoRef}
                 id={videoId}
@@ -117,7 +129,11 @@ const Player360 = ({ src, videoId, POSTER_SRC }: { src: string, videoId: string,
                         value={progress}
                         onChange={handleSeek}
                     />
-                    <button className="player360__controls__btn player360__controls__fullscreen" onClick={toggleFullscreen} title={isFullscreen ? 'Esci dal fullscreen' : 'Fullscreen'}>
+                    <button
+                        className="player360__controls__btn player360__controls__fullscreen"
+                        onClick={toggleFullscreen}
+                        title={isFullscreen ? 'Esci dal fullscreen' : 'Fullscreen'}
+                    >
                         {isFullscreen ? '⊡' : '⛶'}
                     </button>
                 </div>

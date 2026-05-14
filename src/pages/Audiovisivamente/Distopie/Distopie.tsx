@@ -16,8 +16,6 @@ const filmImages = [
     '6.webp','7.webp','8.webp','9.webp','10.webp'
 ].map(image_url => withPublicUrl(`/immagini-pagine/audiovisivamente/distopie/cortometraggio-lenoci/${image_url}`))
 
-
-
 const POSTER_CORTO = withPublicUrl('/immagini-pagine/audiovisivamente/distopie/cortometraggio-lenoci/distopie-poster.jpg')
 
 const Distopie = () => {

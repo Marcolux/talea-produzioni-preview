@@ -32,6 +32,15 @@
     background: #0a0a0a;
     overflow: hidden;
 
+    &--fullscreen {
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100vw !important;
+        height: 100dvh !important;
+        aspect-ratio: unset !important;
+        z-index: 9999 !important;
+    }
+
     // ── Play button overlay ──────────────────────────────────────────────
     &__playBtn {
         position: absolute;
