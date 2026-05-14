@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/talea-produzioni-preview/static/css/main.0e7e9f8f.css",
-    "main.js": "/talea-produzioni-preview/static/js/main.c92e76fc.js",
+    "main.js": "/talea-produzioni-preview/static/js/main.cfcd67ff.js",
     "static/css/975.0bf4ba1b.chunk.css": "/talea-produzioni-preview/static/css/975.0bf4ba1b.chunk.css",
     "static/js/975.b56ace6e.chunk.js": "/talea-produzioni-preview/static/js/975.b56ace6e.chunk.js",
     "static/css/458.b744e403.chunk.css": "/talea-produzioni-preview/static/css/458.b744e403.chunk.css",
@@ -22,8 +22,8 @@
     "static/js/827.ee807de9.chunk.js": "/talea-produzioni-preview/static/js/827.ee807de9.chunk.js",
     "static/css/763.2e775ec6.chunk.css": "/talea-produzioni-preview/static/css/763.2e775ec6.chunk.css",
     "static/js/763.9f6b5fa4.chunk.js": "/talea-produzioni-preview/static/js/763.9f6b5fa4.chunk.js",
-    "static/css/429.99b374a9.chunk.css": "/talea-produzioni-preview/static/css/429.99b374a9.chunk.css",
-    "static/js/429.eaf3fc04.chunk.js": "/talea-produzioni-preview/static/js/429.eaf3fc04.chunk.js",
+    "static/css/429.7557078c.chunk.css": "/talea-produzioni-preview/static/css/429.7557078c.chunk.css",
+    "static/js/429.94b3c71b.chunk.js": "/talea-produzioni-preview/static/js/429.94b3c71b.chunk.js",
     "static/js/453.3121b126.chunk.js": "/talea-produzioni-preview/static/js/453.3121b126.chunk.js",
     "static/js/929.0ded3e06.chunk.js": "/talea-produzioni-preview/static/js/929.0ded3e06.chunk.js",
     "static/js/394.a630fbac.chunk.js": "/talea-produzioni-preview/static/js/394.a630fbac.chunk.js",
@@ -61,7 +61,7 @@
     "static/media/San Marino.ttf": "/talea-produzioni-preview/static/media/San Marino.ab10e1487963479b7844.ttf",
     "index.html": "/talea-produzioni-preview/index.html",
     "main.0e7e9f8f.css.map": "/talea-produzioni-preview/static/css/main.0e7e9f8f.css.map",
-    "main.c92e76fc.js.map": "/talea-produzioni-preview/static/js/main.c92e76fc.js.map",
+    "main.cfcd67ff.js.map": "/talea-produzioni-preview/static/js/main.cfcd67ff.js.map",
     "975.0bf4ba1b.chunk.css.map": "/talea-produzioni-preview/static/css/975.0bf4ba1b.chunk.css.map",
     "975.b56ace6e.chunk.js.map": "/talea-produzioni-preview/static/js/975.b56ace6e.chunk.js.map",
     "458.b744e403.chunk.css.map": "/talea-produzioni-preview/static/css/458.b744e403.chunk.css.map",
@@ -82,8 +82,8 @@
     "827.ee807de9.chunk.js.map": "/talea-produzioni-preview/static/js/827.ee807de9.chunk.js.map",
     "763.2e775ec6.chunk.css.map": "/talea-produzioni-preview/static/css/763.2e775ec6.chunk.css.map",
     "763.9f6b5fa4.chunk.js.map": "/talea-produzioni-preview/static/js/763.9f6b5fa4.chunk.js.map",
-    "429.99b374a9.chunk.css.map": "/talea-produzioni-preview/static/css/429.99b374a9.chunk.css.map",
-    "429.eaf3fc04.chunk.js.map": "/talea-produzioni-preview/static/js/429.eaf3fc04.chunk.js.map",
+    "429.7557078c.chunk.css.map": "/talea-produzioni-preview/static/css/429.7557078c.chunk.css.map",
+    "429.94b3c71b.chunk.js.map": "/talea-produzioni-preview/static/js/429.94b3c71b.chunk.js.map",
     "453.3121b126.chunk.js.map": "/talea-produzioni-preview/static/js/453.3121b126.chunk.js.map",
     "929.0ded3e06.chunk.js.map": "/talea-produzioni-preview/static/js/929.0ded3e06.chunk.js.map",
     "394.a630fbac.chunk.js.map": "/talea-produzioni-preview/static/js/394.a630fbac.chunk.js.map",
@@ -92,6 +92,6 @@
   },
   "entrypoints": [
     "static/css/main.0e7e9f8f.css",
-    "static/js/main.c92e76fc.js"
+    "static/js/main.cfcd67ff.js"
   ]
 }
