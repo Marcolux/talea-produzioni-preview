@@ -79,7 +79,7 @@
 
 }
 
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1000px) {
     .footer {
 
         .logoWrapper {display: none !important;}
@@ -91,5 +91,21 @@
                 }
             }
         }
+    }
+}
+
+#footer_credits {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 10px 0 14px;
+    text-align: center;
+
+    a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        &:hover { color: var(--primary-color); }
     }
 }

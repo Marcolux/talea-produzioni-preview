@@ -57,6 +57,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <p id="footer_credits">Sito creato da <a href="https://blackdahliacreative.com/" target="_blank" rel="noreferrer">Black Dahlia Creative</a></p>
         </div>
     )
 }
