@@ -9,8 +9,8 @@
     "predeploy:preview": "npm run build:preview && npm run spa-fallback",
     "deploy:preview": "node scripts/deploy.js live https://github.com/Marcolux/talea-produzioni-preview.git",
     "build:official": "env-cmd -f .env.official react-scripts build",
-    "predeploy:official": "npm run build:official && npm run spa-fallback && node -e \"require('fs').writeFileSync('build/CNAME','customDomain.com')\"",
-    "deploy:official": "node scripts/deploy.js live https://github.com/Marcolux/xxxxx.git"
+    "predeploy:official": "npm run build:official && npm run spa-fallback && node -e \"require('fs').writeFileSync('build/CNAME','taleaproduzioni.it')\"",
+    "deploy:official": "node scripts/deploy.js live https://github.com/Marcolux/talea-produzioni-live.git"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
