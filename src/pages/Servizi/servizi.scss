@@ -125,7 +125,7 @@
                     height: 70svh !important;
                     margin: 0px !important;
                     width: 100% !important;
-                    img {
+                    img, &::after {
                         border-radius: 8px !important;
                     }
                     .overlay { border-radius: 8px !important;}

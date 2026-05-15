@@ -64,9 +64,9 @@ const NavigationBarSmallScreen = () => {
                                     <NavLink className="navLinksSmScreen" to={'/contatti'} onClick={closeMenu}>
                                         <p>Contatti</p>
                                     </NavLink>
-                                    <NavLink className="navLinksSmScreen audioviLogoNav" to={'/audiovisivamente'} onClick={closeMenu}>
+                                    {/* <NavLink className="navLinksSmScreen audioviLogoNav" to={'/audiovisivamente'} onClick={closeMenu}>
                                         <img src={withPublicUrl('/loghi/AVM_orange.png')} alt='Audiovisivamente' />
-                                    </NavLink>
+                                    </NavLink> */}
                                 </>
                             ) : (
                                 <>

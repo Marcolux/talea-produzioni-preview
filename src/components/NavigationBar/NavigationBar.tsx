@@ -34,13 +34,12 @@ const NavigationBar = () => {
                         <NavLink className="navLinks" to={'/talea-lab'}><p>Talea Lab</p></NavLink>
                         <NavLink className="navLinks" to={'/contatti'}><p>Contatti</p></NavLink>
                     </div>
-                    <div 
+                    {/* <div 
                         className="logoWrapper" 
                         onClick={() => {
                             setTaleaAudio('audiovisivamente')
                         }}
                     >
-                        {/* <NavLink className="navLinks" to={'/audiovisivamente'}><p>Audiovisivamente</p></NavLink> */}
                         <NavLink className="navLinks flex flex-column flex-justifyContent-center flex-alignItems-center" to={'/audiovisivamente'}>
                             <img 
                                 src={withPublicUrl('/loghi/AVM_orange.png')}
@@ -48,7 +47,7 @@ const NavigationBar = () => {
                             />
                             <p className="font-journal fontSize20">Audiovisivamente</p>
                         </NavLink>
-                    </div>
+                    </div> */}
                 
                 </>
                 :
