@@ -106,7 +106,7 @@ const Player360 = ({ src, videoId, POSTER_SRC }: { src: string, videoId: string,
                     style={{ backgroundImage: `url(${POSTER_SRC})` }}
                 >
                     <span className="player360__playIcon">▶</span>
-                    <span className="player360__playLabel">Guarda il Virtual Tour 360° Possiamo metter cio' che vogliamo</span>
+                    <span className="player360__playLabel">ECO-VIRTUAL-TOUR</span>
                 </button>
             )}
 

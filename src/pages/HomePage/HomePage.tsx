@@ -142,7 +142,7 @@ const HomePage = () => {
                         id="talea_home_card_5" 
                         imgSrc={withPublicUrl(`/immagini-pagine/homepage/Strings.webp`)} 
                         imgAlt="Sounds from Human Collective Intelligence"
-                        overlayText="Sounds from Human Collective Intelligence"
+                        overlayText=""
                         backText={
                             <div className="flex flex-column backText">
                                 <h3 className="backTitle primaryColor">
@@ -158,7 +158,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                         }
-                        cardTitle=""
+                        cardTitle="Sounds from Human Collective Intelligence"
                     />
                     <FlippingCardCK 
                         id="talea_home_card_3" 

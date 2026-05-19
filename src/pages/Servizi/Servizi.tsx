@@ -50,7 +50,7 @@ const Servizi = () => {
             servizio: "Noleggio drone con operatore"
         },
         {
-            title: "360° Eco-Virtual Tour",
+            title: "360° ECO-VIRTUAL TOUR",
             description: "Progettazione di tour in Realtà Virtuale (VR) e Aumentata (AR) con tecnologia video 360 e audio tridimensionale. Integriamo riprese sferiche e microfoni ambisonici per una ricostruzione spaziale dinamica del suono, ottimizzando la fruizione immersiva tramite visori VR e dispositivi mobili. Un workflow tecnico avanzato per la valorizzazione di percorsi eco-sostenibili attraverso esperienze sensoriali interattive e spazializzate.",
             nameInURL: "immagini-pagine/servizi/Virtual_tour_Talea.jpeg",
             servizio: "360° Eco-Virtual Tour"

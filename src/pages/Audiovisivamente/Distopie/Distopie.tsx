@@ -72,30 +72,6 @@ const Distopie = () => {
                 />
             </div>
 
-            <section className="section bottom">
-                <div ref={heroDescrRef2} className={`content hero_desc_wrapper ${inViewHeroDescr2 ? "inView" : ""}`}>
-                    <p lang="it">
-                        Le studentesse dell'Istituto Tecnico Economico e Tecnologico Statale Lenoci Euclide,
-                        in un percorso formativo coinvolgente e super creativo, guidato dal regista Antonio Palumbo
-                        hanno appreso le basi della produzione filmica e si sono subito messe alla prova con la realizzazione
-                        di un cortometraggio sull'uso sconsiderato dell'Intelligenza Artificiale.
-                    </p>
-                </div>
-                <div ref={bottomRef}>
-                    <MagazineGallery images={filmImages} inView={inViewBottom} />
-                </div>
-            </section>
-            <section className="section top"></section>
-
-            <div className="image-gap">
-                <img
-                    src={withPublicUrl('/loghi/avorio_caldo_trasparente (1).png')}
-                    alt={'Audiovisivamente'}
-                    className="scrapbookPhoto"
-                    style={{maxWidth: '600px', height: 'auto', filter: 'drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335))'}}
-                />
-            </div>
-
             <section className="section bottom heroAudio pb-40">
                 <h1 ref={heroTextRefBot} className={`heroTitle ${inViewHeroTextBot ? "inView" : ""}`}>Cortometraggio</h1>
 
@@ -112,6 +88,32 @@ const Distopie = () => {
                     <source src="https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/MASTER_LOVE%20BOT.mp4" type="video/mp4"/>
                 </video>
             </section>
+            
+            <section className="section top"></section>
+
+            <div className="image-gap">
+                <img
+                    src={withPublicUrl('/loghi/avorio_caldo_trasparente (1).png')}
+                    alt={'Audiovisivamente'}
+                    className="scrapbookPhoto"
+                    style={{maxWidth: '600px', height: 'auto', filter: 'drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335))'}}
+                />
+            </div>
+
+            <section className="section bottom">
+                <div ref={heroDescrRef2} className={`content hero_desc_wrapper ${inViewHeroDescr2 ? "inView" : ""}`}>
+                    <p lang="it">
+                        Le studentesse dell'Istituto Tecnico Economico e Tecnologico Statale Lenoci Euclide,
+                        in un percorso formativo coinvolgente e super creativo, guidato dal regista Antonio Palumbo
+                        hanno appreso le basi della produzione filmica e si sono subito messe alla prova con la realizzazione
+                        di un cortometraggio sull'uso sconsiderato dell'Intelligenza Artificiale.
+                    </p>
+                </div>
+                <div ref={bottomRef}>
+                    <MagazineGallery images={filmImages} inView={inViewBottom} />
+                </div>
+            </section>
+
         </div>
     )
 }

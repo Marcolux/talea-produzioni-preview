@@ -30,7 +30,7 @@ const Natura360 = () => {
             </section>
 
             <section className="natura360__player">
-                <p className="natura360__label">Costa Ripagnola - Video 1</p>
+                {/* <p className="natura360__label">ECO-VIRTUAL-TOUR</p> */}
                 <Player360 src={VIDEO_SRC_7} POSTER_SRC={POSTER_SRC} videoId="video360_1" />
             </section>
         </div>

@@ -1,10 +1,31 @@
 import { useInView } from "react-intersection-observer"
 import "../../page.scss"
+import { useEffect, useRef } from "react"
+import { sharedLogic } from "../../../general_services/shared_logic"
+import './cineocchio.scss'
 
 
 const Cineocchio = () => {
     const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
     const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
+
+    const videoCortoRef = useRef<HTMLVideoElement>(null)
+    const POSTER_CORTO = sharedLogic.withPublicUrl('/immagini-pagine/audiovisivamente/distopie/cortometraggio-lenoci/distopie-poster.jpg') as string
+
+    useEffect(() => {
+        const video = videoCortoRef.current
+        if (!video) return
+        const onPlay = () => {
+            if (!('mediaSession' in navigator)) return
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: 'Cineocchio — Cortometraggio',
+                artist: 'Talea Produzioni',
+                artwork: [{ src: POSTER_CORTO, sizes: '512x512', type: 'image/jpeg' }],
+            })
+        }
+        video.addEventListener('play', onPlay)
+        return () => video.removeEventListener('play', onPlay)
+    }, [])
 
     return(
         <div className="page audiovisivamente__page" id="audiovisivamente__cineocchio">
@@ -40,6 +61,19 @@ const Cineocchio = () => {
                         scoprendo come nasce un parco che profuma di futuro.
                     </p>
                 </div>
+                
+                <video
+                    ref={videoCortoRef}
+                    playsInline
+                    webkit-playsinline
+                    controls
+                    preload="metadata"
+                    poster={POSTER_CORTO}
+                    crossOrigin="anonymous"
+                    id="videoCorto_cineocchio"
+                >
+                    <source src="https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/MASTER_70126_ILCINEOCCHO.mp4" type="video/mp4"/>
+                </video>
             </section>
 
         </div>
@@ -47,3 +81,7 @@ const Cineocchio = () => {
 }
 
 export default Cineocchio
+
+function withPublicUrl(arg0: string) {
+    throw new Error("Function not implemented.")
+}

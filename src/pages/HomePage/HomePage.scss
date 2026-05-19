@@ -208,6 +208,21 @@
             }
         }
     }
+        #talea_home_card_5 {
+            .cardTitle {
+                color: #111111 !important;
+                flex: 0 0 auto !important;
+                font-size: clamp(13px, 2vw, 30px) !important;
+                font-weight: 600 !important;
+                margin: 0;
+                min-width: fit-content;
+                position: absolute;
+                bottom: 20px;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+            }
+        }
 
     @keyframes scalingUp {
         to {
