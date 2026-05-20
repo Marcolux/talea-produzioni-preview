@@ -312,6 +312,30 @@
             width: min(80%, 700px);
             z-index: 11;
         }
+
+        // iOS Safari pseudo-fullscreen (native API not supported on iOS)
+        &.fakeFullscreen {
+            background: #0B0908;
+            border-radius: 0;
+            height: 100dvh !important;
+            inset: 0 !important;
+            position: fixed !important;
+            width: 100vw !important;
+            z-index: 9999 !important;
+
+            .animatedPic .carouselSinglePic {
+                padding: 48px 80px;
+            }
+
+            .carouselFullscreenBtn {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .picCaption {
+                bottom: 20px;
+            }
+        }
     }
 
     // Preview strip for all available pictures

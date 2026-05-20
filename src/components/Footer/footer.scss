@@ -77,6 +77,33 @@
         }
     }
 
+    #footer_credits {
+        background-color: black;
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 0.75rem;
+        margin: 0;
+        padding: 10px 0 14px;
+        text-align: center;
+        &.footer_aud {
+            background-color: #CED9CC;
+            color: #000;
+            a {
+                color: #3a413a;
+                font-weight: 500;
+                text-decoration: underline;
+    
+                &:hover { color: var(--primary-color); }
+                &:active { color: #3076af; }
+            }
+        }
+
+        a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+
+            &:hover { color: var(--primary-color); }
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -94,18 +121,3 @@
     }
 }
 
-#footer_credits {
-    background-color: black;
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 0.75rem;
-    margin: 0;
-    padding: 10px 0 14px;
-    text-align: center;
-
-    a {
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-
-        &:hover { color: var(--primary-color); }
-    }
-}

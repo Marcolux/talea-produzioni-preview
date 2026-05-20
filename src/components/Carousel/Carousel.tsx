@@ -42,7 +42,16 @@ const Carousel = (props: CarouselProps) => {
 
     // Adding the fullScreen Button
     const picturesRef = useRef<HTMLDivElement>(null)
-    const [isFullscreen, setIsFullscreen] = useState(false)
+    const [isFullscreen, setIsFullscreen] = useState(false)       // native fullscreen (desktop / Android)
+    const [isFakeFullscreen, setIsFakeFullscreen] = useState(false) // CSS fallback (iOS Safari)
+
+    // iOS Safari has never supported the Fullscreen API — detect it once
+    const supportsNativeFullscreen =
+        typeof document !== 'undefined' &&
+        (!!document.fullscreenEnabled || !!(document as any).webkitFullscreenEnabled)
+
+    // Single flag consumed by the UI
+    const isActuallyFullscreen = isFullscreen || isFakeFullscreen
 
     useEffect(() => {
         const handler = () => setIsFullscreen(!!document.fullscreenElement)
@@ -51,10 +60,16 @@ const Carousel = (props: CarouselProps) => {
     }, [])
 
     const toggleFullscreen = () => {
-        if (!document.fullscreenElement) {
-            picturesRef.current?.requestFullscreen()
+        if (supportsNativeFullscreen) {
+            // Desktop & Android: use the real API
+            if (!document.fullscreenElement) {
+                picturesRef.current?.requestFullscreen()
+            } else {
+                document.exitFullscreen()
+            }
         } else {
-            document.exitFullscreen()
+            // iOS Safari: simulate fullscreen with CSS
+            setIsFakeFullscreen(prev => !prev)
         }
     }
 
@@ -147,8 +162,8 @@ const Carousel = (props: CarouselProps) => {
                     </div>
                 }
 
-                <div 
-                    className={`carouselPictures ${!isMultifolder ? "fullWidth" : ""}`}
+                <div
+                    className={`carouselPictures ${!isMultifolder ? "fullWidth" : ""} ${isFakeFullscreen ? "fakeFullscreen" : ""}`}
                     ref={picturesRef}
                     onKeyDown={(event) => {
                         if (carouselType !== "single-preview") {
@@ -169,9 +184,9 @@ const Carousel = (props: CarouselProps) => {
                         <button
                             className="carouselFullscreenBtn"
                             onClick={toggleFullscreen}
-                            aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+                            aria-label={isActuallyFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
                         >
-                            <FontAwesomeIcon icon={(isFullscreen ? faCompress : faExpand) as any} />
+                            <FontAwesomeIcon icon={(isActuallyFullscreen ? faCompress : faExpand) as any} />
                         </button>
                         :
                         <></>

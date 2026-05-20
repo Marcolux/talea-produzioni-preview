@@ -204,6 +204,10 @@
                 max-width: 12ch;
                 line-height: 0.97;
                 letter-spacing: -0.012em;
+                transform: translateY(0) translateX(-50px);
+                &.inView {
+                    animation-delay: 0s;
+                }
             }
 
             .heroAudio h1 {

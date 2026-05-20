@@ -3,4 +3,10 @@
         height: 90dvh;
         width: auto;
     }
+    @media (max-width: 700px) {
+        #videoCorto_cineocchio {
+            height: auto;
+            width: 100vw;
+        }
+    }
 }

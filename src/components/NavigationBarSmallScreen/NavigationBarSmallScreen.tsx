@@ -55,6 +55,7 @@ const NavigationBarSmallScreen = () => {
                                     <NavLink className="navLinksSmScreen logoNav" to={'/'} end onClick={closeMenu}>
                                         <img src={withPublicUrl('/loghi/logo_talea-letter.png')} alt='Talea' />
                                     </NavLink>
+
                                     <NavLink className="navLinksSmScreen" to={'/servizi'} onClick={closeMenu}>
                                         <p>Servizi</p>
                                     </NavLink>
@@ -64,9 +65,9 @@ const NavigationBarSmallScreen = () => {
                                     <NavLink className="navLinksSmScreen" to={'/contatti'} onClick={closeMenu}>
                                         <p>Contatti</p>
                                     </NavLink>
-                                    {/* <NavLink className="navLinksSmScreen audioviLogoNav" to={'/audiovisivamente'} onClick={closeMenu}>
+                                    <NavLink className="navLinksSmScreen audioviLogoNav" to={'/audiovisivamente'} onClick={closeMenu}>
                                         <img src={withPublicUrl('/loghi/AVM_orange.png')} alt='Audiovisivamente' />
-                                    </NavLink> */}
+                                    </NavLink>
                                 </>
                             ) : (
                                 <>
@@ -89,11 +90,11 @@ const NavigationBarSmallScreen = () => {
                                         360° Eco Virtual Tour
                                     </NavLink>
                                     <NavLink 
-                                        className="navLinksSmScreen" 
+                                        className="navLinksSmScreen logoNav" 
                                         to={'/'} 
-                                        onClick={() => { setTaleaAudio('talea'); closeMenu(); }}
+                                        onClick={() => { setTaleaAudio('talea'); closeMenu(); }}    
                                     >
-                                        ← Torna a Talea
+                                        <img src={withPublicUrl('/loghi/talea_bk.png')} alt='Talea' style={{maxHeight: '30px'}}/>
                                     </NavLink>
                                 </>
                             )}
