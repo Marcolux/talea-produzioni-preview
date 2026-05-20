@@ -12,7 +12,6 @@ const Natura360 = () => {
     const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: true })
     const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: true })
 
-    // Scroll to #player on load (React Router doesn't handle hash links natively)
     useEffect(() => {
         if (window.location.hash === '#player') {
             const el = document.getElementById('player')
@@ -24,6 +23,12 @@ const Natura360 = () => {
         <div className="page audiovisivamente__page" id="audiovisivamente__eco_virtual_tour">
             <section className="heroAudio">
                 <h1 ref={heroTextRef} className={`heroTitle ${inViewHeroText ? "inView" : ""}`}>360° Eco Virtual Tour</h1>
+                <img
+                    src={withPublicUrl('/immagini-pagine/audiovisivamente/natura360/video 360.jpg')}
+                    alt={'Audiovisivamente'}
+                    className="scrapbookPhoto my-40"
+                    style={{maxWidth: '1200px', width: '100%', height: 'auto', filter: 'drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335))'}}
+                />
                 <div ref={heroDescrRef} className={`${inViewHeroDescr ? "inView" : ""} hero_desc_wrapper`}>
                     <p className="col-12" lang="it">
                         Cosa succede quando l'esplorazione della natura incontra la tecnologia più avanzata?
