@@ -72,8 +72,8 @@ const Distopie = () => {
                 />
             </div>
 
-            <section className="section bottom heroAudio pb-40">
-                <h1 ref={heroTextBot} className={`heroTitle ${inViewHeroTextBot ? "inView" : ""}`}>Cortometraggio</h1>
+            <section className="section bottom heroAudio pb-40 mt-0">
+                <h1 ref={heroTextBot} className={`heroTitle ${inViewHeroTextBot ? "inView" : ""} mt-0`}>Cortometraggio</h1>
 
                 <video
                     ref={videoCortoRef}
