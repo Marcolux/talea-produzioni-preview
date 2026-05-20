@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import Player360 from "./Player360"
 import "../../page.scss"
@@ -10,6 +11,14 @@ const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/p
 const Natura360 = () => {
     const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: true })
     const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: true })
+
+    // Scroll to #player on load (React Router doesn't handle hash links natively)
+    useEffect(() => {
+        if (window.location.hash === '#player') {
+            const el = document.getElementById('player')
+            if (el) el.scrollIntoView({ behavior: 'smooth' })
+        }
+    }, [])
 
     return (
         <div className="page audiovisivamente__page" id="audiovisivamente__eco_virtual_tour">
@@ -29,7 +38,7 @@ const Natura360 = () => {
                 </div>
             </section>
 
-            <section className="natura360__player">
+            <section className="natura360__player" id="player">
                 {/* <p className="natura360__label">ECO-VIRTUAL-TOUR</p> */}
                 <Player360 src={VIDEO_SRC_7} POSTER_SRC={POSTER_SRC} videoId="video360_1" />
             </section>
