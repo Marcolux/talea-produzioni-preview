@@ -20,10 +20,10 @@ const POSTER_CORTO = withPublicUrl('/immagini-pagine/audiovisivamente/distopie/c
 
 const Distopie = () => {
     const videoCortoRef = useRef<HTMLVideoElement>(null)
-    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
-    const [heroTextRefBot, inViewHeroTextBot] = useInView({ threshold: .1, triggerOnce: false })
-    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
-    const [heroDescrRef2, inViewHeroDescr2] = useInView({ threshold: .1, triggerOnce: false })
+    const [heroTextRef, inViewHeroText] = useInView({ threshold: 0, triggerOnce: false })
+    const [heroTextBot, inViewHeroTextBot] = useInView({ threshold: 0, triggerOnce: false })
+    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: 0, triggerOnce: false })
+    const [heroDescrRef2, inViewHeroDescr2] = useInView({ threshold: 0, triggerOnce: false })
     const [topRef, inViewTop] = useInView({ threshold: 0, triggerOnce: true })
     const [bottomRef, inViewBottom] = useInView({ threshold: 0, triggerOnce: true })
 
@@ -73,7 +73,7 @@ const Distopie = () => {
             </div>
 
             <section className="section bottom heroAudio pb-40">
-                <h1 ref={heroTextRefBot} className={`heroTitle ${inViewHeroTextBot ? "inView" : ""}`}>Cortometraggio</h1>
+                <h1 ref={heroTextBot} className={`heroTitle ${inViewHeroTextBot ? "inView" : ""}`}>Cortometraggio</h1>
 
                 <video
                     ref={videoCortoRef}

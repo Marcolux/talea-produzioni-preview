@@ -6,13 +6,13 @@ import "./negative-carousel.scss"
 
 
 const Analogie = () => {
-    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
-    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
+    const [heroAnalogieRef, inViewHeroText] = useInView({ threshold: 0, triggerOnce: false })
+    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: 0, triggerOnce: false })
 
     return(
         <div className="page audiovisivamente__page" id="audiovisivamente__analogie">
             <section className="heroAudio">
-                <h1 ref={heroTextRef} className={`heroTitle ${inViewHeroText ? "inView" : ""} `} >Analogie</h1>
+                <h1 ref={heroAnalogieRef} className={`heroTitle ${inViewHeroText ? "inView" : ""} `} >Analogie</h1>
                 <div ref={heroDescrRef} className={`${inViewHeroDescr ? "inView" : "" } hero_desc_wrapper`}>
                     <p className="col-12" lang="it">
                         Cosa succede quando i bambini osservano la città attraverso l'obiettivo di una macchina fotografica analogica?

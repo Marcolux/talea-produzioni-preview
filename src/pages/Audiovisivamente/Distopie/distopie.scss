@@ -147,39 +147,7 @@
         height: 90dvh;
         width: auto;
     }
-
-    @media (max-width: 700px) {
-        .magGallery {
-            padding: 0 12px 32px;
-
-            &__pair {
-                flex-direction: row !important;
-                margin-bottom: 8px !important;
-                gap: 8px;
-                align-items: stretch;
-
-                &.pair--reverse {
-                    flex-direction: row-reverse !important;
-                }
-
-                &.pair--normal,
-                &.pair--reverse {
-                    .magGallery__item:first-child,
-                    .magGallery__item:last-child {
-                        width: 50% !important;
-                        margin: 0 !important;
-                        flex: 1;
-                    }
-                }
-            }
-        }
-        #videoCorto {
-            height: auto;
-            width: 100vw;
-        }
-    }
-
-    /* ===== IMAGE GAP ===== */
+        /* ===== IMAGE GAP ===== */
     .image-gap {
         height: 500px;
         display: flex;
@@ -212,4 +180,49 @@
             filter: drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335));
         }
     }
+
+    @media (max-width: 700px) {
+        .magGallery {
+            padding: 0 12px 32px;
+
+            &__pair {
+                flex-direction: row !important;
+                margin-bottom: 8px !important;
+                gap: 8px;
+                align-items: stretch;
+
+                &.pair--reverse {
+                    flex-direction: row-reverse !important;
+                }
+
+                &.pair--normal,
+                &.pair--reverse {
+                    .magGallery__item:first-child,
+                    .magGallery__item:last-child {
+                        width: 50% !important;
+                        margin: 0 !important;
+                        flex: 1;
+                    }
+                }
+            }
+        }
+        #videoCorto {
+            height: auto;
+            width: 100vw;
+        }
+        .image-gap {
+            height: 400px;
+
+            img {
+                width: 70%;
+                max-width: 500px;
+                height: auto;
+                position: relative;
+                z-index: 2;
+                filter: drop-shadow(1px 4px 2px rgba(26, 26, 26, 0.335));
+            }
+        }
+    }
+
+
 }
