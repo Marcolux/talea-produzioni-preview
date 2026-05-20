@@ -44,8 +44,8 @@ const Evoluzioni = () => {
   const [activeFilter, setFilter] = useState<ImageKey>("original")
   const [modalIndex, setModalIndex] = useState<number | null>(null)
 
-  const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
-  const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
+  const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: true })
+  const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: true })
 
   const filtered = useMemo(() => {
     const stringToSearch = search.toLowerCase().trim()

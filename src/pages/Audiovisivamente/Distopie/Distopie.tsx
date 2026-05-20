@@ -20,10 +20,10 @@ const POSTER_CORTO = withPublicUrl('/immagini-pagine/audiovisivamente/distopie/c
 
 const Distopie = () => {
     const videoCortoRef = useRef<HTMLVideoElement>(null)
-    const [heroTextRef, inViewHeroText] = useInView({ threshold: 0, triggerOnce: false })
-    const [heroTextBot, inViewHeroTextBot] = useInView({ threshold: 0, triggerOnce: false })
-    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: 0, triggerOnce: false })
-    const [heroDescrRef2, inViewHeroDescr2] = useInView({ threshold: 0, triggerOnce: false })
+    const [heroTextRef, inViewHeroText] = useInView({ threshold: 0, triggerOnce: true })
+    const [heroTextBot, inViewHeroTextBot] = useInView({ threshold: 0, triggerOnce: true })
+    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: 0, triggerOnce: true })
+    const [heroDescrRef2, inViewHeroDescr2] = useInView({ threshold: 0, triggerOnce: true })
     const [topRef, inViewTop] = useInView({ threshold: 0, triggerOnce: true })
     const [bottomRef, inViewBottom] = useInView({ threshold: 0, triggerOnce: true })
 

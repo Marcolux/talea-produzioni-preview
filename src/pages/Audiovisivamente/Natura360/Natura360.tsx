@@ -8,8 +8,8 @@ const VIDEO_SRC_7 = 'https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/Costa%2
 const POSTER_SRC  = withPublicUrl('/immagini-pagine/audiovisivamente/natura360/poster.jpg')
 
 const Natura360 = () => {
-    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
-    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
+    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: true })
+    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: true })
 
     return (
         <div className="page audiovisivamente__page" id="audiovisivamente__eco_virtual_tour">

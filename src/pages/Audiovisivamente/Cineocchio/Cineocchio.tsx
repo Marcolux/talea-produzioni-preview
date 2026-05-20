@@ -6,8 +6,8 @@ import './cineocchio.scss'
 
 
 const Cineocchio = () => {
-    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
-    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: false })
+    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: true })
+    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: .1, triggerOnce: true })
 
     const videoCortoRef = useRef<HTMLVideoElement>(null)
     const POSTER_CORTO = sharedLogic.withPublicUrl('/immagini-pagine/audiovisivamente/distopie/cortometraggio-lenoci/distopie-poster.jpg') as string

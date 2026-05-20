@@ -56,7 +56,7 @@ const Servizi = () => {
             servizio: "360° Eco-Virtual Tour"
         }
     ]
-    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: false })
+    const [heroTextRef, inViewHeroText] = useInView({ threshold: .1, triggerOnce: true })
 
     return(
         <div className="page p-0" id="servizi_page">

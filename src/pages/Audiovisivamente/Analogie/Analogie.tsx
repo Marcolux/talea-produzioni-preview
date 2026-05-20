@@ -6,8 +6,8 @@ import "./negative-carousel.scss"
 
 
 const Analogie = () => {
-    const [heroAnalogieRef, inViewHeroText] = useInView({ threshold: 0, triggerOnce: false })
-    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: 0, triggerOnce: false })
+    const [heroAnalogieRef, inViewHeroText] = useInView({ threshold: 0, triggerOnce: true })
+    const [heroDescrRef, inViewHeroDescr] = useInView({ threshold: 0, triggerOnce: true })
 
     return(
         <div className="page audiovisivamente__page" id="audiovisivamente__analogie">
