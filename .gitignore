@@ -16,6 +16,9 @@
 public/immagini-pagine/audiovisivamente/natura360/*.mp4
 public/immagini-pagine/audiovisivamente/natura360/*.webm
 
+# deploy cache (persistent clone used by deploy.js to avoid re-downloading on every deploy)
+/.deploy-cache
+
 # misc
 .DS_Store
 .env.official
