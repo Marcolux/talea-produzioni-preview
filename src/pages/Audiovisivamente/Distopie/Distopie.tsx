@@ -85,7 +85,7 @@ const Distopie = () => {
                     crossOrigin="anonymous"
                     id="videoCorto"
                 >
-                    <source src="https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/MASTER_LOVE%20BOT.mp4" type="video/mp4"/>
+                    <source src="https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/MASTER_LOVE%20BOT_2_V2.mp4" type="video/mp4"/>
                 </video>
             </section>
             

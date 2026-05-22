@@ -72,7 +72,7 @@ const Cineocchio = () => {
                     crossOrigin="anonymous"
                     id="videoCorto_cineocchio"
                 >
-                    <source src="https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/MASTER_70126_ILCINEOCCHO.mp4" type="video/mp4"/>
+                    <source src="https://pub-3e8f1f8594254c93a49fb4e5bef03ab0.r2.dev/MASTER_70126_ILCINEOCCHO_V2.mp4" type="video/mp4"/>
                 </video>
             </section>
 
